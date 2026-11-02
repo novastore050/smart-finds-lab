@@ -1,0 +1,269 @@
+# =====================================================================
+#  10 Kitchen Gadgets That Actually Make Life Easier  -  TIMELINE
+#  1. Replace every [text in brackets] with your real product info.
+#  2. Put your media files at the paths below (or change the paths).
+#  3. Check:  python scripts/sfl.py check config/timelines/kitchen-gadgets-10.yaml
+#  4. Build:  python scripts/sfl.py build config/timelines/kitchen-gadgets-10.yaml
+#
+#  Honesty rule for this channel: we research products (specs, Amazon
+#  reviews, comparisons). Never say "I tested" unless you really did.
+#  QC warns you if the script contains testing claims.
+# =====================================================================
+
+project:
+  title: "10 Kitchen Gadgets That Actually Make Life Easier"
+  output: kitchen-gadgets-10
+  format: long
+
+audio:
+  music: assets/music/background-kitchen.mp3
+  music_license: "[Where the music is from, e.g. YouTube Audio Library - no attribution required]"
+  # music_volume_db: -19     # uncomment to change the music level for this video only
+
+subtitles:
+  mode: auto          # uses each scene's .srt if you add one, otherwise the narration text
+
+intro:
+  position: after_first_scene   # hook first, then the 2.6 s brand sting
+
+scenes:
+  # ---------------------------------------------------------------- HOOK (first 5-10 s)
+  - id: hook
+    voice: assets/audio/kitchen-gadgets-10/00_hook.mp3
+    narration: >
+      [Hook. Example: Most kitchen gadgets end up in a drawer. These ten are different -
+      based on thousands of customer reviews, they actually save time every day.
+      And number one costs less than a takeaway lunch.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/hook_a.mp4
+      - source: assets/video/kitchen-gadgets-10/hook_b.mp4
+      - source: assets/video/kitchen-gadgets-10/hook_c.mp4
+    overlays:
+      - type: title
+        text: "10 Kitchen Gadgets That Actually Make Life Easier"
+        start: 0.4
+        duration: 3.5
+
+  # ---------------------------------------------------------------- #10
+  - id: p10
+    voice: assets/audio/kitchen-gadgets-10/10.mp3
+    narration: >
+      [Narration for product #10: what problem it solves, who it is for,
+      one thing buyers like, one honest drawback.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/p10_a.mp4
+      - source: assets/video/kitchen-gadgets-10/p10_b.mp4
+      - source: assets/images/kitchen-gadgets-10/p10.jpg
+    overlays:
+      - type: badge
+        text: "#10"
+      - type: lower_third
+        text: "[Product 10 name]"
+        subtitle: "[Best for: ...]"
+        start: 0.8
+      - type: callout
+        text: "[Key feature]"
+        start: 5
+
+  # ---------------------------------------------------------------- #9
+  - id: p09
+    voice: assets/audio/kitchen-gadgets-10/09.mp3
+    narration: >
+      [Narration for product #9: what problem it solves, who it is for,
+      one thing buyers like, one honest drawback.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/p09_a.mp4
+      - source: assets/video/kitchen-gadgets-10/p09_b.mp4
+      - source: assets/images/kitchen-gadgets-10/p09.jpg
+    overlays:
+      - type: badge
+        text: "#9"
+      - type: lower_third
+        text: "[Product 9 name]"
+        subtitle: "[Best for: ...]"
+        start: 0.8
+      - type: callout
+        text: "[Key feature]"
+        start: 5
+
+  # ---------------------------------------------------------------- #8
+  - id: p08
+    voice: assets/audio/kitchen-gadgets-10/08.mp3
+    narration: >
+      [Narration for product #8: what problem it solves, who it is for,
+      one thing buyers like, one honest drawback.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/p08_a.mp4
+      - source: assets/video/kitchen-gadgets-10/p08_b.mp4
+      - source: assets/images/kitchen-gadgets-10/p08.jpg
+    overlays:
+      - type: badge
+        text: "#8"
+      - type: lower_third
+        text: "[Product 8 name]"
+        subtitle: "[Best for: ...]"
+        start: 0.8
+      - type: callout
+        text: "[Key feature]"
+        start: 5
+
+  # ---------------------------------------------------------------- #7
+  - id: p07
+    voice: assets/audio/kitchen-gadgets-10/07.mp3
+    narration: >
+      [Narration for product #7: what problem it solves, who it is for,
+      one thing buyers like, one honest drawback.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/p07_a.mp4
+      - source: assets/video/kitchen-gadgets-10/p07_b.mp4
+      - source: assets/images/kitchen-gadgets-10/p07.jpg
+    overlays:
+      - type: badge
+        text: "#7"
+      - type: lower_third
+        text: "[Product 7 name]"
+        subtitle: "[Best for: ...]"
+        start: 0.8
+      - type: callout
+        text: "[Key feature]"
+        start: 5
+
+  # ---------------------------------------------------------------- #6
+  - id: p06
+    voice: assets/audio/kitchen-gadgets-10/06.mp3
+    narration: >
+      [Narration for product #6: what problem it solves, who it is for,
+      one thing buyers like, one honest drawback.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/p06_a.mp4
+      - source: assets/video/kitchen-gadgets-10/p06_b.mp4
+      - source: assets/images/kitchen-gadgets-10/p06.jpg
+    overlays:
+      - type: badge
+        text: "#6"
+      - type: lower_third
+        text: "[Product 6 name]"
+        subtitle: "[Best for: ...]"
+        start: 0.8
+      - type: callout
+        text: "[Key feature]"
+        start: 5
+
+  # ---------------------------------------------------------------- #5
+  - id: p05
+    voice: assets/audio/kitchen-gadgets-10/05.mp3
+    narration: >
+      [Narration for product #5: what problem it solves, who it is for,
+      one thing buyers like, one honest drawback.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/p05_a.mp4
+      - source: assets/video/kitchen-gadgets-10/p05_b.mp4
+      - source: assets/images/kitchen-gadgets-10/p05.jpg
+    overlays:
+      - type: badge
+        text: "#5"
+      - type: lower_third
+        text: "[Product 5 name]"
+        subtitle: "[Best for: ...]"
+        start: 0.8
+      - type: callout
+        text: "[Key feature]"
+        start: 5
+
+  # ---------------------------------------------------------------- #4
+  - id: p04
+    voice: assets/audio/kitchen-gadgets-10/04.mp3
+    narration: >
+      [Narration for product #4: what problem it solves, who it is for,
+      one thing buyers like, one honest drawback.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/p04_a.mp4
+      - source: assets/video/kitchen-gadgets-10/p04_b.mp4
+      - source: assets/images/kitchen-gadgets-10/p04.jpg
+    overlays:
+      - type: badge
+        text: "#4"
+      - type: lower_third
+        text: "[Product 4 name]"
+        subtitle: "[Best for: ...]"
+        start: 0.8
+      - type: callout
+        text: "[Key feature]"
+        start: 5
+
+  # ---------------------------------------------------------------- #3
+  - id: p03
+    voice: assets/audio/kitchen-gadgets-10/03.mp3
+    narration: >
+      [Narration for product #3: what problem it solves, who it is for,
+      one thing buyers like, one honest drawback.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/p03_a.mp4
+      - source: assets/video/kitchen-gadgets-10/p03_b.mp4
+      - source: assets/images/kitchen-gadgets-10/p03.jpg
+    overlays:
+      - type: badge
+        text: "#3"
+      - type: lower_third
+        text: "[Product 3 name]"
+        subtitle: "[Best for: ...]"
+        start: 0.8
+      - type: callout
+        text: "[Key feature]"
+        start: 5
+
+  # ---------------------------------------------------------------- #2
+  - id: p02
+    voice: assets/audio/kitchen-gadgets-10/02.mp3
+    narration: >
+      [Narration for product #2: what problem it solves, who it is for,
+      one thing buyers like, one honest drawback.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/p02_a.mp4
+      - source: assets/video/kitchen-gadgets-10/p02_b.mp4
+      - source: assets/images/kitchen-gadgets-10/p02.jpg
+    overlays:
+      - type: badge
+        text: "#2"
+      - type: lower_third
+        text: "[Product 2 name]"
+        subtitle: "[Best for: ...]"
+        start: 0.8
+      - type: callout
+        text: "[Key feature]"
+        start: 5
+
+  # ---------------------------------------------------------------- #1
+  - id: p01
+    voice: assets/audio/kitchen-gadgets-10/01.mp3
+    narration: >
+      [Narration for product #1: what problem it solves, who it is for,
+      one thing buyers like, one honest drawback.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/p01_a.mp4
+      - source: assets/video/kitchen-gadgets-10/p01_b.mp4
+      - source: assets/images/kitchen-gadgets-10/p01.jpg
+    overlays:
+      - type: badge
+        text: "#1"
+      - type: lower_third
+        text: "[Product 1 name]"
+        subtitle: "[Best for: ...]"
+        start: 0.8
+      - type: callout
+        text: "[Key feature]"
+        start: 5
+
+  # ---------------------------------------------------------------- WRAP-UP
+  - id: wrapup
+    voice: assets/audio/kitchen-gadgets-10/99_wrapup.mp3
+    narration: >
+      [Wrap-up. Example: Prices change often, so check the links in the description
+      for today's price. Which one would you get first? Tell me in the comments.]
+    clips:
+      - source: assets/video/kitchen-gadgets-10/wrapup.mp4
+    overlays:
+      - type: cta
+        text: "Links in the description"
+        start: 0.5
+        duration: scene

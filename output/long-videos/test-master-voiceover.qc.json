@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "title": "System Test - Master Voice-over",
+  "output": "/home/user/Smart-Finds-Lab/output/long-videos/test-master-voiceover.mp4",
+  "duration": 28.5,
+  "checks": [
+    {
+      "level": "info",
+      "area": "Aspect ratio",
+      "message": "samples/test-media/image_1_square.jpg is 2000x2000 - it will be reframed to 1920x1080 (fit: auto)"
+    },
+    {
+      "level": "info",
+      "area": "Aspect ratio",
+      "message": "samples/test-media/image_2_cutout.png is 1200x1200 - it will be reframed to 1920x1080 (fit: contain)"
+    },
+    {
+      "level": "info",
+      "area": "Aspect ratio",
+      "message": "samples/test-media/clip_c_vertical.mp4 is 1080x1920 - it will be reframed to 1920x1080 (fit: auto)"
+    },
+    {
+      "level": "ok",
+      "area": "Subtitles",
+      "message": "4 subtitles; source: file samples/test-media/voiceover_full_placeholder.srt"
+    },
+    {
+      "level": "info",
+      "area": "Duration",
+      "message": "planned length 0:28.50"
+    },
+    {
+      "level": "ok",
+      "area": "Media files",
+      "message": "all 5 clip/image files found and readable"
+    },
+    {
+      "level": "ok",
+      "area": "Resolution",
+      "message": "1920x1080 (expected 1920x1080, 16:9)"
+    },
+    {
+      "level": "ok",
+      "area": "Codec",
+      "message": "video h264 yuv420p, audio aac 48000 Hz"
+    },
+    {
+      "level": "ok",
+      "area": "Frame rate",
+      "message": "30 fps"
+    },
+    {
+      "level": "ok",
+      "area": "Duration",
+      "message": "final video 0:28.50 (planned 0:28.50)"
+    },
+    {
+      "level": "ok",
+      "area": "Audio sync",
+      "message": "audio track 28.50s vs video 28.50s (difference 0 ms)"
+    },
+    {
+      "level": "ok",
+      "area": "Audio sync",
+      "message": "1 voice clip(s) placed inside their scenes"
+    },
+    {
+      "level": "ok",
+      "area": "Black frames",
+      "message": "no unexpected black sections found"
+    },
+    {
+      "level": "ok",
+      "area": "Silence",
+      "message": "no long silent gaps"
+    },
+    {
+      "level": "ok",
+      "area": "Loudness",
+      "message": "-14.02 LUFS (target -14.0), true peak -2.58 dBTP"
+    },
+    {
+      "level": "ok",
+      "area": "Subtitles",
+      "message": "SRT for YouTube upload: output/long-videos/test-master-voiceover.srt"
+    },
+    {
+      "level": "ok",
+      "area": "Export",
+      "message": "output/long-videos/test-master-voiceover.mp4 (9.0 MB)"
+    }
+  ],
+  "stats": {
+    "path": "/home/user/Smart-Finds-Lab/output/long-videos/test-master-voiceover.mp4",
+    "duration": 28.5,
+    "has_video": true,
+    "has_audio": true,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30.0,
+    "vcodec": "h264",
+    "acodec": "aac",
+    "pix_fmt": "yuv420p",
+    "sample_rate": 48000,
+    "channels": 2,
+    "rotation": 0,
+    "is_image": false,
+    "video_duration": 28.5,
+    "audio_duration": 28.5,
+    "lufs": "-14.02",
+    "true_peak": "-2.58"
+  }
+}

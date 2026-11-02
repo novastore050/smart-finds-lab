@@ -1,0 +1,19 @@
+1
+00:00:00,150 --> 00:00:03,944
+The orange box is on the left side of a wide clip.
+
+2
+00:00:03,944 --> 00:00:07,150
+Auto reframe should keep it in the frame.
+
+3
+00:00:07,750 --> 00:00:11,827
+Wide busy footage is shown whole on a blurred
+
+4
+00:00:11,827 --> 00:00:15,750
+background so nothing important is cut off.
+
+5
+00:00:16,350 --> 00:00:21,850
+A manual focus point also works when you know exactly where the product is.

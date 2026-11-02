@@ -1,0 +1,15 @@
+# working files (safe to delete)
+temp/*
+!temp/.gitkeep
+logs/*
+!logs/.gitkeep
+# large media - keep originals backed up elsewhere (cloud drive)
+assets/video/**/*.mp4
+assets/video/**/*.mov
+output/**/*.mp4
+.venv/
+__pycache__/
+*.pyc
+Smart-Finds-Lab.zip
+# generated test media - recreate with: python scripts/sfl.py make-test-media
+samples/test-media/

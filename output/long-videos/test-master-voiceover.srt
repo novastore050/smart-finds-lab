@@ -1,0 +1,15 @@
+1
+00:00:00,000 --> 00:00:05,400
+Part one of the master voice-over.
+
+2
+00:00:05,500 --> 00:00:13,400
+Part two comes from the same file.
+
+3
+00:00:13,500 --> 00:00:20,400
+Part three keeps the same timing.
+
+4
+00:00:20,500 --> 00:00:24,900
+Part four ends the test.

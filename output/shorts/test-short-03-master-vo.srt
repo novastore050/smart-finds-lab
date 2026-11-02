@@ -1,0 +1,7 @@
+1
+00:00:00,000 --> 00:00:07,500
+Part two comes from the same file.
+
+2
+00:00:08,433 --> 00:00:14,433
+Part three keeps the same timing.

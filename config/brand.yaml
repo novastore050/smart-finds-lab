@@ -1,0 +1,132 @@
+# =====================================================================
+#  SMART FINDS LAB - BRAND STYLE
+#  Every video uses these settings. Change a value here and ALL future
+#  videos change. (A single timeline can override them with "style:".)
+#  Colours are hex codes (#RRGGBB). Sizes are in pixels at 1080p.
+# =====================================================================
+
+channel:
+  name: "Smart Finds Lab"
+  tagline: "Discover. Compare. Buy Smarter."
+  watermark:                # small channel name in the corner
+    enabled: true
+    text: "SMART FINDS LAB"
+    position: top-right
+    opacity: 0.55           # 0 = invisible, 1 = solid
+  logo:                     # optional PNG logo (replaces the text watermark)
+    file: null              # e.g. assets/images/logo.png
+    width: 150
+    position: top-right
+    opacity: 0.9
+
+colors:
+  primary: "#14B8A6"        # teal - accent bars, badges, CTA
+  secondary: "#FFB020"      # amber - callouts, highlighted caption words
+  dark: "#0B1220"           # boxes and card backgrounds
+  dark2: "#123A4A"          # second gradient colour for title cards
+  light: "#FFFFFF"          # main text
+  muted: "#CBD5E1"          # secondary text
+
+fonts:                      # files live in assets/fonts (Inter, free OFL licence)
+  folder: assets/fonts
+  heading: { name: "Inter ExtraBold", file: "Inter-ExtraBold.otf" }
+  body:    { name: "Inter SemiBold",  file: "Inter-SemiBold.otf" }
+  caption: { name: "Inter Black",     file: "Inter-Black.otf" }
+
+look:                       # colour adjustment applied to every clip and photo
+  brightness: 0.0           # -0.1 darker ... +0.1 brighter
+  contrast: 1.04
+  saturation: 1.08          # 1.0 = unchanged
+  gamma: 1.0
+  sharpen: 0.25             # 0 = off
+  vignette: false
+
+transitions:
+  default: fade             # used when a scene does not choose one (see docs/TIMELINE-REFERENCE.md)
+  duration: 0.5             # seconds
+  video_fade_in: 0.4        # fade from black at the very start (long-form)
+  video_fade_out: 1.0       # fade to black at the very end (long-form)
+
+audio:
+  voice_volume_db: 0.0
+  voice_cleanup: true       # removes rumble + gentle compression for clearer voice
+  music_volume_db: -19      # background music level (more negative = quieter)
+  music_fade_in: 1.5
+  music_fade_out: 3.0
+  duck_music_under_voice: true   # music automatically dips while someone speaks
+  duck_threshold: 0.03
+  duck_ratio: 6
+  sfx_volume_db: -8
+  transition_sfx: assets/sound-effects/generated/whoosh.wav   # set to null for silent transitions
+  overlay_sfx: assets/sound-effects/generated/pop.wav         # plays when a badge/title pops in
+  loudness_lufs: -14        # YouTube's loudness target
+  true_peak_db: -1.5
+
+formats:
+  long:  { width: 1920, height: 1080, fps: 30, crf: 18, preset: medium, audio_bitrate: 192k }
+  short: { width: 1080, height: 1920, fps: 30, crf: 18, preset: medium, audio_bitrate: 192k }
+  # crf: lower = better quality + bigger file (17-20 is good). preset: slower = smaller file.
+
+text_sizes:
+  long:  { title: 100, lower_third: 50, lower_third_sub: 32, badge: 64, callout: 36, cta: 34,
+           card_title: 104, card_sub: 44, watermark: 22, hook: 84, subtitles: 44 }
+  short: { title: 84, lower_third: 46, lower_third_sub: 30, badge: 60, callout: 36, cta: 38,
+           card_title: 88, card_sub: 42, watermark: 24, hook: 70, subtitles: 76 }
+
+subtitles:
+  long:                     # classic subtitles at the bottom
+    font: body
+    color: "#FFFFFF"
+    box_color: "#000000"
+    box_opacity: 0.45
+    margin_bottom: 56
+    max_chars_per_line: 42
+    max_lines: 2
+    uppercase: false
+  short:                    # big, punchy captions for Shorts
+    font: caption
+    color: "#FFFFFF"
+    highlight_color: "#FFB020"   # one key word per caption is highlighted
+    highlight: longest_word      # or: none
+    outline_color: "#000000"
+    outline: 7
+    position_y: 0.68        # 0 = top, 1 = bottom (kept above YouTube's buttons)
+    max_words: 3
+    max_chars: 18
+    uppercase: true
+    pop_animation: true
+
+intro:                      # branded sting (long-form)
+  enabled: true
+  duration: 2.6
+  position: start           # start | after_first_scene (recommended: hook first, then sting)
+  title: null               # null = channel name
+  subtitle: null            # null = tagline
+  background: gradient      # gradient | "#hexcolour" | path to an image
+  sfx: assets/sound-effects/generated/riser.wav
+
+outro:                      # end screen (long-form). Keep 5-20 s for YouTube end-screen elements
+  enabled: true
+  duration: 12
+  title: "Thanks for watching!"
+  subtitle: "Subscribe for more smart finds"
+  note: "Links & current prices: see the description"
+  background: gradient
+
+shorts:
+  hook_duration: 3.0
+  cta_text: "Full review on the channel"
+  cta_duration: 2.5
+  fit: auto                 # auto | cover | blur | center  (how 16:9 footage becomes 9:16)
+  transition_duration: 0.3
+  min_seconds: 20
+  max_seconds: 60
+
+images:                     # product photos
+  default_duration: 4.0
+  motion: zoom_in           # none | zoom_in | zoom_out | pan_left | pan_right | pan_up | pan_down
+  fit: cover                # cover (fill, crop edges) | contain (whole photo on clean background) | blur
+
+voice:
+  delay: 0.15               # pause after a transition before the voice starts
+  tail: 0.45                # pause after the voice before the next scene

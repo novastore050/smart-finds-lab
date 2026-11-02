@@ -1,0 +1,69 @@
+{
+  "status": "FAIL",
+  "title": "[Product 1 name] - Short",
+  "output": null,
+  "duration": 9.0,
+  "checks": [
+    {
+      "level": "error",
+      "area": "Media files",
+      "message": "File not found: assets/video/kitchen-gadgets-10/p01_a.mp4"
+    },
+    {
+      "level": "error",
+      "area": "Media files",
+      "message": "File not found: assets/video/kitchen-gadgets-10/p01_b.mp4"
+    },
+    {
+      "level": "error",
+      "area": "Media files",
+      "message": "File not found: assets/images/kitchen-gadgets-10/p01.jpg"
+    },
+    {
+      "level": "error",
+      "area": "Media files",
+      "message": "File not found: assets/audio/kitchen-gadgets-10/01.mp3"
+    },
+    {
+      "level": "error",
+      "area": "Audio",
+      "message": "music file not found: assets/music/background-kitchen.mp3"
+    },
+    {
+      "level": "warning",
+      "area": "Audio",
+      "message": "no voice-over in this video"
+    },
+    {
+      "level": "warning",
+      "area": "Placeholder text",
+      "message": "scene 'p01' narration still contains placeholder text: \"[Narration for product #1: what problem it solves, who it is for, one \""
+    },
+    {
+      "level": "warning",
+      "area": "Placeholder text",
+      "message": "scene 'p01' lower_third still contains placeholder text: \"[Product 1 name] [Best for: ...]\""
+    },
+    {
+      "level": "warning",
+      "area": "Placeholder text",
+      "message": "scene 'p01' callout still contains placeholder text: \"[Key feature]\""
+    },
+    {
+      "level": "warning",
+      "area": "Placeholder text",
+      "message": "hook still contains placeholder text: \"[Hook for product #1, e.g. This $15 tool replaces three others]\""
+    },
+    {
+      "level": "ok",
+      "area": "Subtitles",
+      "message": "2 subtitles; source: script text over silent scene"
+    },
+    {
+      "level": "warning",
+      "area": "Duration",
+      "message": "Short is 9.0s - your target range is 20-60s"
+    }
+  ],
+  "stats": {}
+}

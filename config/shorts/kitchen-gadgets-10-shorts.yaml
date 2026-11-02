@@ -1,0 +1,30 @@
+# Shorts for "10 Kitchen Gadgets That Actually Make Life Easier"
+# They re-use footage, voice and subtitles from the long-form timeline.
+# Make them with:  python scripts/sfl.py shorts config/shorts/kitchen-gadgets-10-shorts.yaml
+# One only:        python scripts/sfl.py shorts config/shorts/kitchen-gadgets-10-shorts.yaml --only 1
+#
+# Tip: one product per Short. If the product's voice line is under ~20 s, add a second
+# scene (or record a dedicated Short voice-over and use 'scenes:' - see docs/SHORTS-GUIDE.md).
+
+defaults:
+  from_timeline: config/timelines/kitchen-gadgets-10.yaml
+  audio:
+    music: assets/music/background-kitchen.mp3
+    music_license: "[same as the long video]"
+  cta: "Full top 10 on the channel"
+
+shorts:
+  - output: kitchen10-short-01
+    title: "[Product 1 name] - Short"
+    hook: "[Hook for product #1, e.g. This $15 tool replaces three others]"
+    use_scenes: [p01]
+
+  - output: kitchen10-short-02
+    title: "[Product 2 name] - Short"
+    hook: "[Hook for product #2]"
+    use_scenes: [p02]
+
+  - output: kitchen10-short-03
+    title: "[Product 3 name] - Short"
+    hook: "[Hook for product #3]"
+    use_scenes: [p03]

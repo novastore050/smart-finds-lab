@@ -1,0 +1,39 @@
+1
+00:00:00,150 --> 00:00:03,479
+These are the gadgets that make everyday kitchen jobs faster.
+
+2
+00:00:03,479 --> 00:00:05,650
+Number one surprised a lot of buyers.
+
+3
+00:00:08,383 --> 00:00:10,983
+This subtitle comes from an SRT file.
+
+4
+00:00:10,983 --> 00:00:13,583
+Timings in SRT files are exact.
+
+5
+00:00:13,583 --> 00:00:16,383
+That is the best way to get perfect sync.
+
+6
+00:00:17,050 --> 00:00:19,502
+The short clip below repeats automatically because the
+
+7
+00:00:19,502 --> 00:00:21,123
+voice is longer than the footage.
+
+8
+00:00:21,123 --> 00:00:24,050
+The cut-out photo is placed on a clean background with a slow pan.
+
+9
+00:00:26,717 --> 00:00:28,057
+Thanks for watching.
+
+10
+00:00:28,057 --> 00:00:31,217
+Prices change often, so check the links for today's price.
