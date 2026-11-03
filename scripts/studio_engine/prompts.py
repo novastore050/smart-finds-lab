@@ -176,12 +176,13 @@ def import_clips(prod: Production, folder, log):
     return done, unmatched
 
 
-def write_visual_plan(prod: Production, log):
-    """Scene-by-scene visual production plan (shots, camera, overlays, timing, transitions)."""
+def write_visual_plan(prod: Production, log, script: dict | None = None, out_name: str = "visual-plan.md"):
+    """Scene-by-scene visual production plan (shots, camera, overlays, timing, transitions).
+    script/out_name let a review proposal be planned without touching the approved script."""
     from .script import est_seconds, load_script
 
     prod.require("script", why="Write and check the script first.")
-    s = load_script(prod)
+    s = script or load_script(prod)
     wpm = float(s.get("words_per_minute") or 155)
     data = load_research(prod)
     names = {p["id"]: fval(p["name"]) for p in data.get("products", [])}
@@ -220,10 +221,14 @@ def write_visual_plan(prod: Production, log):
         L += ["", "| Shot | Source | Camera / angle | ~Seconds | What we see |", "|---|---|---|---|---|"]
         shot_total = 0
         for sh in sc.get("shots") or []:
-            src = "📷 product photo (slow zoom)" if sh.get("type") == "product_photo" else "🎬 AI b-roll"
+            src = {"product_photo": f"📷 product photo ({sh.get('motion', 'zoom_in')}, crop: {sh.get('crop', 'full')})",
+                   "stock": "🎞️ free-licence stock", "graphic": "🔤 graphic (made by the editor)"}.get(
+                sh.get("type"), "🎬 AI b-roll")
             have = shot_file(prod, sh)
             shot_total += float(sh.get("seconds") or 0)
-            what = sh.get("prompt", "") if sh.get("type") != "product_photo" else f"{names.get(sh.get('product'), '')} — clean product shot"
+            what = {"product_photo": f"{names.get(sh.get('product'), '')} — real product photo",
+                    "stock": f"search: \"{sh.get('search', '')}\"",
+                    "graphic": f"{sh.get('graphic', '')}: {sh.get('text', '')}"}.get(sh.get("type"), sh.get("prompt", ""))
             L.append(f"| `{sh['id']}`{' ✅' if have else ''} | {src} | {sh.get('camera', '—')} | {sh.get('seconds', '—')} | {what} |")
         if shot_total and shot_total < sec * 0.6:
             L.append(f"\n*Shots cover ~{shot_total:.0f} s of ~{sec:.0f} s — the clips will repeat; adding 1–2 more "
@@ -233,7 +238,7 @@ def write_visual_plan(prod: Production, log):
         L.append("")
     L += [f"**Estimated narration total:** {total / 60:.1f} min (+ intro sting 2.6 s, outro 12 s, transitions).", "",
           "Higgsfield prompts for every 🎬 shot: `prompts/higgsfield-prompts.md` · shot list: `prompts/shotlist.csv`."]
-    out = prod.dir / "production" / "visual-plan.md"
+    out = prod.dir / "production" / out_name
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("\n".join(L) + "\n", encoding="utf-8")
     log.info(f"Visual plan: {rel(out)}")
