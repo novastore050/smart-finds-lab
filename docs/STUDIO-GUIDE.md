@@ -112,6 +112,18 @@ python scripts/studio.py import-clips cleaning-gadgets-7 "C:\Users\you\Downloads
 
 Only files whose names contain the shot id are imported; your downloads are never changed.
 
+Also generate the scene-by-scene visual plan (shots, camera angles, overlays, timing, transitions):
+
+```bash
+python scripts/studio.py plan cleaning-gadgets-7
+```
+
+And the production package (Shorts scripts, voice sections, thumbnail concepts, checklist):
+
+```bash
+python scripts/studio.py package cleaning-gadgets-7
+```
+
 ## 6. Voice-over (ElevenLabs)
 
 ```bash

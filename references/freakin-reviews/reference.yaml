@@ -1,0 +1,54 @@
+name: Freakin' Reviews
+channel_url: https://www.youtube.com/@FreakinReviews
+collected_on: '2026-11-03'
+method: manual (web search index; youtube.com blocked in the research environment)
+videos:
+- url: https://www.youtube.com/watch?v=PRgy1nnm3fg
+  video_id: PRgy1nnm3fg
+  title: Kitchen Gadgets - An Honest Review.
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: appeared in search for the channel; attribution not confirmed
+- url: https://www.youtube.com/watch?v=UhTRjm8vVMY
+  video_id: UhTRjm8vVMY
+  title: I've Tested Thousands of Products. These Were the BEST & WORST!
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: appeared in search for the channel; attribution not confirmed
+- url: https://www.youtube.com/watch?v=eCg-dF7BWX8
+  video_id: eCg-dF7BWX8
+  title: Testing Microwave Gadgets That Actually Work!
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: search summary links the channel to a microwave-gadgets video; attribution not confirmed
+- url: https://www.youtube.com/watch?v=bXk9pKAf6h0
+  video_id: bXk9pKAf6h0
+  title: Do These Weird Kitchen Utensils Actually Work?
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: search summary links the channel to an unusual-utensils video; attribution not confirmed
+- url: https://freakinreviews.beehiiv.com/p/kitchen-gadgets-0125
+  video_id: null
+  title: 'Testing 3 Kitchen Gadgets: Hits or Misses?'
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: channel's own newsletter (confirmed)
+manual_observations:
+  presenter_or_faceless: On-camera host (James White) who physically tests products, per channel/website
+    descriptions - not reviewed visually
+  visual_style: ''
+  on_screen_text: ''
+  b_roll_and_footage: ''
+  thumbnail_style: ''
+  music_and_sound: ''
+  editing_pace_feel: ''

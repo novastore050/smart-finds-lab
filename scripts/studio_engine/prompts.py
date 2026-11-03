@@ -86,7 +86,8 @@ def write_prompts(prod: Production, log):
                          "save_as": target, "prompt": sh.get("prompt", ""),
                          "status": "imported" if have else "pending"})
             continue
-        full = f"{sh['prompt'].rstrip('.')}. {vs['suffix']}"
+        cam = f" Camera: {sh['camera']}." if sh.get("camera") else ""
+        full = f"{sh['prompt'].rstrip('.')}.{cam} {vs['suffix']}"
         versions = [("16:9", "", "long video")]
         if sh["for_shorts"]:
             versions.append(("9:16", "-v", "Short (vertical)"))
@@ -173,3 +174,67 @@ def import_clips(prod: Production, folder, log):
             log.info(f"     - {u}")
     log.info(f"\nCopied {len(done)} file(s). Your original files were not changed.")
     return done, unmatched
+
+
+def write_visual_plan(prod: Production, log):
+    """Scene-by-scene visual production plan (shots, camera, overlays, timing, transitions)."""
+    from .script import est_seconds, load_script
+
+    prod.require("script", why="Write and check the script first.")
+    s = load_script(prod)
+    wpm = float(s.get("words_per_minute") or 155)
+    data = load_research(prod)
+    names = {p["id"]: fval(p["name"]) for p in data.get("products", [])}
+    total = 0.0
+    L = [f"# Visual production plan — {prod.title}", "",
+         "Generated from `script/script.yaml`. Durations are estimates from the narration "
+         f"({wpm:.0f} words/min); the editor fits the real voice-over automatically. Clips shorter than a scene "
+         "repeat in order (fill: cycle); longer ones are trimmed.", "",
+         "**Sources of visuals:** 🎬 AI b-roll (Higgsfield, generic — must not imitate the exact product) · "
+         "📷 real product photo (your own photo or a manufacturer image you are licensed to use). "
+         "Never use footage from reference channels or images from Amazon listings without permission.", "",
+         "Automatic in every video (config/brand.yaml): brand intro sting after the hook, 12 s end-screen outro, "
+         "watermark, subtitles, background music ducking, whoosh on transitions, pop on badges.", ""]
+    for i, sc in enumerate(s.get("scenes") or [], 1):
+        sec = est_seconds(sc.get("narration", ""), wpm)
+        total += sec
+        title = {"hook": "Hook", "setup": "Honesty & affiliate note", "wrapup": "Wrap-up & call to action"}.get(
+            sc.get("role"), f"#{sc.get('rank')} {names.get(sc.get('product'), '')}")
+        L += [f"## Scene {i} — `{sc['id']}` · {title}", "",
+              f"- **Approx. duration:** {sec:.0f} s of narration"
+              + (" (+0.5 s pauses)" if sc.get("role") == "product" else ""),
+              f"- **Transition into this scene:** {sc.get('transition') or 'brand default (fade)'}"]
+        os_ = sc.get("on_screen") or {}
+        ov = []
+        if os_.get("title"):
+            ov.append(f"title \"{os_['title']}\" (0.4 s → 3.9 s)")
+        if os_.get("badge"):
+            ov.append(f"badge {os_['badge']} (whole scene)")
+        if os_.get("lower_third"):
+            ov.append(f"lower third \"{os_['lower_third']}\" / \"{os_.get('lower_third_sub', '')}\" (0.8 s → 5.3 s)")
+        if os_.get("callout"):
+            ov.append(f"callout \"{os_['callout']}\" (from 6 s)")
+        if os_.get("cta"):
+            ov.append(f"CTA \"{os_['cta']}\" (from 0.5 s to the end)")
+        L.append("- **Text overlays:** " + ("; ".join(ov) if ov else "subtitles only"))
+        L += ["", "| Shot | Source | Camera / angle | ~Seconds | What we see |", "|---|---|---|---|---|"]
+        shot_total = 0
+        for sh in sc.get("shots") or []:
+            src = "📷 product photo (slow zoom)" if sh.get("type") == "product_photo" else "🎬 AI b-roll"
+            have = shot_file(prod, sh)
+            shot_total += float(sh.get("seconds") or 0)
+            what = sh.get("prompt", "") if sh.get("type") != "product_photo" else f"{names.get(sh.get('product'), '')} — clean product shot"
+            L.append(f"| `{sh['id']}`{' ✅' if have else ''} | {src} | {sh.get('camera', '—')} | {sh.get('seconds', '—')} | {what} |")
+        if shot_total and shot_total < sec * 0.6:
+            L.append(f"\n*Shots cover ~{shot_total:.0f} s of ~{sec:.0f} s — the clips will repeat; adding 1–2 more "
+                     "shots would make this scene feel richer.*")
+        if sc.get("needs_verification"):
+            L += ["", "**Verify before publishing:** " + "; ".join(sc["needs_verification"])]
+        L.append("")
+    L += [f"**Estimated narration total:** {total / 60:.1f} min (+ intro sting 2.6 s, outro 12 s, transitions).", "",
+          "Higgsfield prompts for every 🎬 shot: `prompts/higgsfield-prompts.md` · shot list: `prompts/shotlist.csv`."]
+    out = prod.dir / "production" / "visual-plan.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text("\n".join(L) + "\n", encoding="utf-8")
+    log.info(f"Visual plan: {rel(out)}")
+    return out

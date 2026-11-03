@@ -282,6 +282,9 @@ def write_markdown(prod: Production):
             L.append("**On screen:** " + " · ".join(f"{k}: *{v}*" for k, v in os_.items() if v))
         for sh in sc.get("shots") or []:
             L.append(f"- shot `{sh['id']}` ({sh.get('type')}): {sh.get('prompt', '')}")
+        if sc.get("needs_verification"):
+            L.append("")
+            L += [f"- ⚠️ **Needs verification:** {v}" for v in sc["needs_verification"]]
         L.append("")
     if s.get("shorts"):
         L += ["## Shorts", ""] + [f"- **{x['id']}**: hook \"{x.get('hook')}\" — scenes {x.get('use_scenes')}"

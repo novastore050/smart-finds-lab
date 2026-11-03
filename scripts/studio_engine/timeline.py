@@ -16,6 +16,8 @@ from .voice import scene_audio
 
 def _scene_entry(prod: Production, sc: dict, wpm: float, missing: list, placeholders: bool, vertical=False):
     e = {"id": sc["id"], "narration": " ".join(str(sc.get("narration", "")).split())}
+    if sc.get("transition") and not vertical:  # Shorts use their own quick transitions
+        e["transition"] = sc["transition"]
     audio = scene_audio(prod, sc["id"])
     if audio:
         e["voice"] = rel(audio)

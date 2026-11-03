@@ -1,0 +1,61 @@
+name: SteveDOES
+channel_url: https://www.youtube.com/@SteveDOES
+collected_on: '2026-11-03'
+method: manual (web search index; youtube.com blocked in the research environment)
+videos:
+- url: https://www.youtube.com/watch?v=ag6dJJjPrE0
+  video_id: ag6dJJjPrE0
+  title: This Robot Vacuum Has Human-Level Smarts
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: appeared in search for the channel name; attribution not confirmed
+- url: https://www.youtube.com/watch?v=jXVEdq7Ma8g
+  video_id: jXVEdq7Ma8g
+  title: The New Sony BRAVIA 9 II Is Here!
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: appeared in search for the channel name; attribution not confirmed
+- url: https://m.youtube.com/watch?v=hY0nJ3yfm7Y
+  video_id: hY0nJ3yfm7Y
+  title: We Put the DREO 2-In-1 Tower Heater Fan to the Test
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: search summary ties a DREO promo code 'SteveDoes' to the channel; attribution likely
+- url: https://www.youtube.com/watch?v=yO8l--8D7_A
+  video_id: yO8l--8D7_A
+  title: Things To Know Before You Buy - JBL Boombox 3
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: appeared in search for the channel name; attribution not confirmed
+- url: https://www.youtube.com/watch?v=ZNDbWejyDEM
+  video_id: ZNDbWejyDEM
+  title: ASUS ZenWiFi BQ16 Pro Unboxing + Real-World Speed Test
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: appeared in search for the channel name; attribution not confirmed
+- url: https://www.youtube.com/watch?v=aJdybtWKS4k
+  video_id: aJdybtWKS4k
+  title: ASUS BD4 Wi-Fi 7 Mesh Speed Test
+  published: ''
+  duration: ''
+  views: null
+  description: ''
+  attribution: appeared in search for the channel name; attribution not confirmed
+manual_observations:
+  presenter_or_faceless: Not determined - needs viewing
+  visual_style: ''
+  on_screen_text: ''
+  b_roll_and_footage: ''
+  thumbnail_style: ''
+  music_and_sound: ''
+  editing_pace_feel: ''

@@ -222,6 +222,13 @@ def main():
     ok("human review not marked automatically", "NOT DONE" in rep)
     ok("export integrity check ran", "every frame decodes" in rep)
 
+    plan_md = prompts.write_visual_plan(prod, log)
+    ok("visual plan written with shots and overlays", "| Shot |" in plan_md.read_text() and "badge" in plan_md.read_text())
+    from studio_engine import package
+    pk = package.write(prod, log)
+    for fn in ("shorts-scripts.md", "voiceover-sections.md", "thumbnail-concepts.md", "production-checklist.md"):
+        ok(f"package {fn}", (pk / fn).exists())
+
     print("7. reference analysis")
     reference.new_reference("zz-test-reference", "https://www.youtube.com/@example",
                             ["https://www.youtube.com/watch?v=abcdefghijk"], log)

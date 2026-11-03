@@ -50,7 +50,10 @@ class Log:
         self.debug(f"Smart Finds Lab log - {time.ctime()}")
 
     def info(self, msg: str = ""):
-        print(msg, flush=True)
+        try:
+            print(msg, flush=True)
+        except BrokenPipeError:  # output piped into e.g. `head` that closed early
+            pass
         self.debug(msg)
 
     def warn(self, msg: str):

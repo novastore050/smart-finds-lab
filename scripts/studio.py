@@ -19,8 +19,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from sfl_engine.util import SFLError, Log, rel  # noqa: E402
-from studio_engine import (pipeline, production_qc, prompts, reference, research, script, seo,  # noqa: E402
-                           timeline, voice)
+from studio_engine import (package, pipeline, production_qc, prompts, reference, research, script,  # noqa: E402
+                           seo, timeline, voice)
 from studio_engine.common import Production, create_production  # noqa: E402
 
 
@@ -132,6 +132,10 @@ def main():
     add("check-script", cmd_check_script, "check honesty, claims, originality and timing")
     # prompts & clips
     add("prompts", cmd_prompts, "write Higgsfield prompts + shot list")
+    add("package", lambda a: package.write(P(a), Log("package")) and 0,
+        "production package: Shorts scripts, voice sections, thumbnail concepts, checklist")
+    add("plan", lambda a: prompts.write_visual_plan(P(a), Log("plan")) and 0,
+        "scene-by-scene visual production plan (production/visual-plan.md)")
     s = add("import-clips", lambda a: prompts.import_clips(P(a), a.folder, Log("import")) and 0,
             "copy downloaded clips/photos that have shot ids in their names")
     s.add_argument("folder")

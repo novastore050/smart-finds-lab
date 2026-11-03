@@ -38,3 +38,7 @@ references/zz-*/
 assets/video/zz-*/
 assets/images/zz-*/
 output/**/zz-*
+
+# draft / animatic renders and their reports
+output/**/*_draft*
+output/**/*.precheck.*

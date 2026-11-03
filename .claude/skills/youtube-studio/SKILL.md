@@ -41,9 +41,10 @@ viewers about Amazon products. Everything runs through two CLIs in this reposito
 | 3 | Report | `studio.py research-report <slug>` → report.md, shortlist.md, amazon-verification.csv/.md | |
 | 4 | **STOP** | Owner verifies on Amazon → `import-verification <slug>`; owner runs `approve-products <slug>` | |
 | 5 | Script | `studio.py draft-script <slug>` → edit `script/script.yaml` → `check-script <slug>` | `reference/script-guide.md` |
-| 6 | Prompts | `studio.py prompts <slug>` → `prompts/higgsfield-prompts.md` + `shotlist.csv` | `reference/higgsfield-workflow.md` |
+| 6 | Prompts + plan | `studio.py prompts <slug>` → `prompts/higgsfield-prompts.md` + `shotlist.csv`; `studio.py plan <slug>` → `production/visual-plan.md` | `reference/higgsfield-workflow.md` |
 | 7 | Voice | `studio.py voice-pack <slug>` → (approved) generate → `import-voice` → `align` | `reference/elevenlabs-voice.md` |
 | 8 | Clips | owner generates/downloads → `studio.py import-clips <slug> <folder>` | |
+| 8b | Package | `studio.py seo <slug>`, `studio.py thumbnail <slug>`, `studio.py package <slug>` → `production/` (Shorts scripts, voice sections, thumbnail concepts, checklist) | |
 | 9 | Render | `studio.py render <slug>` (long + 3 Shorts + thumbnails + SEO + QC); `--draft`, `--placeholders` for previews | |
 | 10 | QC | `studio.py qc <slug>` → `reports/production-qc.md` (Part A automated, Part B human) | `reference/qc-and-publish.md` |
 | 11 | **STOP** | Owner reviews Part B → `studio.py review-done <slug>` → uploads manually | |

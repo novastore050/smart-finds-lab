@@ -29,6 +29,12 @@ voice_settings:
 # (subtitles still show the original spelling).
 pronunciations:
   OXO: "ox-oh"
+  TP19H: "T P nineteen H"
+  TempPro: "Temp Pro"
+  ThermoPro: "Thermo Pro"
+  PowerLix: "Power Licks"
+  Zulay: "Zoo-lay"          # unconfirmed - check how the brand says it
+  Microplane: "Micro-plane"
 
 # Other voices that were compared (free public previews from ElevenLabs' voice library).
 candidates:

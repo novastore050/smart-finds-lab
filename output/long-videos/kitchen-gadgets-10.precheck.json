@@ -2,242 +2,182 @@
   "status": "FAIL",
   "title": "10 Kitchen Gadgets That Actually Make Life Easier",
   "output": null,
-  "duration": 110.1,
+  "duration": 536.6,
   "checks": [
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/hook_a.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s01-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/hook_b.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s01-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/hook_c.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s01-c.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/00_hook.mp3"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s02-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p10_a.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s02-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p10_b.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s03-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/images/kitchen-gadgets-10/p10.jpg"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s03-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/10.mp3"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s04-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p09_a.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s04-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p09_b.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s04-c.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/images/kitchen-gadgets-10/p09.jpg"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s05-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/09.mp3"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s05-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p08_a.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s05-c.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p08_b.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s06-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/images/kitchen-gadgets-10/p08.jpg"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s06-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/08.mp3"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s07-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p07_a.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s07-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p07_b.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s07-c.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/images/kitchen-gadgets-10/p07.jpg"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s08-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/07.mp3"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s08-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p06_a.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s08-c.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p06_b.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s09-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/images/kitchen-gadgets-10/p06.jpg"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s09-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/06.mp3"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s09-c.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p05_a.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s10-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p05_b.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s10-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/images/kitchen-gadgets-10/p05.jpg"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s10-c.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/05.mp3"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s11-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p04_a.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s11-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p04_b.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s11-c.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/images/kitchen-gadgets-10/p04.jpg"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s12-a.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/04.mp3"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s12-b.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p03_a.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s12-c.mp4"
     },
     {
       "level": "error",
       "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p03_b.mp4"
+      "message": "File not found: assets/video/kitchen-gadgets-10/s13-a.mp4"
     },
     {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/images/kitchen-gadgets-10/p03.jpg"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/03.mp3"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p02_a.mp4"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p02_b.mp4"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/images/kitchen-gadgets-10/p02.jpg"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/02.mp3"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p01_a.mp4"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/p01_b.mp4"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/images/kitchen-gadgets-10/p01.jpg"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/01.mp3"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/video/kitchen-gadgets-10/wrapup.mp4"
-    },
-    {
-      "level": "error",
-      "area": "Media files",
-      "message": "File not found: assets/audio/kitchen-gadgets-10/99_wrapup.mp3"
-    },
-    {
-      "level": "error",
+      "level": "info",
       "area": "Audio",
-      "message": "music file not found: assets/music/background-kitchen.mp3"
+      "message": "no background music set"
     },
     {
       "level": "warning",
@@ -245,184 +185,79 @@
       "message": "no voice-over in this video"
     },
     {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'hook' narration still contains placeholder text: \"[Hook. Example: Most kitchen gadgets end up in a drawer. These ten are\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p10' narration still contains placeholder text: \"[Narration for product #10: what problem it solves, who it is for, one\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p10' lower_third still contains placeholder text: \"[Product 10 name] [Best for: ...]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p10' callout still contains placeholder text: \"[Key feature]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p09' narration still contains placeholder text: \"[Narration for product #9: what problem it solves, who it is for, one \""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p09' lower_third still contains placeholder text: \"[Product 9 name] [Best for: ...]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p09' callout still contains placeholder text: \"[Key feature]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p08' narration still contains placeholder text: \"[Narration for product #8: what problem it solves, who it is for, one \""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p08' lower_third still contains placeholder text: \"[Product 8 name] [Best for: ...]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p08' callout still contains placeholder text: \"[Key feature]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p07' narration still contains placeholder text: \"[Narration for product #7: what problem it solves, who it is for, one \""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p07' lower_third still contains placeholder text: \"[Product 7 name] [Best for: ...]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p07' callout still contains placeholder text: \"[Key feature]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p06' narration still contains placeholder text: \"[Narration for product #6: what problem it solves, who it is for, one \""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p06' lower_third still contains placeholder text: \"[Product 6 name] [Best for: ...]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p06' callout still contains placeholder text: \"[Key feature]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p05' narration still contains placeholder text: \"[Narration for product #5: what problem it solves, who it is for, one \""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p05' lower_third still contains placeholder text: \"[Product 5 name] [Best for: ...]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p05' callout still contains placeholder text: \"[Key feature]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p04' narration still contains placeholder text: \"[Narration for product #4: what problem it solves, who it is for, one \""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p04' lower_third still contains placeholder text: \"[Product 4 name] [Best for: ...]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p04' callout still contains placeholder text: \"[Key feature]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p03' narration still contains placeholder text: \"[Narration for product #3: what problem it solves, who it is for, one \""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p03' lower_third still contains placeholder text: \"[Product 3 name] [Best for: ...]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p03' callout still contains placeholder text: \"[Key feature]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p02' narration still contains placeholder text: \"[Narration for product #2: what problem it solves, who it is for, one \""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p02' lower_third still contains placeholder text: \"[Product 2 name] [Best for: ...]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p02' callout still contains placeholder text: \"[Key feature]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p01' narration still contains placeholder text: \"[Narration for product #1: what problem it solves, who it is for, one \""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p01' lower_third still contains placeholder text: \"[Product 1 name] [Best for: ...]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'p01' callout still contains placeholder text: \"[Key feature]\""
-    },
-    {
-      "level": "warning",
-      "area": "Placeholder text",
-      "message": "scene 'wrapup' narration still contains placeholder text: \"[Wrap-up. Example: Prices change often, so check the links in the desc\""
-    },
-    {
-      "level": "warning",
-      "area": "Subtitles",
-      "message": "5 subtitle(s) shown for under 0.6s (hard to read)"
-    },
-    {
-      "level": "warning",
-      "area": "Subtitles",
-      "message": "9 subtitle(s) need fast reading (> 22 characters/second)"
-    },
-    {
       "level": "ok",
       "area": "Subtitles",
-      "message": "30 subtitles; source: script text over silent scene"
+      "message": "131 subtitles; source: script text over silent scene"
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's01': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's02': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's03': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's04': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's05': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's06': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's07': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's08': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's09': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's10': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's11': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's12': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
+    },
+    {
+      "level": "warning",
+      "area": "Timeline",
+      "message": "scene 's13': clips are shorter than the voice, so they repeat. Add more footage to this scene for a more professional result."
     },
     {
       "level": "ok",
       "area": "Duration",
-      "message": "planned length 1:50.10"
+      "message": "planned length 8:56.60"
     }
   ],
   "stats": {}

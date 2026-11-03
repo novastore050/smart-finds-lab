@@ -46,6 +46,8 @@ def chapters(prod: Production, script: dict, names: dict):
         sc = roles.get(sid)
         if not sc:
             continue  # intro/outro cards belong to the previous chapter
+        if sc.get("role") not in ("hook", "product", "wrapup"):
+            continue  # setup/bridge scenes belong to the previous chapter
         if sc.get("role") == "hook":
             label = "Intro"
             t = 0
@@ -75,10 +77,11 @@ def build(prod: Production, log):
     chaps, total, estimated, dropped = chapters(prod, s, names)
     title = s.get("title") or prod.title
     year = dt.date.today().year
-    titles = [title, f"{title} ({year})", f"{title} | Researched & Compared"]
+    custom = prod.meta.get("seo") or {}
+    titles = custom.get("titles") or [title, f"{title} ({year})", f"{title} | Researched & Compared"]
     titles = [t for t in titles if len(t) <= 100]
     prods = [sc for sc in s.get("scenes") or [] if sc.get("role") == "product"]
-    hook = " ".join(str(s["scenes"][0].get("narration", "")).split()[:30]) + "…"
+    hook = custom.get("description_intro") or (" ".join(str(s["scenes"][0].get("narration", "")).split()[:30]) + "…")
     D = [hook, "", "🛒 PRODUCTS IN THIS VIDEO (prices change — check the link for today's price):"]
     unverified_links = []
     for sc in prods:
@@ -92,8 +95,8 @@ def build(prod: Production, log):
           f"🔔 Subscribe to {cfg['channel']['name']} — {cfg['channel']['tagline']}", "",
           " ".join(cfg["seo"]["hashtags"])]
     description = "\n".join(D)
-    tags = list(dict.fromkeys(cfg["seo"]["default_tags"] + [str(names.get(sc.get("product"), "")).lower()
-                                                             for sc in prods]))
+    tags = list(dict.fromkeys(custom.get("tags", []) + cfg["seo"]["default_tags"]
+                              + [str(names.get(sc.get("product"), "")).lower() for sc in prods]))
     while len(",".join(tags)) > 480:
         tags.pop()
     shorts = []
