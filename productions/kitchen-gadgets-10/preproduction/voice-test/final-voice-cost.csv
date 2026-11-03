@@ -1,0 +1,17 @@
+file,type,characters_billed,credits_1_take,usd_estimate_1_take,credits_2_takes,est_seconds,text_file
+voice/s01.mp3,long-video scene,175,175,0.018,350,12.8,voice/text/s01.txt
+voice/s02.mp3,long-video scene,262,262,0.026,524,17.0,voice/text/s02.txt
+voice/s03.mp3,long-video scene,558,558,0.056,1116,36.4,voice/text/s03.txt
+voice/s04.mp3,long-video scene,531,531,0.053,1062,38.7,voice/text/s04.txt
+voice/s05.mp3,long-video scene,640,640,0.064,1280,40.3,voice/text/s05.txt
+voice/s06.mp3,long-video scene,566,566,0.057,1132,39.5,voice/text/s06.txt
+voice/s07.mp3,long-video scene,654,654,0.065,1308,45.3,voice/text/s07.txt
+voice/s08.mp3,long-video scene,438,438,0.044,876,30.2,voice/text/s08.txt
+voice/s09.mp3,long-video scene,606,606,0.061,1212,41.4,voice/text/s09.txt
+voice/s10.mp3,long-video scene,585,585,0.059,1170,41.8,voice/text/s10.txt
+voice/s11.mp3,long-video scene,729,729,0.073,1458,49.5,voice/text/s11.txt
+voice/s12.mp3,long-video scene,681,681,0.068,1362,48.8,voice/text/s12.txt
+voice/s13.mp3,long-video scene,266,266,0.027,532,17.8,voice/text/s13.txt
+voice/short1.mp3,Short,609,609,0.061,1218,42.2,voice/text/short1.txt
+voice/short2.mp3,Short,693,693,0.069,1386,46.8,voice/text/short2.txt
+voice/short3.mp3,Short,680,680,0.068,1360,46.5,voice/text/short3.txt

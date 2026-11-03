@@ -1,0 +1,32 @@
+{
+  "status": "PREPARED ONLY - nothing generated, nothing sent",
+  "voice_id": "KeU8nqWFDbaoi0QVUjD3",
+  "voice_name": "Aabo - Engaging Confident Explainer Voice",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_128",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 1.0
+  },
+  "generations_count": 1,
+  "jobs": [
+    {
+      "id": "test-passage",
+      "save_as": "voice-test/test-passage-aabo.mp3",
+      "credits": 407,
+      "text": "Number two. Cutting into chicken to check it can let some of the juices escape, and guessing can leave it overcooked or undercooked. The T P nineteen H instant-read thermometer, sold under the Temp Pro name, formerly Thermo Pro, fixes that. Flip out the probe, and according to its manual, the backlit screen shows a reading in about three to four seconds. It's water resistant and has a magnet on the back."
+    },
+    {
+      "id": "pronunciation-lines",
+      "save_as": "voice-test/pronunciation-aabo.mp3",
+      "credits": 611,
+      "text": "Version A. Number nine is the Soo-lay two-in-one lemon squeezer. The T P nineteen H instant-read thermometer. The Microplane Premium Classic zester.\nVersion B. Number nine is the Zoo-lay two-in-one lemon squeezer. The T P one nine H instant-read thermometer. The Micro-plane Premium Classic zester.\nVersion C. Number nine is the Zuh-lay two-in-one lemon squeezer. The T P nineteen aitch instant-read thermometer. The My-kro-plane Premium Classic zester.\nOther names. Ox-oh Good Grips. Power Licks milk frother. Temp Pro, formerly Thermo Pro. Fullstar vegetable chopper. Rubbermaid Brilliance. KitchenAid shears."
+    }
+  ],
+  "total_credits": 1018,
+  "usd_estimate": 0.1,
+  "note": "Credits confirmed with free estimate_only checks on 2026-11-03 (1 credit per character, eleven_multilingual_v2)."
+}
