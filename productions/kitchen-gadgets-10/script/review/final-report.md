@@ -66,7 +66,7 @@ Related changes:
 2. Product photos must be your own or used with permission. Amazon listing images can't be used without permission.
 3. The existing thumbnail mockups (`thumbnails/*.jpg`, not in git) still show the old "Researched & compared" text.
    They were not regenerated, because that would be image generation. Regenerate them after approval.
-4. Music: confirm the licence of the track set in `production.yaml` before rendering.
+4. Music: no track is chosen yet (`production.yaml` → music is empty). Pick a track with a clear commercial licence and record it there before rendering.
 5. Commercial use of ElevenLabs audio needs a paid plan. AI clips must stay generic (no copying of real products or
    brands), and YouTube's "altered or synthetic content" box should be ticked if realistic AI scenes are used.
 6. Reference channels were used for pacing only. The script passed the 7-word originality check.
