@@ -4,70 +4,83 @@ research:
   topic: 10 Kitchen Gadgets That Actually Make Life Easier
   market: Amazon USA
   researched_on: '2026-11-03'
+  revision: 2
   researcher: Claude (web search) for Smart Finds Lab
-  method: Candidates chosen for everyday usefulness, price accessibility and strong buyer/reviewer evidence.
-    Amazon product pages (ASIN, title) were found through search-engine results restricted to amazon.com.
-    Ratings, benefits and drawbacks were collected from editorial reviews, retailer pages and review aggregators.
-    Each value cites its source; quality of each source is labelled.
+  method: Exact listings were re-checked by searching each ASIN on amazon.com through a search engine
+    (title, brand, model number and any rating shown on the Amazon page). Benefits and drawbacks come
+    from editorial reviews, retailer pages and Amazon review summaries, each with its source.
+  scoring: 'Each shortlisted product gets 1-5 points for: Evidence (Amazon rating volume + independent
+    reviews), Visual demo (how clearly the benefit shows on camera), Everyday benefit (how often a typical
+    household would use it) and Clear problem/solution. Highest total = #1. Ties go to the stronger evidence.
+    Scores are editorial judgements based on the sourced data, not measurements.'
+  changes:
+  - Replaced Etekcity Food Scale -> Dash Rapid Egg Cooker (new category, ≈112K Amazon ratings, hands-on
+    review).
+  - Replaced Amazon Basics Baking Mat -> Original Scrub Daddy (new cleaning category, tested best sponge,
+    strong visual).
+  - Replaced OXO Avocado Slicer -> PowerLix Milk Frother (new coffee category, foam demo, 66K Amazon ratings).
+  - 'OXO Salad Spinner: ASIN corrected B077TV6BL3 (green ''4.0'' variant) -> B00004OCKR (classic 6.22
+    Qt, model 32480).'
+  - 'Fullstar Chopper: ASIN B0B8SQR665 (conflicting cached versions) -> B0764HS4SL (listing showing model
+    TF1096C-8).'
+  - 'KitchenAid Shears: ASIN B07TLNSW1S (Aqua Sky colour) -> B07PZF3QS3 (black, model KE351OHOBA on listing).'
+  - Model numbers added for every product where the Amazon listing shows one.
+  - 'Amazon data and third-party data are now strictly separate: Amazon fields cite only Amazon pages;
+    figures that third parties *report* about Amazon moved to the third-party section.'
+  - 'New ranking by transparent score; shortlist now shown in countdown order (#10 first, #1 last).'
+  - 'Category mix now: prep 5, cooking 1, breakfast 1, cleaning 1, coffee 1, salad/washing 1 (was 9 prep-type
+    tools).'
   limitations:
   - 'amazon.com could not be opened from the research environment: NO value is verified against the live
-    Amazon page.'
-  - '''Amazon'' prices/ratings shown are either search-engine snapshots (capture date unknown) or figures
-    reported by third parties.'
-  - Several sources are affiliate roundups with generic text; editorial hands-on reviews are noted where
-    available.
-  - Some figures appeared in search summaries without a clearly attributable page - marked 'attribution
-    unconfirmed'.
-  - Products were not purchased or tested. The video must stay research-based (no testing claims).
+    page.'
+  - Amazon values come from search-engine snapshots of Amazon pages; capture dates are unknown and may
+    be stale.
+  - Some Amazon ratings were shown on a sibling listing or review page of the same product - noted per
+    field.
+  - Several third-party sources are affiliate roundups; editorial hands-on reviews are labelled.
+  - Products were not purchased or tested. The video stays research-based (no testing claims).
 sources:
   AZ-SPIN:
-    url: https://www.amazon.com/OXO-Spinner-4-0-Green-Plastic-58-42/dp/B077TV6BL3
+    url: https://www.amazon.com/OXO-Good-Grips-Salad-Spinner/dp/B00004OCKR
     type: amazon_search_index
     quality: amazon (search index)
     publisher: Amazon.com
-    title: OXO Good Grips 4.0 Salad Spinner, Large
-    accessed: '2026-11-03'
-  AZ-SPIN-S:
-    url: https://www.amazon.com/OXO-Grips-Little-Salad-Spinner/dp/B00005QB5U
-    type: amazon_search_index
-    quality: amazon (search index)
-    publisher: Amazon.com
-    title: OXO Good Grips Little Salad & Herb Spinner
+    title: OXO Good Grips 6.22 Qt Salad Spinner
     accessed: '2026-11-03'
   AZ-THERMO:
-    url: https://www.amazon.com/ThermoPro-Thermometer-Grilling-Waterproof-Ambidextrous/dp/B07XXSYLL8
+    url: https://www.amazon.com/TempPro-TempSwift-Thermometer-Auto-Rotating-Motion-Activated/dp/B07XXSYLL8
     type: amazon_search_index
     quality: amazon (search index)
     publisher: Amazon.com
-    title: TempPro (ThermoPro) TempSwift TP19H Instant Read Meat Thermometer
+    title: TempPro TempSwift TP19H Instant Read Meat Thermometer
     accessed: '2026-11-03'
   AZ-CHOP:
-    url: https://www.amazon.com/Fullstar-Vegetable-Chopper-Spiralizer-Container/dp/B0B8SQR665
+    url: https://www.amazon.com/Vegetable-Chopper-Spiralizer-Slicer-Choppers/dp/B0764HS4SL
     type: amazon_search_index
     quality: amazon (search index)
     publisher: Amazon.com
-    title: Fullstar The Original Pro Chopper 4-in-1
+    title: Fullstar Pro Original Vegetable Chopper & Spiralizer
     accessed: '2026-11-03'
   AZ-GARLIC:
-    url: https://www.amazon.com/OXO-Grips-Heavy-Garlic-Press/dp/B00HEZ888K
+    url: https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K
     type: amazon_search_index
     quality: amazon (search index)
     publisher: Amazon.com
-    title: OXO Good Grips Garlic Press (die-cast zinc)
+    title: OXO Good Grips Garlic Press (model 11107400)
     accessed: '2026-11-03'
   AZ-ZEST:
     url: https://www.amazon.com/Microplane-46020-Grater-Made-Cheese-Soft-Handle-Black/dp/B00151WA06
     type: amazon_search_index
     quality: amazon (search index)
     publisher: Amazon.com
-    title: Microplane Premium Classic Series Zester 46020
+    title: Microplane Premium Classic Series Zester 46020, Black
     accessed: '2026-11-03'
   AZ-SHEARS:
-    url: https://us.amazon.com/KitchenAid-Protective-Dishwasher-Stainless-8-72-Inch/dp/B07TLNSW1S
+    url: https://www.amazon.com/KitchenAid-Protective-Dishwasher-Stainless-8-72-Inch/dp/B07PZF3QS3
     type: amazon_search_index
     quality: amazon (search index)
     publisher: Amazon.com
-    title: KitchenAid All Purpose Kitchen Shears with Protective Sheath
+    title: KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black
     accessed: '2026-11-03'
   AZ-ZULAY:
     url: https://www.amazon.com/Rated-Zulay-Premium-Quality-Squeezer/dp/B00YBP918M
@@ -307,12 +320,201 @@ sources:
     publisher: Hip2Save
     title: Silicone stretch lids honest review
     accessed: '2026-11-03'
+  AZ-SPIN-32480:
+    url: https://www.amazon.com/OXO-Spinner-Strainer-Vegetable-Capacity/dp/B0FD81VQK7
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: OXO Good Grips Salad Spinner (model 32480 listing)
+    accessed: '2026-11-03'
+  AZ-SPIN-4:
+    url: https://www.amazon.com/OXO-Spinner-4-0-Green-Plastic-58-42/dp/B077TV6BL3
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: OXO Good Grips 4.0 Salad Spinner - Green, Large (previous pick)
+    accessed: '2026-11-03'
+  AZ-CHOP-R:
+    url: https://arcus-www.amazon.com/product-reviews/B0764HS4SL/
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: 'Customer reviews: Fullstar Vegetable Chopper (4 in 1, White)'
+    accessed: '2026-11-03'
+  AZ-CHOP-OLD:
+    url: https://www.amazon.com/Fullstar-Vegetable-Chopper-Spiralizer-Container/dp/B0B8SQR665
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: Fullstar The Original Pro Chopper 4-in-1 Gray/Green (previous pick)
+    accessed: '2026-11-03'
+  AZ-GARLIC-S:
+    url: https://www.amazon.com/Garlic-Presses-OXO-Tools/s?keywords=Garlic+Presses&rh=n:678518011,p_89:OXO&c=ts&ts_id=678518011
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: 'Amazon search results: OXO garlic presses'
+    accessed: '2026-11-03'
+  AZ-SHEARS-ALT:
+    url: https://www.amazon.com/KitchenAid-KC351OHOBA-Multi-Purpose-Scissors-Stainless/dp/B0050U240O
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: KitchenAid KC351OHOBA shears listing (different ASIN)
+    accessed: '2026-11-03'
+  AZ-ZULAY-R:
+    url: https://arcus-www.amazon.com/product-reviews/B00YBP918M/
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: 'Customer reviews: Zulay 2-in-1 Lemon Lime Squeezer'
+    accessed: '2026-11-03'
+  AZ-DASH:
+    url: https://us.amazon.com/Dash-Rapid-Egg-Cooker-Scrambled/dp/B00DDXWFY0
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: Dash Rapid Egg Cooker, 6 egg, Black (DEC005BK)
+    accessed: '2026-11-03'
+  AZ-DASH-R:
+    url: https://arcus-www.amazon.com/product-reviews/B00DDXWFY0/
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: 'Customer reviews: DASH Rapid Egg Cooker, Black'
+    accessed: '2026-11-03'
+  AZ-DASH-WH:
+    url: https://www.amazon.com/Dash-Rapid-Egg-Cooker-Scrambled/dp/B00DDXYC6O
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: Dash Rapid Egg Cooker 7 egg, White (DEC005WH)
+    accessed: '2026-11-03'
+  AZ-SCRUB:
+    url: https://www.amazon.com/Scrub-Daddy-Sponge-Ounces-Pack/dp/B07ND5C1LW
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: Original Scrub Daddy Sponge, 4ct
+    accessed: '2026-11-03'
+  AZ-SCRUB-1:
+    url: https://us.amazon.com/Scrub-Daddy-Scrubbing-Sponge-Original/dp/B074MB2V4B
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: The Original Scrub Daddy (1 count)
+    accessed: '2026-11-03'
+  AZ-FROTH-R:
+    url: https://arcus-www.amazon.com/PowerLix-Handheld-Cappuccino-Chocolate-Stainless/product-reviews/B08CVPQJHJ
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: 'Customer reviews: PowerLix Milk Frother Handheld (Deep Blue)'
+    accessed: '2026-11-03'
+  AZ-EVO:
+    url: https://www.amazon.com/Evo-Oil-Sprayer-Non-Aerosol-Capacity/dp/B00ORXO9TO
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: Evo Oil Sprayer Bottle, 8-ounce, Set of 2
+    accessed: '2026-11-03'
+  AZ-EVO-SS:
+    url: https://arcus-www.amazon.com/product-reviews/B015CYRBPK/
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: 'Customer reviews: Evo Stainless Steel 16 oz Oil Sprayer'
+    accessed: '2026-11-03'
+  REVIEWED-DASH:
+    url: https://reviewed.com/ovens/features/dash-rapid-egg-cooker-review
+    type: editorial_review
+    quality: editorial (hands-on)
+    publisher: Reviewed (USA Today)
+    title: We tried the egg cooker with a cult-following on Amazon
+    accessed: '2026-11-03'
+  TTR-DASH:
+    url: https://toptenreviews.com/egg-cookers-dash-go-review
+    type: editorial_review
+    quality: editorial
+    publisher: Top Ten Reviews
+    title: Dash Go egg cooker review
+    accessed: '2026-11-03'
+  PCV-DASH:
+    url: https://www.pcvarge.com/?p=116
+    type: third_party
+    quality: blog review
+    publisher: PCVarge
+    title: Dash Rapid Egg Cooker Review
+    accessed: '2026-11-03'
+  GREENLIT-DASH:
+    url: https://greenlitcontent.com/resources/dash-review
+    type: third_party
+    quality: blog review
+    publisher: Greenlit Content
+    title: Dash Kitchen Appliances Review
+    accessed: '2026-11-03'
+  YBD-SCRUB:
+    url: https://www.yourbestdigs.com/reviews/scrub-daddy/
+    type: editorial_review
+    quality: editorial (tested 8 sponges, affiliate)
+    publisher: Your Best Digs
+    title: Scrub Daddy review
+    accessed: '2026-11-03'
+  HW-SCRUB:
+    url: https://homewisereview.com/?p=6192
+    type: third_party
+    quality: affiliate review (home use)
+    publisher: Homewise Review
+    title: Scrub Daddy Sponges Review
+    accessed: '2026-11-03'
+  CAH-FROTH:
+    url: https://cuisineathome.com/review/powerlix-handheld-milk-frother/
+    type: third_party
+    quality: review site
+    publisher: Cuisine at Home
+    title: PowerLix handheld milk frother review
+    accessed: '2026-11-03'
+  JPOST-FROTH:
+    url: https://stgmobile.jpost.com/advisor/home-and-kitchen/top-selling-handheld-milk-frothers-754791
+    type: third_party
+    quality: affiliate roundup
+    publisher: JPost Advisor
+    title: Top selling handheld milk frothers
+    accessed: '2026-11-03'
+  BA-FROTH:
+    url: https://www.bestadvisor.com/handheld-milk-frothers
+    type: third_party
+    quality: affiliate roundup
+    publisher: BestAdvisor
+    title: Best Handheld Milk Frothers
+    accessed: '2026-11-03'
+  SKINNY-OIL:
+    url: https://www.skinnytaste.com/best-olive-oil-sprayers
+    type: editorial_review
+    quality: editorial (blog roundup)
+    publisher: Skinnytaste
+    title: Best olive oil sprayers
+    accessed: '2026-11-03'
+  COOKISTRY-OIL:
+    url: https://reviews.cookistry.com/2014/12/evo-oil-sprayer.html
+    type: editorial_review
+    quality: editorial (blog, hands-on, 2014)
+    publisher: Cookistry
+    title: Evo oil sprayer
+    accessed: '2026-11-03'
+  QVC-OIL:
+    url: https://community.qvc.com/t5/Kitchen/EVO-oil-sprayer/m-p/7916369
+    type: third_party
+    quality: forum post
+    publisher: QVC community
+    title: EVO oil sprayer thread
+    accessed: '2026-11-03'
 products:
 - id: salad-spinner
   rank: 1
   status: shortlisted
   name:
-    value: OXO Good Grips Salad Spinner, Large (4.0)
+    value: OXO Good Grips Salad Spinner, 6.22 Qt
     verified: false
     sources:
     - AZ-SPIN
@@ -324,48 +526,70 @@ products:
     sources:
     - AZ-SPIN
     as_of: '2026-11-03'
+  model:
+    value: '32480'
+    verified: false
+    sources:
+    - AZ-SPIN-32480
+    as_of: '2026-11-03'
+    note: model shown on sibling listing B0FD81VQK7; confirm on B00004OCKR
   asin:
-    value: B077TV6BL3
+    value: B00004OCKR
     verified: false
     sources:
     - AZ-SPIN
     as_of: '2026-11-03'
-    note: from an amazon.com URL in search results; listing page not opened
+    note: from the amazon.com URL in search results; listing not opened live
   amazon_url:
-    value: https://www.amazon.com/dp/B077TV6BL3
+    value: https://www.amazon.com/dp/B00004OCKR
     verified: false
     sources:
     - AZ-SPIN
     as_of: '2026-11-03'
-    note: standard /dp/ link built from the ASIN
+    note: standard link built from the ASIN
   price_amazon:
     value: null
     verified: false
-    sources: &id001 []
+    sources: []
     as_of: null
-    note: not collected - check on Amazon
-  prices_third_party: []
+    note: not found on Amazon pages via search - check on Amazon
   rating_amazon:
     value: 4.7
     verified: false
     sources:
-    - SKINNY
+    - AZ-SPIN-32480
     as_of: '2026-11-03'
-    note: as reported by Skinnytaste ('more than 38,000 Amazon reviewers')
+    note: shown on sibling listing B0FD81VQK7 (model 32480); confirm on B00004OCKR
   review_count_amazon:
-    value: 38000
+    value: 52141
     verified: false
     sources:
-    - SKINNY
+    - AZ-SPIN-32480
     as_of: '2026-11-03'
-    note: '''more than 38,000'' as reported by Skinnytaste'
-  ratings_other: []
+    note: shown on sibling listing B0FD81VQK7
+  amazon_notes:
+  - text: B00004OCKR shown as '#1 Best Seller in Salad Spinners' (search snapshot)
+    source: AZ-SPIN
+    as_of: '2026-11-03'
+  prices_third_party: []
+  ratings_other:
+  - platform: Amazon rating as reported by Skinnytaste
+    value: 4.7
+    count: 38000
+    source: SKINNY
+    as_of: '2026-11-03'
+    note: '''more than 38,000'' reviewers'
+  scores:
+    evidence: 5
+    visual: 5
+    everyday: 4
+    problem: 5
   category: Prep
   features:
   - text: a one-handed pump spins the basket, and a brake button stops it
-    source: AZ-SPIN
-  - text: the basket comes out and the parts are dishwasher safe
-    source: AZ-SPIN
+    source: AZ-SPIN-32480
+  - text: the basket doubles as a colander and the parts are dishwasher safe
+    source: AZ-SPIN-4
   pros:
   - text: Reviewers call it easy to use, and it holds a lot of greens at once
     source: BI-SPIN
@@ -380,25 +604,136 @@ products:
     source: SKINNY
   best_for: anyone who eats salads or washes herbs and berries often
   angle: Soggy salad happens when leaves are still wet, and patting them dry with paper towels takes forever
-  why_selected: 'Most consistently recommended item in the research: named a top salad spinner by several
-    outlets and reported at 4.7 stars from 38,000+ Amazon reviewers. Daily-use, very visual.'
-  visual_description: a large clear salad spinner with a green push-button pump on the lid
+  why_selected: 'Strongest overall: Amazon shows 4.7★ from 52,141 ratings on the model-32480 listing,
+    it is a #1 Best Seller in its category, and several outlets name it a top salad spinner. Instant,
+    satisfying demo.'
+  verify_notes:
+  - ASIN corrected to the classic 6.22 Qt listing B00004OCKR (was the green '4.0' variant B077TV6BL3)
+  - confirm rating/count on B00004OCKR itself
+  visual_description: a large clear salad spinner with a push-button pump on the lid
   broll_problem: wet lettuce leaves dripping on a cutting board next to a pile of soaked paper towels
   broll_use: pressing the pump on top while freshly washed lettuce spins inside the clear bowl
   callout: Dishwasher-safe parts
   shorts_hook: Stop eating soggy salad
-- id: instant-thermometer
+- id: egg-cooker
   rank: 2
   status: shortlisted
   name:
-    value: TempPro (ThermoPro) TP19H Instant Read Meat Thermometer
+    value: Dash Rapid Egg Cooker, 6 Egg Capacity, Black (DEC005BK)
+    verified: false
+    sources:
+    - AZ-DASH
+    as_of: '2026-11-03'
+  short_name: Dash Egg Cooker
+  brand:
+    value: Dash
+    verified: false
+    sources:
+    - AZ-DASH
+    as_of: '2026-11-03'
+  model:
+    value: DEC005BK
+    verified: false
+    sources:
+    - AZ-DASH
+    as_of: '2026-11-03'
+  asin:
+    value: B00DDXWFY0
+    verified: false
+    sources:
+    - AZ-DASH
+    as_of: '2026-11-03'
+    note: from the amazon.com URL in search results; listing not opened live
+  amazon_url:
+    value: https://www.amazon.com/dp/B00DDXWFY0
+    verified: false
+    sources:
+    - AZ-DASH
+    as_of: '2026-11-03'
+    note: standard link built from the ASIN
+  price_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  rating_amazon:
+    value: 4.7
+    verified: false
+    sources:
+    - AZ-DASH-R
+    as_of: '2026-11-03'
+    note: Amazon review page snapshot ('about 4.7')
+  review_count_amazon:
+    value: 112000
+    verified: false
+    sources:
+    - AZ-DASH-R
+    as_of: '2026-11-03'
+    note: '''roughly 112,000 global ratings'' - rounded in the snapshot'
+  amazon_notes:
+  - text: white 7-egg version (DEC005WH, B00DDXYC6O) showed 'currently unavailable'; that listing shows
+      4.6★ from 126,722 ratings
+    source: AZ-DASH-WH
+    as_of: '2026-11-03'
+  prices_third_party: []
+  ratings_other: []
+  scores:
+    evidence: 5
+    visual: 5
+    everyday: 4
+    problem: 4
+  category: Breakfast
+  features:
+  - text: cooks up to six eggs soft, medium or hard boiled, then shuts off by itself
+    source: AZ-DASH
+  - text: includes poaching and omelet trays and a measuring cup
+    source: AZ-DASH
+  pros:
+  - text: A hands-on review at Reviewed found that it works, and works very well
+    source: REVIEWED-DASH
+  - text: Buyers praise the automatic shut-off and quick cleanup
+    source: AZ-DASH-R
+  - text: Top Ten Reviews named it a budget pick that cooks six eggs nicely
+    source: TTR-DASH
+  cons:
+  - text: The timer buzzer is loud
+    source: GREENLIT-DASH
+  - text: Six eggs per batch can be limiting for big families
+    source: PCV-DASH
+  - text: Getting your preferred doneness takes a little trial and error with the water amount
+    source: GREENLIT-DASH
+  best_for: busy mornings, meal preppers and anyone who struggles to peel boiled eggs
+  angle: Boiling eggs on the stove means watching a pot and guessing the timing
+  why_selected: NEW (replaces the Etekcity scale). Biggest rating volume in the list on Amazon (≈112K
+    ratings, 4.7★), a hands-on editorial verdict, a new category (breakfast) and a very visual steam-and-eggs
+    demo.
+  verify_notes:
+  - confirm the black DEC005BK listing is in stock (the white one was unavailable)
+  - Reviewed tested the 12-egg Deluxe version, not this exact model
+  visual_description: a small round black electric egg cooker with a clear dome lid
+  broll_problem: eggs cracking in a pot of rolling boiling water on a stove
+  broll_use: lifting a clear dome lid to reveal steamed eggs on a tray as steam rises
+  callout: Auto shut-off
+  shorts_hook: Perfect boiled eggs without watching a pot
+- id: instant-thermometer
+  rank: 3
+  status: shortlisted
+  name:
+    value: TempPro TempSwift TP19H Instant Read Meat Thermometer
     verified: false
     sources:
     - AZ-THERMO
     as_of: '2026-11-03'
   short_name: TP19H Thermometer
   brand:
-    value: TempPro / ThermoPro
+    value: TempPro (formerly ThermoPro)
+    verified: false
+    sources:
+    - AZ-THERMO
+    as_of: '2026-11-03'
+  model:
+    value: TP19H
     verified: false
     sources:
     - AZ-THERMO
@@ -409,45 +744,58 @@ products:
     sources:
     - AZ-THERMO
     as_of: '2026-11-03'
-    note: from an amazon.com URL in search results; listing page not opened
+    note: from the amazon.com URL in search results; listing not opened live
   amazon_url:
     value: https://www.amazon.com/dp/B07XXSYLL8
     verified: false
     sources:
     - AZ-THERMO
     as_of: '2026-11-03'
-    note: standard /dp/ link built from the ASIN
+    note: standard link built from the ASIN
   price_amazon:
     value: null
     verified: false
-    sources: *id001
+    sources: []
     as_of: null
-    note: not collected - check on Amazon
-  prices_third_party: []
+    note: not found on Amazon pages via search - check on Amazon
   rating_amazon:
-    value: null
+    value: 4.7
     verified: false
-    sources: *id001
-    as_of: null
-    note: not collected - check on Amazon
+    sources:
+    - AZ-THERMO
+    as_of: '2026-11-03'
   review_count_amazon:
-    value: null
+    value: 56641
     verified: false
-    sources: *id001
-    as_of: null
-    note: not collected - check on Amazon
+    sources:
+    - AZ-THERMO
+    as_of: '2026-11-03'
+    note: global ratings
+  amazon_notes:
+  - text: listing mentions a newer version is available
+    source: AZ-THERMO
+    as_of: '2026-11-03'
+  - text: title says 1-second reading, product details say 4-second response time
+    source: AZ-THERMO
+    as_of: '2026-11-03'
+  prices_third_party: []
   ratings_other:
   - platform: Walmart
     value: 4.7
     count: 3488
     source: WM-THERMO
     as_of: '2026-11-03'
-    note: Walmart listing; exact listing/model match unconfirmed
+    note: listing/model match unconfirmed
+  scores:
+    evidence: 4
+    visual: 4
+    everyday: 4
+    problem: 5
   category: Cooking
   features:
-  - text: a large backlit display that rotates for left- or right-handed use
+  - text: a large backlit display that flips for left- or right-handed use
     source: AZ-THERMO
-  - text: it is IP65 water resistant and has a magnet on the back for storage
+  - text: IP65 water resistant with a magnet on the back
     source: AZ-THERMO
   pros:
   - text: A hands-on reviewer called it the best performance for the money among the thermometers they
@@ -456,27 +804,29 @@ products:
   - text: The big display is easy to read from a distance
     source: GRILLDAD
   cons:
-  - text: The same reviewer found the grip not very comfortable in some positions
-    source: GRILLDAD
+  - text: Amazon review summaries mention mixed feedback on long-term durability and accuracy
+    source: AZ-THERMO
   - text: It is not as fast as premium thermometers costing several times more
     source: GRILLDAD
-  - text: A barbecue reviewer criticized the accuracy of the related TP19 model, so check readings against
-      boiling water
+  - text: A barbecue reviewer criticized the accuracy of the related TP19 model, so check it in ice water
     source: TXBBQ
-  best_for: anyone who cooks meat, fish or bakes bread and wants to stop guessing
+  best_for: anyone who cooks meat, fish or bread and wants to stop guessing
   angle: Cutting into chicken to check if it's done lets the juices run out, and guessing is risky
-  why_selected: 'Solves a real food-safety problem; listing showed very high recent sales (search snapshot).
-    Note: brand is moving from ThermoPro to TempPro, and buyers may receive either name.'
+  why_selected: Real food-safety benefit with strong Amazon volume (4.7★, 56,641 ratings). Ranked below
+    the top two because accuracy/durability feedback is mixed.
+  verify_notes:
+  - brand shows as TempPro (ThermoPro rebrand) - buyers may receive either name
+  - check whether the 'newer version' should be featured instead
   visual_description: a slim digital food thermometer with a fold-out metal probe and a backlit screen
   broll_problem: a person cutting open a grilled chicken breast to check if it is cooked through
   broll_use: inserting the thin probe into a steak on a board while the screen lights up
   callout: Waterproof (IP65)
   shorts_hook: Never cut into your chicken to check it again
 - id: veggie-chopper
-  rank: 3
+  rank: 4
   status: shortlisted
   name:
-    value: Fullstar The Original Pro Chopper, 4-in-1
+    value: Fullstar Pro Original Vegetable Chopper & Spiralizer (4-in-1)
     verified: false
     sources:
     - AZ-CHOP
@@ -488,44 +838,57 @@ products:
     sources:
     - AZ-CHOP
     as_of: '2026-11-03'
+  model:
+    value: TF1096C-8
+    verified: false
+    sources:
+    - AZ-CHOP
+    as_of: '2026-11-03'
   asin:
-    value: B0B8SQR665
+    value: B0764HS4SL
     verified: false
     sources:
     - AZ-CHOP
     as_of: '2026-11-03'
-    note: from an amazon.com URL in search results; listing page not opened
+    note: from the amazon.com URL in search results; listing not opened live
   amazon_url:
-    value: https://www.amazon.com/dp/B0B8SQR665
+    value: https://www.amazon.com/dp/B0764HS4SL
     verified: false
     sources:
     - AZ-CHOP
     as_of: '2026-11-03'
-    note: standard /dp/ link built from the ASIN
+    note: standard link built from the ASIN
   price_amazon:
     value: null
     verified: false
-    sources: *id001
+    sources: []
     as_of: null
-    note: not collected - check on Amazon
+    note: not found on Amazon pages via search - check on Amazon
+  rating_amazon:
+    value: 4.6
+    verified: false
+    sources:
+    - AZ-CHOP-R
+    as_of: '2026-11-03'
+    note: Amazon review page for B0764HS4SL (4 in 1, White)
+  review_count_amazon:
+    value: 67144
+    verified: false
+    sources:
+    - AZ-CHOP-R
+    as_of: '2026-11-03'
+    note: global ratings on the review page snapshot
+  amazon_notes:
+  - text: previous pick B0B8SQR665 showed conflicting cached versions (gray/green 4-in-1 vs an older black
+      model) and also lists model TF1096C-8
+    source: AZ-CHOP-OLD
+    as_of: '2026-11-03'
   prices_third_party:
   - value: 39.99
     currency: USD
     seller: list price per BestReviews
     source: BR-CHOP
     as_of: '2026-11-03'
-  rating_amazon:
-    value: null
-    verified: false
-    sources: *id001
-    as_of: null
-    note: not collected - check on Amazon
-  review_count_amazon:
-    value: null
-    verified: false
-    sources: *id001
-    as_of: null
-    note: not collected - check on Amazon
   ratings_other:
   - platform: Walmart
     value: 4.6
@@ -533,11 +896,16 @@ products:
     source: WM-CHOP
     as_of: '2026-11-03'
     note: white 4-blade model
+  scores:
+    evidence: 4
+    visual: 5
+    everyday: 4
+    problem: 4
   category: Prep
   features:
   - text: interchangeable stainless steel blades press vegetables straight into a container
     source: AZ-CHOP
-  - text: the container catches everything, and it is dishwasher safe
+  - text: the container catches everything and it is dishwasher safe
     source: BR-CHOP
   pros:
   - text: Reviewers say it makes onion and vegetable prep much faster
@@ -551,100 +919,21 @@ products:
     source: BR-CHOP
   best_for: meal preppers and anyone who hates dicing onions
   angle: Dicing onions and peppers by hand is slow, uneven, and makes you cry
-  why_selected: 'Hugely popular prep tool (search snapshot showed 10K+ bought in a month on a Fullstar
-    listing) with clear before/after visuals. Honest con: cleaning.'
+  why_selected: 'Very popular, strong Amazon volume (4.6★, 67,144 ratings) and the best before/after demo
+    in the list. Honest con: cleaning.'
+  verify_notes:
+  - ASIN changed to B0764HS4SL (the listing showing model TF1096C-8); confirm colour/blade count
+  - Fullstar sells many similar versions (2-in-1 to 14-in-1) - make sure the link is the 4-in-1
   visual_description: a clear plastic box vegetable chopper with a hinged lid and a square grid blade
   broll_problem: a person wiping their eyes while slowly dicing an onion with a knife
   broll_use: pressing the hinged lid down so diced onion drops into the clear container
   callout: Dishwasher safe
   shorts_hook: Dice an onion in two seconds
-- id: garlic-press
-  rank: 4
-  status: shortlisted
-  name:
-    value: OXO Good Grips Garlic Press (die-cast zinc)
-    verified: false
-    sources:
-    - AZ-GARLIC
-    as_of: '2026-11-03'
-  short_name: OXO Garlic Press
-  brand:
-    value: OXO
-    verified: false
-    sources:
-    - AZ-GARLIC
-    as_of: '2026-11-03'
-  asin:
-    value: B00HEZ888K
-    verified: false
-    sources:
-    - AZ-GARLIC
-    as_of: '2026-11-03'
-    note: from an amazon.com URL in search results; listing page not opened
-  amazon_url:
-    value: https://www.amazon.com/dp/B00HEZ888K
-    verified: false
-    sources:
-    - AZ-GARLIC
-    as_of: '2026-11-03'
-    note: standard /dp/ link built from the ASIN
-  price_amazon:
-    value: 20.99
-    verified: false
-    sources:
-    - AZ-GARLIC
-    as_of: '2026-11-03'
-    note: search-engine snapshot of an Amazon results page, date unknown (list price shown $28.99)
-  prices_third_party:
-  - value: 20.99
-    currency: USD
-    seller: Macy's (sale)
-    source: MACYS-GARLIC
-    as_of: '2026-11-02'
-  rating_amazon:
-    value: 4.7
-    verified: false
-    sources:
-    - SS-GARLIC
-    as_of: '2026-11-03'
-    note: Amazon average as reported by ShopSavvy
-  review_count_amazon:
-    value: 35993
-    verified: false
-    sources:
-    - SS-GARLIC
-    as_of: '2026-11-03'
-    note: as reported by ShopSavvy
-  ratings_other: []
-  category: Prep
-  features:
-  - text: a large chamber presses several cloves at once, even unpeeled
-    source: AZ-GARLIC
-  - text: a built-in cleaner pushes out the leftover skins
-    source: AZ-GARLIC
-  pros:
-  - text: Reviewers call it one of the best garlic tools they have used
-    source: SS-GARLIC
-  - text: It is easy to clean and can go in the dishwasher
-    source: SS-GARLIC
-  cons:
-  - text: Some buyers say pressing takes effort and leaves garlic behind
-    source: SS-GARLIC
-  - text: A few find the handles large, and one UK reviewer reported a broken press
-    source: LAKE-GARLIC
-  best_for: people who cook with fresh garlic several times a week
-  angle: Mincing garlic with a knife is fiddly, sticky, and leaves your fingers smelling for hours
-  why_selected: Long-standing best seller with very high reported rating volume (4.7 from ~36K).
-  visual_description: a black metal garlic press with soft rubber handles
-  broll_problem: sticky fingers trying to mince small garlic cloves with a big knife
-  broll_use: squeezing the handles so fresh minced garlic comes out over a pan
-  callout: Built-in cleaner
-  shorts_hook: The garlic tool chefs keep in the drawer
 - id: zester
   rank: 5
   status: shortlisted
   name:
-    value: Microplane Premium Classic Series Zester/Grater (46020)
+    value: Microplane Premium Classic Series Zester/Grater, Black
     verified: false
     sources:
     - AZ-ZEST
@@ -656,154 +945,181 @@ products:
     sources:
     - AZ-ZEST
     as_of: '2026-11-03'
+  model:
+    value: '46020'
+    verified: false
+    sources:
+    - AZ-ZEST
+    as_of: '2026-11-03'
   asin:
     value: B00151WA06
     verified: false
     sources:
     - AZ-ZEST
     as_of: '2026-11-03'
-    note: from an amazon.com URL in search results; listing page not opened
+    note: from the amazon.com URL in search results; listing not opened live
   amazon_url:
     value: https://www.amazon.com/dp/B00151WA06
     verified: false
     sources:
     - AZ-ZEST
     as_of: '2026-11-03'
-    note: standard /dp/ link built from the ASIN
+    note: standard link built from the ASIN
   price_amazon:
     value: null
     verified: false
-    sources: *id001
+    sources: []
     as_of: null
-    note: not collected - check on Amazon
+    note: not found on Amazon pages via search - check on Amazon
+  rating_amazon:
+    value: 4.8
+    verified: false
+    sources:
+    - AZ-ZEST
+    as_of: '2026-11-03'
+  review_count_amazon:
+    value: 47796
+    verified: false
+    sources:
+    - AZ-ZEST
+    as_of: '2026-11-03'
+    note: global ratings
+  amazon_notes: []
   prices_third_party:
   - value: 18.99
     currency: USD
     seller: US retail listing (per search summary)
     source: WM-ZEST
     as_of: '2026-11-03'
-  rating_amazon:
-    value: 4.8
-    verified: false
-    sources:
-    - MF-ZEST
-    as_of: '2026-11-03'
-    note: '''about 4.8 stars across nearly 49k reviews'' from a roundup in search results; attribution
-      to this exact page unconfirmed'
-  review_count_amazon:
-    value: 49000
-    verified: false
-    sources:
-    - MF-ZEST
-    as_of: '2026-11-03'
-    note: '''nearly 49k'' - attribution unconfirmed'
   ratings_other: []
+  scores:
+    evidence: 5
+    visual: 4
+    everyday: 3
+    problem: 4
   category: Prep
   features:
-  - text: photo-etched stainless steel teeth grate citrus zest, hard cheese, ginger and garlic
+  - text: photo-etched stainless steel teeth for citrus zest, hard cheese, ginger and garlic
     source: AZ-ZEST
-  - text: it comes with a protective cover and has a non-slip end you can rest on a bowl
+  - text: comes with a protective cover and has a non-slip end you can rest on a bowl
     source: LAKE-ZEST
   pros:
-  - text: It turns hard cheese into fluffy shreds and zests a lemon without the bitter white pith
+  - text: Amazon reviewers mostly praise its sharpness and how easy it is to clean
     source: AZ-ZEST
-  - text: Reviewers praise the comfortable handle
-    source: LAKE-ZEST
+  - text: It zests a lemon without the bitter white pith
+    source: AZ-ZEST
   cons:
-  - text: It is pricier than basic graters
-    source: MF-ZEST
   - text: The blade is very sharp, so it needs care when cleaning
+    source: AZ-ZEST
+  - text: It costs more than basic graters
     source: MF-ZEST
   best_for: anyone who uses lemon zest, parmesan, ginger or nutmeg
   angle: Box graters are clumsy for small jobs, and lemon zest always ends up bitter
-  why_selected: Classic, highly rated tool with strong visual payoff (fluffy parmesan, bright zest).
+  why_selected: Highest Amazon star rating in the list (4.8★, 47,796 ratings); fluffy parmesan is a great
+    visual.
+  verify_notes:
+  - each colour has its own model number - 46020 is black
   visual_description: a long narrow stainless steel rasp grater with a black handle
   broll_problem: a bulky box grater struggling with a small piece of parmesan
   broll_use: grating fluffy parmesan cheese over a bowl of pasta
-  callout: Made with USA blades
+  callout: Blades made in the USA
   shorts_hook: Restaurant-style parmesan at home
-- id: kitchen-shears
+- id: scrub-daddy
   rank: 6
   status: shortlisted
   name:
-    value: KitchenAid All Purpose Kitchen Shears with Protective Sheath
+    value: Original Scrub Daddy Sponge, 4 Count
     verified: false
     sources:
-    - AZ-SHEARS
+    - AZ-SCRUB
     as_of: '2026-11-03'
-  short_name: KitchenAid Shears
+  short_name: Scrub Daddy
   brand:
-    value: KitchenAid
+    value: Scrub Daddy
     verified: false
     sources:
-    - AZ-SHEARS
+    - AZ-SCRUB
     as_of: '2026-11-03'
+  model:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: model not shown
   asin:
-    value: B07TLNSW1S
+    value: B07ND5C1LW
     verified: false
     sources:
-    - AZ-SHEARS
+    - AZ-SCRUB
     as_of: '2026-11-03'
-    note: from an amazon.com URL in search results; listing page not opened
+    note: from the amazon.com URL in search results; listing not opened live
   amazon_url:
-    value: https://www.amazon.com/dp/B07TLNSW1S
+    value: https://www.amazon.com/dp/B07ND5C1LW
     verified: false
     sources:
-    - AZ-SHEARS
+    - AZ-SCRUB
     as_of: '2026-11-03'
-    note: standard /dp/ link built from the ASIN
+    note: standard link built from the ASIN
   price_amazon:
-    value: 7.59-12.99 (varies by color)
+    value: null
     verified: false
-    sources:
-    - AZ-SHEARS
-    as_of: '2026-11-03'
-    note: range from search-engine snapshot, date unknown
-  prices_third_party:
-  - value: 7.51
-    currency: USD
-    seller: lowest of range on ShopSavvy ($7.51-$26.85)
-    source: SS-SHEARS
-    as_of: '2026-11-03'
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
   rating_amazon:
-    value: 4.8
+    value: null
     verified: false
-    sources:
-    - SS-SHEARS
-    as_of: '2026-11-03'
-    note: '''over 71,000 reviews and a 4.8-star rating'' per a third-party summary'
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
   review_count_amazon:
-    value: 71000
+    value: null
     verified: false
-    sources:
-    - SS-SHEARS
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  amazon_notes:
+  - text: the single-sponge listing (B074MB2V4B) showed 'currently unavailable'
+    source: AZ-SCRUB-1
     as_of: '2026-11-03'
-    note: '''over 71,000'' - third-party figure'
+  prices_third_party: []
   ratings_other: []
-  category: Prep
+  scores:
+    evidence: 3
+    visual: 5
+    everyday: 5
+    problem: 3
+  category: Cleaning
   features:
-  - text: stainless steel blades with a plastic sheath that protects them in the drawer
-    source: AZ-SHEARS
-  - text: soft-grip handles, and the shears are dishwasher safe
-    source: AZ-SHEARS
+  - text: FlexTexture foam is firm in cold water for scrubbing and soft in warm water for wiping
+    source: AZ-SCRUB
+  - text: scratch-free on most surfaces, odor resistant and dishwasher safe
+    source: AZ-SCRUB
   pros:
-  - text: Reviewers call them sharp, comfortable and a great value for everyday jobs
-    source: SS-SHEARS
-  - text: The included sheath is something many cheap shears skip
-    source: BR-SHEARS
+  - text: Your Best Digs tested eight sponges and called it the best kitchen sponge they tested
+    source: YBD-SCRUB
+  - text: It holds up to grime without the sponge itself getting ruined
+    source: YBD-SCRUB
   cons:
-  - text: They can dull faster than premium shears
-    source: SS-SHEARS
-  - text: Some buyers reported rust despite the dishwasher-safe label
-    source: SS-SHEARS
-  best_for: cutting herbs, pizza, packaging and chicken without dragging out a knife and board
-  angle: Half the time you grab a knife and cutting board, scissors would be faster
-  why_selected: Cheap, extremely popular, many uses = easy 'why didn't I buy this sooner' moment.
-  visual_description: a pair of black kitchen scissors with a protective blade cover
-  broll_problem: a person struggling to open a tough plastic food package with a knife
-  broll_use: snipping fresh herbs straight into a pot
-  callout: Protective sheath included
-  shorts_hook: Use scissors, not a knife, for these 5 jobs
+  - text: It starts breaking down after a month or two of heavy use
+    source: YBD-SCRUB
+  - text: It doesn't soak up spills as well as a regular cellulose sponge
+    source: HW-SCRUB
+  - text: Keep it away from very hot pans and bleach
+    source: HW-SCRUB
+  best_for: everyday dishes, sticky pans and stovetops
+  angle: Regular sponges get smelly in days and scratch nonstick pans
+  why_selected: 'NEW (replaces the Amazon Basics baking mat). Adds a cleaning category, best ''wow'' visual
+    (firm in cold, soft in warm water) and a tested editorial win. Weaker point: no Amazon rating found
+    for this exact listing.'
+  verify_notes:
+  - no Amazon rating found via search - record the rating on the 4-count listing
+  - choose the pack size you want to link (1, 4 or 8 count)
+  visual_description: a round yellow smiley-face sponge
+  broll_problem: a smelly, shredded old kitchen sponge next to a greasy pan
+  broll_use: scrubbing a sticky pan with a firm yellow smiley sponge under cold running water
+  callout: Firm cold, soft warm
+  shorts_hook: The sponge that changes texture
 - id: lemon-squeezer
   rank: 7
   status: shortlisted
@@ -820,43 +1136,62 @@ products:
     sources:
     - AZ-ZULAY
     as_of: '2026-11-03'
+  model:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: model not shown
   asin:
     value: B00YBP918M
     verified: false
     sources:
     - AZ-ZULAY
     as_of: '2026-11-03'
-    note: from an amazon.com URL in search results; listing page not opened
+    note: from the amazon.com URL in search results; listing not opened live
   amazon_url:
     value: https://www.amazon.com/dp/B00YBP918M
     verified: false
     sources:
     - AZ-ZULAY
     as_of: '2026-11-03'
-    note: standard /dp/ link built from the ASIN
+    note: standard link built from the ASIN
   price_amazon:
     value: null
     verified: false
-    sources: *id001
+    sources: []
     as_of: null
-    note: not collected - check on Amazon
-  prices_third_party: []
+    note: not found on Amazon pages via search - check on Amazon
   rating_amazon:
     value: 4.7
     verified: false
     sources:
-    - KWS-ZULAY
+    - AZ-ZULAY
     as_of: '2026-11-03'
-    note: '''4.7 out of 5 stars, 47,137 ratings on Amazon'' in a search summary; attribution to this exact
-      page unconfirmed'
   review_count_amazon:
-    value: 47137
+    value: 37677
     verified: false
     sources:
-    - KWS-ZULAY
+    - AZ-ZULAY
     as_of: '2026-11-03'
-    note: attribution unconfirmed
-  ratings_other: []
+    note: '''about 37,677 global ratings'''
+  amazon_notes:
+  - text: 'first available May 2015; shown as #1 in Manual Juicers at one point'
+    source: AZ-ZULAY
+    as_of: '2026-11-03'
+  prices_third_party: []
+  ratings_other:
+  - platform: Amazon rating as reported by a search summary
+    value: 4.7
+    count: 47137
+    source: KWS-ZULAY
+    as_of: '2026-11-03'
+    note: differs from the Amazon page (37,677) - attribution unconfirmed
+  scores:
+    evidence: 4
+    visual: 4
+    everyday: 3
+    problem: 4
   category: Prep
   features:
   - text: two bowl sizes, one for lemons and one for limes
@@ -864,25 +1199,342 @@ products:
   - text: a hinged press squeezes the juice out and keeps seeds in the bowl
     source: COOKISTRY
   pros:
-  - text: Buyers like that seeds stay out of the food
-    source: KWS-ZULAY
+  - text: Amazon reviewers often praise how sturdy and easy to clean it is
+    source: AZ-ZULAY-R
   - text: A hands-on reviewer said it gets nearly every drop from lemons and limes
     source: COOKISTRY
   cons:
-  - text: It is not made for large oranges
-    source: COOKISTRY
+  - text: One critical Amazon review says the paint started chipping after a few months
+    source: AZ-ZULAY-R
+  - text: Some seed bits slip through with key limes, and it is not made for large oranges
+    source: AZ-ZULAY-R
   best_for: cooks, bakers and anyone making lemonade or cocktails
   angle: Squeezing lemons by hand drops seeds in your food and leaves juice behind
-  why_selected: 'Inexpensive, satisfying visual, very high reported rating volume. Note: a different Zulay
-    listing (B072N94M7L) showed as unavailable, so this 2-in-1 listing was chosen.'
+  why_selected: Cheap, satisfying visual and a long-running best seller (4.7★, 37,677 ratings on Amazon).
+  verify_notes:
+  - the rating count on Amazon (37,677) differs from a third-party figure (47,137) - record the live one
   visual_description: a yellow and green metal hand-held citrus press with two bowls
   broll_problem: sticky hands squeezing a lemon over a bowl while seeds fall in
   broll_use: pressing a lime half in the hand press so juice streams into a glass
   callout: Seeds stay in
   shorts_hook: Every last drop, zero seeds
-- id: kitchen-scale
+- id: garlic-press
   rank: 8
   status: shortlisted
+  name:
+    value: OXO Good Grips Garlic Press (die-cast zinc)
+    verified: false
+    sources:
+    - AZ-GARLIC
+    as_of: '2026-11-03'
+  short_name: OXO Garlic Press
+  brand:
+    value: OXO
+    verified: false
+    sources:
+    - AZ-GARLIC
+    as_of: '2026-11-03'
+  model:
+    value: '11107400'
+    verified: false
+    sources:
+    - AZ-GARLIC
+    as_of: '2026-11-03'
+  asin:
+    value: B00HEZ888K
+    verified: false
+    sources:
+    - AZ-GARLIC
+    as_of: '2026-11-03'
+    note: from the amazon.com URL in search results; listing not opened live
+  amazon_url:
+    value: https://www.amazon.com/dp/B00HEZ888K
+    verified: false
+    sources:
+    - AZ-GARLIC
+    as_of: '2026-11-03'
+    note: standard link built from the ASIN
+  price_amazon:
+    value: 20.99
+    verified: false
+    sources:
+    - AZ-GARLIC-S
+    as_of: '2026-11-03'
+    note: Amazon search-results page snapshot, date unknown (list price shown $28.99)
+  rating_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  review_count_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  amazon_notes:
+  - text: '''1K+ bought in past week'' and ranked #2 in garlic presses (snapshot)'
+    source: AZ-GARLIC
+    as_of: '2026-11-03'
+  - text: listing colour field says Silver while the title says Black
+    source: AZ-GARLIC
+    as_of: '2026-11-03'
+  prices_third_party:
+  - value: 20.99
+    currency: USD
+    seller: Macy's (sale)
+    source: MACYS-GARLIC
+    as_of: '2026-11-02'
+  ratings_other:
+  - platform: Amazon rating as reported by ShopSavvy
+    value: 4.7
+    count: 35993
+    source: SS-GARLIC
+    as_of: '2026-11-03'
+  scores:
+    evidence: 3
+    visual: 4
+    everyday: 4
+    problem: 4
+  category: Prep
+  features:
+  - text: a large chamber presses several cloves at once
+    source: AZ-GARLIC
+  - text: a built-in cleaner pushes out the leftover skins
+    source: AZ-GARLIC
+  pros:
+  - text: Reviewers call it one of the best garlic tools they have used
+    source: SS-GARLIC
+  - text: It is easy to clean and can go in the dishwasher
+    source: SS-GARLIC
+  cons:
+  - text: Some buyers say pressing takes effort and leaves garlic behind
+    source: SS-GARLIC
+  - text: A few find the handles large, and one UK reviewer reported a broken press
+    source: LAKE-GARLIC
+  best_for: people who cook with fresh garlic several times a week
+  angle: Mincing garlic with a knife is fiddly, sticky, and leaves your fingers smelling for hours
+  why_selected: Proven best seller with strong sales signals, but its star rating was only found via a
+    third party, so it sits mid-list.
+  verify_notes:
+  - record the Amazon star rating and count (not found directly)
+  - check colour (Black vs Silver)
+  visual_description: a black metal garlic press with soft rubber handles
+  broll_problem: sticky fingers trying to mince small garlic cloves with a big knife
+  broll_use: squeezing the handles so fresh minced garlic comes out over a pan
+  callout: Built-in cleaner
+  shorts_hook: The garlic tool chefs keep in the drawer
+- id: kitchen-shears
+  rank: 9
+  status: shortlisted
+  name:
+    value: KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black
+    verified: false
+    sources:
+    - AZ-SHEARS
+    as_of: '2026-11-03'
+  short_name: KitchenAid Shears
+  brand:
+    value: KitchenAid
+    verified: false
+    sources:
+    - AZ-SHEARS
+    as_of: '2026-11-03'
+  model:
+    value: KE351OHOBA
+    verified: false
+    sources:
+    - AZ-SHEARS
+    as_of: '2026-11-03'
+  asin:
+    value: B07PZF3QS3
+    verified: false
+    sources:
+    - AZ-SHEARS
+    as_of: '2026-11-03'
+    note: from the amazon.com URL in search results; listing not opened live
+  amazon_url:
+    value: https://www.amazon.com/dp/B07PZF3QS3
+    verified: false
+    sources:
+    - AZ-SHEARS
+    as_of: '2026-11-03'
+    note: standard link built from the ASIN
+  price_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  rating_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  review_count_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  amazon_notes:
+  - text: '''20K+ bought in past month'' (snapshot); no star rating shown in search results'
+    source: AZ-SHEARS
+    as_of: '2026-11-03'
+  - text: a separate black listing B0050U240O shows model KC351OHOBA, 4.5★ from 1,874 ratings and $6.99
+      (cached) - a different listing
+    source: AZ-SHEARS-ALT
+    as_of: '2026-11-03'
+  prices_third_party:
+  - value: 7.51
+    currency: USD
+    seller: lowest of range on ShopSavvy ($7.51-$26.85)
+    source: SS-SHEARS
+    as_of: '2026-11-03'
+  ratings_other:
+  - platform: Amazon rating as reported by ShopSavvy
+    value: 4.8
+    count: 71000
+    source: SS-SHEARS
+    as_of: '2026-11-03'
+    note: '''over 71,000'''
+  scores:
+    evidence: 3
+    visual: 3
+    everyday: 5
+    problem: 3
+  category: Prep
+  features:
+  - text: stainless steel blades with a plastic sheath that protects them in the drawer
+    source: AZ-SHEARS
+  - text: soft-grip handles; listed as dishwasher safe
+    source: AZ-SHEARS
+  pros:
+  - text: Reviewers call them sharp, comfortable and a great value for everyday jobs
+    source: SS-SHEARS
+  - text: The included sheath is something many cheap shears skip
+    source: BR-SHEARS
+  cons:
+  - text: They can dull faster than premium shears
+    source: SS-SHEARS
+  - text: Some buyers reported rust despite the dishwasher-safe label
+    source: SS-SHEARS
+  best_for: snipping herbs, pizza, packaging and chicken without a knife and board
+  angle: Half the time you grab a knife and cutting board, scissors would be faster
+  why_selected: Extremely popular everyday tool (20K+ a month), but a less dramatic visual and its rating
+    came from a third party.
+  verify_notes:
+  - ASIN changed to the black listing B07PZF3QS3 (B07TLNSW1S is Aqua Sky)
+  - model number differs between listings (KE351OHOBA vs KC351OHOBA)
+  - record the star rating
+  visual_description: a pair of black kitchen scissors with a protective blade cover
+  broll_problem: a person struggling to open a tough plastic food package with a knife
+  broll_use: snipping fresh herbs straight into a pot
+  callout: Protective sheath included
+  shorts_hook: Use scissors, not a knife, for these jobs
+- id: milk-frother
+  rank: 10
+  status: shortlisted
+  name:
+    value: PowerLix Milk Frother Handheld with Stand (Deep Blue)
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+  short_name: PowerLix Frother
+  brand:
+    value: PowerLix
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+  model:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: model not shown
+  asin:
+    value: B08CVPQJHJ
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+    note: from the amazon.com URL in search results; listing not opened live
+  amazon_url:
+    value: https://www.amazon.com/dp/B08CVPQJHJ
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+    note: standard link built from the ASIN
+  price_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  rating_amazon:
+    value: 4.5
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+    note: review page for the Deep Blue variant
+  review_count_amazon:
+    value: 66496
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+    note: global ratings (variants show 14K-72K)
+  amazon_notes:
+  - text: other PowerLix variants show 4.3★ (71,995) and 4.4★ (13,852) - ratings differ by colour/model
+    source: AZ-FROTH-R
+    as_of: '2026-11-03'
+  prices_third_party: []
+  ratings_other: []
+  scores:
+    evidence: 3
+    visual: 5
+    everyday: 3
+    problem: 3
+  category: Coffee
+  features:
+  - text: a battery-powered whisk that froths milk in seconds, with a stand to store it
+    source: AZ-FROTH-R
+  - text: stainless steel whisk head that rinses clean
+    source: JPOST-FROTH
+  pros:
+  - text: Roundups describe it as easy to use, portable and durable
+    source: JPOST-FROTH
+  - text: Cuisine at Home scored it 4.4 out of 5
+    source: CAH-FROTH
+  cons:
+  - text: Reviewers say it is loud
+    source: JPOST-FROTH
+  - text: It runs on batteries, which need replacing
+    source: JPOST-FROTH
+  - text: The battery compartment is a tight fit on one model
+    source: BA-FROTH
+  best_for: latte, matcha and hot chocolate drinkers who want cafe foam at home
+  angle: Coffee-shop lattes are expensive, and milk heated in the microwave stays flat
+  why_selected: 'NEW (replaces the OXO avocado slicer). New category (coffee) with a great foam demo and
+    high Amazon volume. Ranked #10 because editorial testing of this brand is thin (Zulay frothers get
+    more editorial picks, but Zulay is already in the list).'
+  verify_notes:
+  - 'pick ONE variant to link: ratings differ by colour/model'
+  - confirm stand is included
+  visual_description: a slim handheld battery milk frother with a small whisk head
+  broll_problem: flat, bubbly microwaved milk in a mug next to a homemade latte that looks sad
+  broll_use: a frother whisking milk into thick foam in a glass, then pouring it over coffee
+  callout: Cafe foam in seconds
+  shorts_hook: Coffee-shop foam for a few dollars
+- id: kitchen-scale
+  rank: 99
+  status: reserve
   name:
     value: Etekcity 0.1g Food Kitchen Scale with Bowl, 11 lb
     verified: false
@@ -913,7 +1565,7 @@ products:
   price_amazon:
     value: null
     verified: false
-    sources: *id001
+    sources: &id001 []
     as_of: null
     note: not collected - check on Amazon
   prices_third_party:
@@ -957,16 +1609,15 @@ products:
     source: AZ-SCALE
   best_for: bakers and anyone tracking portions
   angle: Measuring cups are surprisingly inaccurate for flour, which is why baking goes wrong
-  why_selected: Real accuracy benefit for bakers; weaker evidence than others (Etekcity models are often
-    mixed up in reviews) - verify model and rating on Amazon.
+  why_selected: 'Removed from the top 10: weakest evidence (Etekcity models are often mixed up in reviews).'
   visual_description: a small stainless steel digital kitchen scale with a removable bowl
   broll_problem: flour spilling everywhere while leveling off a measuring cup
   broll_use: pouring flour into a bowl on a digital scale as the numbers change
   callout: Grams, ounces & mL
   shorts_hook: Why your cookies keep coming out wrong
 - id: baking-mat
-  rank: 9
-  status: shortlisted
+  rank: 99
+  status: reserve
   name:
     value: Amazon Basics Silicone Baking Mat, 2-Pack (16.5 x 11.6 in)
     verified: false
@@ -1002,20 +1653,24 @@ products:
     note: not collected - check on Amazon
   prices_third_party: []
   rating_amazon:
-    value: 4.7
+    value: null
     verified: false
-    sources:
-    - KWS-MAT
-    as_of: '2026-11-03'
-    note: '''about 4.7 stars with 98k+ reviews'' per roundup sites in search results'
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
   review_count_amazon:
-    value: 98000
+    value: null
     verified: false
-    sources:
-    - KWS-MAT
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  ratings_other:
+  - platform: Amazon rating as reported by roundup sites
+    value: 4.7
+    count: 98000
+    source: KWS-MAT
     as_of: '2026-11-03'
-    note: '''98k+'' per roundup sites - attribution unconfirmed'
-  ratings_other: []
+    note: '''98k+'', attribution unconfirmed'
   category: Baking
   features:
   - text: non-stick silicone that is oven safe to about 480 degrees Fahrenheit
@@ -1034,107 +1689,12 @@ products:
     source: KWS-MAT
   best_for: regular bakers and sheet-pan dinner fans
   angle: Parchment paper runs out, and greased pans still stick
-  why_selected: Cheap, reusable, very high reported rating volume; good sustainability angle.
+  why_selected: 'Removed from the top 10: useful but low visual impact and overlaps ''baking'' only.'
   visual_description: a beige rectangular silicone baking mat on a metal sheet pan
   broll_problem: scraping stuck, burnt cookies off a bare baking sheet
   broll_use: sliding freshly baked cookies off a silicone mat with a spatula
   callout: Oven safe to 480°F
   shorts_hook: Stop buying parchment paper
-- id: avocado-tool
-  rank: 10
-  status: shortlisted
-  name:
-    value: OXO Good Grips 3-in-1 Avocado Slicer (Green)
-    verified: false
-    sources:
-    - AZ-AVO
-    as_of: '2026-11-03'
-  short_name: OXO Avocado Tool
-  brand:
-    value: OXO
-    verified: false
-    sources:
-    - AZ-AVO
-    as_of: '2026-11-03'
-  asin:
-    value: B0088LR592
-    verified: false
-    sources:
-    - AZ-AVO
-    as_of: '2026-11-03'
-    note: from an amazon.com URL in search results; listing page not opened
-  amazon_url:
-    value: https://www.amazon.com/dp/B0088LR592
-    verified: false
-    sources:
-    - AZ-AVO
-    as_of: '2026-11-03'
-    note: standard /dp/ link built from the ASIN
-  price_amazon:
-    value: null
-    verified: false
-    sources: *id001
-    as_of: null
-    note: not collected - check on Amazon
-  prices_third_party:
-  - value: 9.99
-    currency: USD
-    seller: ShopSavvy listing
-    source: SS-AVO
-    as_of: '2026-11-03'
-  - value: 11.99
-    currency: USD
-    seller: Bloomingdale's
-    source: BLOOM-AVO
-    as_of: '2026-11-03'
-  rating_amazon:
-    value: null
-    verified: false
-    sources: *id001
-    as_of: null
-    note: not collected - check on Amazon
-  review_count_amazon:
-    value: null
-    verified: false
-    sources: *id001
-    as_of: null
-    note: not collected - check on Amazon
-  ratings_other:
-  - platform: Bloomingdale's
-    value: 4.5
-    count: 107
-    source: BLOOM-AVO
-    as_of: '2026-11-03'
-  - platform: Macy's
-    value: 4.4
-    count: 110
-    source: MACYS-AVO
-    as_of: '2026-11-03'
-  category: Prep
-  features:
-  - text: one tool splits, pits and slices an avocado
-    source: AZ-AVO
-  - text: the blade cuts the skin but is not sharp to the touch
-    source: MACYS-AVO
-  pros:
-  - text: A safer option than stabbing the pit with a knife
-    source: CI-AVO
-  - text: Dishwasher safe and inexpensive
-    source: AZ-AVO
-  cons:
-  - text: Cook's Illustrated found it did not slice or scoop very neatly
-    source: CI-AVO
-  - text: The blade can be too short for very large avocados
-    source: MF-AVO
-  best_for: avocado toast fans and families with kids learning to cook
-  angle: Stabbing an avocado pit with a knife is how a lot of kitchen injuries happen
-  why_selected: 'Safety angle + very visual. Lower rank: ratings found are from other retailers, and a
-    test kitchen found its slicing only average.'
-  visual_description: a green plastic three-in-one avocado tool with a small round pitter
-  broll_problem: a knife hovering dangerously over an avocado pit held in a hand
-  broll_use: scooping perfect avocado slices onto toast with a green tool
-  callout: No knife needed
-  shorts_hook: The safer way to open an avocado
 - id: stretch-lids
   status: reserve
   name:
@@ -1195,33 +1755,104 @@ products:
     reviews.'
   visual_description: a set of colorful round silicone lids stretched over bowls
   rank: 99
-- id: herb-spinner
+- id: oil-sprayer
+  rank: 99
   status: reserve
   name:
-    value: OXO Good Grips Little Salad & Herb Spinner
+    value: Evo Oil Sprayer Bottle, 8-ounce, Set of 2
     verified: false
     sources:
-    - AZ-SPIN-S
+    - AZ-EVO
     as_of: '2026-11-03'
-  short_name: OXO Herb Spinner
+  short_name: Evo Oil Sprayer
+  brand:
+    value: Evo
+    verified: false
+    sources:
+    - AZ-EVO
+    as_of: '2026-11-03'
+  model:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: model not shown
+  asin:
+    value: B00ORXO9TO
+    verified: false
+    sources:
+    - AZ-EVO
+    as_of: '2026-11-03'
+    note: from the amazon.com URL in search results; listing not opened live
+  amazon_url:
+    value: https://www.amazon.com/dp/B00ORXO9TO
+    verified: false
+    sources:
+    - AZ-EVO
+    as_of: '2026-11-03'
+    note: standard link built from the ASIN
+  price_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  rating_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  review_count_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  amazon_notes:
+  - text: no rating shown for this listing; Evo stainless 16 oz listing shows 3.8★ (3,096)
+    source: AZ-EVO-SS
+    as_of: '2026-11-03'
+  prices_third_party: []
+  ratings_other: []
+  pros:
+  - text: 'Skinnytaste''s top oil sprayer pick: easy to use and resists clogging'
+    source: SKINNY-OIL
+  cons:
+  - text: The spray is not as fine as a mist, and canola oil gets gummy faster
+    source: COOKISTRY-OIL
+  - text: A forum post claims it is no longer sold in the US - availability unclear
+    source: QVC-OIL
+  why_selected: 'Reserve: good air-fryer angle, but mixed clogging reviews and unclear US availability.'
+  category: Cooking
+- id: avocado-tool
+  rank: 99
+  status: rejected
+  name:
+    value: OXO Good Grips 3-in-1 Avocado Slicer (Green)
+    verified: false
+    sources:
+    - AZ-AVO
+    as_of: '2026-11-03'
+  short_name: OXO Avocado Tool
   brand:
     value: OXO
     verified: false
     sources:
-    - AZ-SPIN-S
+    - AZ-AVO
     as_of: '2026-11-03'
   asin:
-    value: B00005QB5U
+    value: B0088LR592
     verified: false
     sources:
-    - AZ-SPIN-S
+    - AZ-AVO
     as_of: '2026-11-03'
     note: from an amazon.com URL in search results; listing page not opened
   amazon_url:
-    value: https://www.amazon.com/dp/B00005QB5U
+    value: https://www.amazon.com/dp/B0088LR592
     verified: false
     sources:
-    - AZ-SPIN-S
+    - AZ-AVO
     as_of: '2026-11-03'
     note: standard /dp/ link built from the ASIN
   price_amazon:
@@ -1230,28 +1861,64 @@ products:
     sources: *id001
     as_of: null
     note: not collected - check on Amazon
-  prices_third_party: []
+  prices_third_party:
+  - value: 9.99
+    currency: USD
+    seller: ShopSavvy listing
+    source: SS-AVO
+    as_of: '2026-11-03'
+  - value: 11.99
+    currency: USD
+    seller: Bloomingdale's
+    source: BLOOM-AVO
+    as_of: '2026-11-03'
   rating_amazon:
     value: null
     verified: false
-    sources: *id001
+    sources: []
     as_of: null
-    note: not collected - check on Amazon
+    note: not found on Amazon pages via search - check on Amazon
   review_count_amazon:
     value: null
     verified: false
-    sources: *id001
+    sources: []
     as_of: null
-    note: not collected - check on Amazon
-  ratings_other: []
+    note: not found on Amazon pages via search - check on Amazon
+  ratings_other:
+  - platform: Bloomingdale's
+    value: 4.5
+    count: 107
+    source: BLOOM-AVO
+    as_of: '2026-11-03'
+  - platform: Macy's
+    value: 4.4
+    count: 110
+    source: MACYS-AVO
+    as_of: '2026-11-03'
   category: Prep
+  features:
+  - text: one tool splits, pits and slices an avocado
+    source: AZ-AVO
+  - text: the blade cuts the skin but is not sharp to the touch
+    source: MACYS-AVO
   pros:
-  - text: A small version of the OXO spinner for herbs, berries or salad for two
-    source: AZ-SPIN-S
+  - text: A safer option than stabbing the pit with a knife
+    source: CI-AVO
+  - text: Dishwasher safe and inexpensive
+    source: AZ-AVO
   cons:
-  - text: Too small for family-size salads
-    source: AZ-SPIN-S
-  why_selected: 'Reserve: swap in if you prefer a smaller spinner (search snapshot showed it as a #1 Best
-    Seller).'
-  visual_description: a small clear salad spinner
-  rank: 99
+  - text: Cook's Illustrated found it did not slice or scoop very neatly
+    source: CI-AVO
+  - text: The blade can be too short for very large avocados
+    source: MF-AVO
+  best_for: avocado toast fans and families with kids learning to cook
+  angle: Stabbing an avocado pit with a knife is how a lot of kitchen injuries happen
+  why_selected: 'Safety angle + very visual. Lower rank: ratings found are from other retailers, and a
+    test kitchen found its slicing only average.'
+  visual_description: a green plastic three-in-one avocado tool with a small round pitter
+  broll_problem: a knife hovering dangerously over an avocado pit held in a hand
+  broll_use: scooping perfect avocado slices onto toast with a green tool
+  callout: No knife needed
+  shorts_hook: The safer way to open an avocado
+  rejected_reason: 'Replaced (owner request): ratings found only on other retailers and a test kitchen
+    found its slicing only average. Replaced by the PowerLix frother.'

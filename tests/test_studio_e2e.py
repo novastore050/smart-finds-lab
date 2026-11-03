@@ -51,7 +51,9 @@ def fixture_products():
     src = {"S1": {"url": "https://example.com/test-review", "type": "third_party", "publisher": "Example (TEST)",
                   "title": "Fictional review page", "accessed": "2026-11-03"},
            "S2": {"url": "https://example.com/test-store", "type": "retailer", "publisher": "Example store (TEST)",
-                  "title": "Fictional store", "accessed": "2026-11-03"}}
+                  "title": "Fictional store", "accessed": "2026-11-03"},
+           "SA": {"url": "https://www.amazon.com/dp/B0TEST0001", "type": "amazon_search_index",
+                  "publisher": "Amazon.com (TEST)", "title": "Fictional Amazon page", "accessed": "2026-11-03"}}
 
     def f(v, s="S1", verified=False):
         return {"value": v, "verified": verified, "sources": [s], "as_of": "2026-11-03"}
@@ -62,11 +64,11 @@ def fixture_products():
         prods.append({
             "id": f"t{i}", "rank": i, "status": "shortlisted", "category": "TEST",
             "name": f(f"TEST Product {n} (fictional)"), "short_name": f"Test {n}", "brand": f("TestBrand"),
-            "asin": f(f"B0TEST000{i}"), "amazon_url": f(f"https://www.amazon.com/dp/B0TEST000{i}"),
+            "asin": f(f"B0TEST000{i}", "SA"), "amazon_url": f(f"https://www.amazon.com/dp/B0TEST000{i}", "SA"),
             "price_amazon": {"value": None, "verified": False, "sources": [], "as_of": None},
             "prices_third_party": [{"value": 10 + i, "currency": "USD", "seller": "Example store", "source": "S2",
                                     "as_of": "2026-11-03"}],
-            "rating_amazon": f(4.5, "S1"), "review_count_amazon": f(1000 * i, "S1"),
+            "rating_amazon": f(4.5, "SA"), "review_count_amazon": f(1000 * i, "SA"),
             "features": [{"text": "it does one simple job quickly", "source": "S1"}],
             "pros": [{"text": "people like how easy it is to clean", "source": "S1"}],
             "cons": [{"text": "some find it smaller than expected", "source": "S1"}],
@@ -99,6 +101,12 @@ def main():
     errs = [m for l, m in research.validate(bad, 3) if l == "error"]
     ok("validator rejects 'verified' without Amazon source", any("marked verified" in e for e in errs))
     ok("validator rejects unsourced feature", any("has no source" in e for e in errs))
+    bad2 = fixture_products()
+    bad2["products"][2]["rating_amazon"]["sources"] = ["S1"]  # third-party figure placed in an Amazon field
+    errs2 = [m for l, m in research.validate(bad2, 3) if l == "error"]
+    ok("validator keeps third-party data out of Amazon fields", any("may only cite Amazon pages" in e for e in errs2))
+    sl_lines = [ln for ln in sl.splitlines() if ln.startswith("| ") and "**#" in ln]
+    ok("shortlist is in countdown order (#3 first, #1 last)", "**#3**" in sl_lines[0] and "**#1**" in sl_lines[-1])
     # approval gate before verification import
     r = cli("draft-script", SLUG)
     ok("script refused before approval", r.returncode != 0 and "Approve" in (r.stderr + r.stdout))
@@ -107,7 +115,8 @@ def main():
     import csv
     path = prod.p("research", "amazon-verification.csv")
     rows = list(csv.DictReader(open(path, encoding="utf-8")))
-    rows[0].update({"correct_product_yes_no": "yes", "available_in_us_yes_no": "yes", "amazon_price_usd": "$12.99",
+    row_t1 = next(r for r in rows if r["product_id"] == "t1")  # sheet is in countdown order
+    row_t1.update({"correct_product_yes_no": "yes", "available_in_us_yes_no": "yes", "amazon_price_usd": "$12.99",
                     "amazon_rating": "4.6", "amazon_rating_count": "2,345", "asin_confirmed_or_corrected": "B0TEST0001",
                     "checked_on_yyyy_mm_dd": "2026-11-03"})
     with open(path, "w", newline="", encoding="utf-8") as fh:
