@@ -1,6 +1,6 @@
 # Product shortlist — 10 Kitchen Gadgets That Actually Make Life Easier
 
-Research date: 2026-11-03 (revision 2) · Video type: **research_based** (research-based: no hands-on testing claims)
+Research date: 2026-11-03 (revision 3) · Video type: **research_based** (research-based: no hands-on testing claims)
 
 **Countdown order — exactly as the video plays: #10 first, #1 (strongest) last.**
 
@@ -8,57 +8,55 @@ Research date: 2026-11-03 (revision 2) · Video type: **research_based** (resear
 
 | Video order | Rank | Product | Brand · Model | ASIN | Amazon data (unverified) | Third-party data | Score |
 |---|---|---|---|---|---|---|---|
-| 1 | **#10** | [PowerLix Milk Frother Handheld with Stand (Deep Blue)](https://www.amazon.com/dp/B08CVPQJHJ) | PowerLix · — | B08CVPQJHJ | 4.5★ (66,496 ratings) | — | 14/20 |
-| 2 | **#9** | [KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black](https://www.amazon.com/dp/B07PZF3QS3) | KitchenAid · KE351OHOBA | B07PZF3QS3 | rating not found | 4.8★/71,000 (Amazon rating as reported by ShopSavvy); $7.51 (lowest of range on ShopSavvy ($7.51-$26.85)) | 14/20 |
-| 3 | **#8** | [OXO Good Grips Garlic Press (die-cast zinc)](https://www.amazon.com/dp/B00HEZ888K) | OXO · 11107400 | B00HEZ888K | rating not found; price $20.99 | 4.7★/35,993 (Amazon rating as reported by ShopSavvy); $20.99 (Macy's (sale)) | 15/20 |
-| 4 | **#7** | [Zulay Kitchen Metal 2-in-1 Lemon Lime Squeezer](https://www.amazon.com/dp/B00YBP918M) | Zulay Kitchen · — | B00YBP918M | 4.7★ (37,677 ratings) | 4.7★/47,137 (Amazon rating as reported by a search summary) | 15/20 |
-| 5 | **#6** | [Original Scrub Daddy Sponge, 4 Count](https://www.amazon.com/dp/B07ND5C1LW) | Scrub Daddy · — | B07ND5C1LW | rating not found | — | 16/20 |
-| 6 | **#5** | [Microplane Premium Classic Series Zester/Grater, Black](https://www.amazon.com/dp/B00151WA06) | Microplane · 46020 | B00151WA06 | 4.8★ (47,796 ratings) | $18.99 (US retail listing (per search summary)) | 16/20 |
-| 7 | **#4** | [Fullstar Pro Original Vegetable Chopper & Spiralizer (4-in-1)](https://www.amazon.com/dp/B0764HS4SL) | Fullstar · TF1096C-8 | B0764HS4SL | 4.6★ (67,144 ratings) | 4.6★/793 (Walmart); $39.99 (list price per BestReviews) | 17/20 |
-| 8 | **#3** | [TempPro TempSwift TP19H Instant Read Meat Thermometer](https://www.amazon.com/dp/B07XXSYLL8) | TempPro (formerly ThermoPro) · TP19H | B07XXSYLL8 | 4.7★ (56,641 ratings) | 4.7★/3,488 (Walmart) | 17/20 |
-| 9 | **#2** | [Dash Rapid Egg Cooker, 6 Egg Capacity, Black (DEC005BK)](https://www.amazon.com/dp/B00DDXWFY0) | Dash · DEC005BK | B00DDXWFY0 | 4.7★ (≈112,000 ratings) | — | 18/20 |
-| 10 | **#1** | [OXO Good Grips Salad Spinner, 6.22 Qt](https://www.amazon.com/dp/B00004OCKR) | OXO · 32480 | B00004OCKR | 4.7★ (52,141 ratings) | 4.7★/38,000 (Amazon rating as reported by Skinnytaste) | 19/20 |
+| 1 | **#10** | [OXO Good Grips Garlic Press (die-cast zinc)](https://www.amazon.com/dp/B00HEZ888K) | OXO · 11107400 | B00HEZ888K | rating not found; price $20.99 | 4.7★/35,993 (Amazon rating as reported by ShopSavvy); $20.99 (Macy's (sale)) | 12/20 |
+| 2 | **#9** | [KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black](https://www.amazon.com/dp/B07PZF3QS3) | KitchenAid · KE351OHOBA | B07PZF3QS3 | rating not found | 4.8★/71,000 (Amazon rating as reported by ShopSavvy); $7.51 (lowest of range on ShopSavvy ($7.51-$26.85)) | 13/20 |
+| 3 | **#8** | [Zulay Kitchen Metal 2-in-1 Lemon Lime Squeezer](https://www.amazon.com/dp/B00YBP918M) | Zulay Kitchen · — | B00YBP918M | 4.7★ (≈37,677 ratings) | 4.7★/47,137 (Amazon rating as reported by a search summary) | 13/20 |
+| 4 | **#7** | [Microplane Premium Classic Series Zester/Grater, Black](https://www.amazon.com/dp/B00151WA06) | Microplane · 46020 | B00151WA06 | 4.8★ (47,796 ratings) | $18.99 (US retail listing (per search summary)) | 15/20 |
+| 5 | **#6** | [PowerLix Milk Frother Handheld with Stainless Steel Stand - Deep Blue](https://www.amazon.com/dp/B08CVPQJHJ) | PowerLix · — | B08CVPQJHJ | 4.5★ (66,496 ratings) | — | 16/20 |
+| 6 | **#5** | [Fullstar Pro Original Vegetable Chopper & Spiralizer (4-in-1)](https://www.amazon.com/dp/B0764HS4SL) | Fullstar · TF1096C-8 | B0764HS4SL | 4.6★ (67,144 ratings) | 4.6★/793 (Walmart); $39.99 (list price per BestReviews) | 16/20 |
+| 7 | **#4** | [OXO Good Grips Soap Dispensing Dish Brush](https://www.amazon.com/dp/B000CC91GK) | OXO · 1067529WH | B000CC91GK | 4.5★ (29,629 ratings) | — | 17/20 |
+| 8 | **#3** | [OXO Good Grips Salad Spinner, 6.22 Qt](https://www.amazon.com/dp/B00004OCKR) | OXO · 32480 | B00004OCKR | rating not found | 4.7★/37,265 (Amazon Germany (amazon.de, same ASIN - not Amazon USA)); 4.6★/37,395 (Amazon UK (amazon.co.uk, same ASIN - not Amazon USA)) | 17/20 |
+| 9 | **#2** | [TempPro TempSwift TP19H Instant Read Meat Thermometer](https://www.amazon.com/dp/B07XXSYLL8) | TempPro (formerly ThermoPro) · TP19H | B07XXSYLL8 | 4.7★ (56,641 ratings) | 4.7★/3,488 (Walmart) | 18/20 |
+| 10 | **#1** | [Dash Rapid Egg Cooker, 6 Egg Capacity, Black (DEC005BK)](https://www.amazon.com/dp/B00DDXWFY0) | Dash · DEC005BK | B00DDXWFY0 | 4.7★ (≈112,000 ratings) | — | 19/20 |
 
-Score = Evidence + Visual demo + Everyday benefit + Clear problem/solution (each 1–5). Ties go to the stronger evidence.
+Score = Viewer usefulness + Visual storytelling + Product variety + Evidence quality (each 1–5). Ties go to evidence, then visual.
 
 ### Why each product (countdown order)
 
-- **#10 PowerLix Milk Frother Handheld with Stand (Deep Blue)** — NEW (replaces the OXO avocado slicer). New category (coffee) with a great foam demo and high Amazon volume. Ranked #10 because editorial testing of this brand is thin (Zulay frothers get more editorial picks, but Zulay is already in the list).
-  - *Check on Amazon:* pick ONE variant to link: ratings differ by colour/model; confirm stand is included
-- **#9 KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black** — Extremely popular everyday tool (20K+ a month), but a less dramatic visual and its rating came from a third party.
-  - *Check on Amazon:* ASIN changed to the black listing B07PZF3QS3 (B07TLNSW1S is Aqua Sky); model number differs between listings (KE351OHOBA vs KC351OHOBA); record the star rating
-- **#8 OXO Good Grips Garlic Press (die-cast zinc)** — Proven best seller with strong sales signals, but its star rating was only found via a third party, so it sits mid-list.
+- **#10 OXO Good Grips Garlic Press (die-cast zinc)** — Your preferred pick and a proven seller, but its Amazon star rating was not found and it overlaps with other prep tools - so it opens the countdown at #10.
   - *Check on Amazon:* record the Amazon star rating and count (not found directly); check colour (Black vs Silver)
-- **#7 Zulay Kitchen Metal 2-in-1 Lemon Lime Squeezer** — Cheap, satisfying visual and a long-running best seller (4.7★, 37,677 ratings on Amazon).
+- **#9 KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black** — Very useful everyday tool (20K+ bought in a month per snapshot) and the model is now confirmed as KE351OHOBA, but the visual is less dramatic and its rating was only found via a third party.
+  - *Check on Amazon:* confirm the listing shows model KE351OHOBA; record the star rating (not found)
+- **#8 Zulay Kitchen Metal 2-in-1 Lemon Lime Squeezer** — Cheap, satisfying visual and solid Amazon evidence (4.7★, 37,677 ratings), but a small prep tool with limited daily use.
   - *Check on Amazon:* the rating count on Amazon (37,677) differs from a third-party figure (47,137) - record the live one
-- **#6 Original Scrub Daddy Sponge, 4 Count** — NEW (replaces the Amazon Basics baking mat). Adds a cleaning category, best 'wow' visual (firm in cold, soft in warm water) and a tested editorial win. Weaker point: no Amazon rating found for this exact listing.
-  - *Check on Amazon:* no Amazon rating found via search - record the rating on the 4-count listing; choose the pack size you want to link (1, 4 or 8 count)
-- **#5 Microplane Premium Classic Series Zester/Grater, Black** — Highest Amazon star rating in the list (4.8★, 47,796 ratings); fluffy parmesan is a great visual.
+- **#7 Microplane Premium Classic Series Zester/Grater, Black** — Highest Amazon star rating found (4.8★, 47,796 ratings) and a lovely visual, but a narrower everyday use.
   - *Check on Amazon:* each colour has its own model number - 46020 is black
-- **#4 Fullstar Pro Original Vegetable Chopper & Spiralizer (4-in-1)** — Very popular, strong Amazon volume (4.6★, 67,144 ratings) and the best before/after demo in the list. Honest con: cleaning.
+- **#6 PowerLix Milk Frother Handheld with Stainless Steel Stand - Deep Blue** — Adds coffee variety and a great foam visual (4.5★, 66,496 ratings on the Deep Blue review page), but editorial testing of this brand is thin.
+  - *Check on Amazon:* confirm B08CVPQJHJ opens the Deep Blue colour with the stand; record the rating shown on that page
+- **#5 Fullstar Pro Original Vegetable Chopper & Spiralizer (4-in-1)** — Best before/after demo and strong Amazon volume (4.6★, 67,144 ratings on its review page), but it is one of five prep tools, so lower on variety. Honest con: cleaning.
   - *Check on Amazon:* ASIN changed to B0764HS4SL (the listing showing model TF1096C-8); confirm colour/blade count; Fullstar sells many similar versions (2-in-1 to 14-in-1) - make sure the link is the 4-in-1
-- **#3 TempPro TempSwift TP19H Instant Read Meat Thermometer** — Real food-safety benefit with strong Amazon volume (4.7★, 56,641 ratings). Ranked below the top two because accuracy/durability feedback is mixed.
-  - *Check on Amazon:* brand shows as TempPro (ThermoPro rebrand) - buyers may receive either name; check whether the 'newer version' should be featured instead
-- **#2 Dash Rapid Egg Cooker, 6 Egg Capacity, Black (DEC005BK)** — NEW (replaces the Etekcity scale). Biggest rating volume in the list on Amazon (≈112K ratings, 4.7★), a hands-on editorial verdict, a new category (breakfast) and a very visual steam-and-eggs demo.
+- **#4 OXO Good Grips Soap Dispensing Dish Brush** — NEW (replaces Scrub Daddy). Keeps a cleaning product in the list, with stronger evidence: Amazon shows 4.5★ from 29,629 ratings on this exact listing and lab testing picked it as best value. Less 'wow' visual than Scrub Daddy.
+  - *Check on Amazon:* confirm B000CC91GK is the single soap-dispensing dish brush (not the palm brush or a 2-pack); TechGearLab's article is about 3.5 years old - check the pick is still the same model
+- **#3 OXO Good Grips Salad Spinner, 6.22 Qt** — Most consistently recommended item across editorial roundups, #1 Best Seller in its Amazon category, and the clearest wet-vs-dry visual. Amazon.com rating still to be recorded (only non-US Amazon figures found: 4.5-4.7★, ~37K ratings).
+  - *Check on Amazon:* record the Amazon.com star rating and count for B00004OCKR (only non-US Amazon figures found); confirm size (6.22 Qt) and model on the listing
+- **#2 TempPro TempSwift TP19H Instant Read Meat Thermometer** — The most useful item for safety and results, unique in the list. Ranked below the egg cooker because accuracy/durability feedback is mixed and the advertised reading time was overstated (the manual says 3-4 seconds).
+  - *Check on Amazon:* brand shows as TempPro (ThermoPro rebrand); manufacturer page calls it 'TempSwift PLUS TP19H'; check whether the 'newer version' should be featured instead
+- **#1 Dash Rapid Egg Cooker, 6 Egg Capacity, Black (DEC005BK)** — Highest total: useful for most households, the clearest before/after visual (steam, perfect eggs), the only appliance/breakfast item, and the strongest Amazon evidence (about 112,000 ratings, 4.7★ - rounded figure in the snapshot) plus a hands-on editorial verdict.
   - *Check on Amazon:* confirm the black DEC005BK listing is in stock (the white one was unavailable); Reviewed tested the 12-egg Deluxe version, not this exact model
-- **#1 OXO Good Grips Salad Spinner, 6.22 Qt** — Strongest overall: Amazon shows 4.7★ from 52,141 ratings on the model-32480 listing, it is a #1 Best Seller in its category, and several outlets name it a top salad spinner. Instant, satisfying demo.
-  - *Check on Amazon:* ASIN corrected to the classic 6.22 Qt listing B00004OCKR (was the green '4.0' variant B077TV6BL3); confirm rating/count on B00004OCKR itself
 
 ### Changes from the previous shortlist
 
-- Replaced Etekcity Food Scale -> Dash Rapid Egg Cooker (new category, ≈112K Amazon ratings, hands-on review).
-- Replaced Amazon Basics Baking Mat -> Original Scrub Daddy (new cleaning category, tested best sponge, strong visual).
-- Replaced OXO Avocado Slicer -> PowerLix Milk Frother (new coffee category, foam demo, 66K Amazon ratings).
-- OXO Salad Spinner: ASIN corrected B077TV6BL3 (green '4.0' variant) -> B00004OCKR (classic 6.22 Qt, model 32480).
-- Fullstar Chopper: ASIN B0B8SQR665 (conflicting cached versions) -> B0764HS4SL (listing showing model TF1096C-8).
-- KitchenAid Shears: ASIN B07TLNSW1S (Aqua Sky colour) -> B07PZF3QS3 (black, model KE351OHOBA on listing).
-- Model numbers added for every product where the Amazon listing shows one.
-- Amazon data and third-party data are now strictly separate: Amazon fields cite only Amazon pages; figures that third parties *report* about Amazon moved to the third-party section.
-- New ranking by transparent score; shortlist now shown in countdown order (#10 first, #1 last).
-- Category mix now: prep 5, cooking 1, breakfast 1, cleaning 1, coffee 1, salad/washing 1 (was 9 prep-type tools).
+- OXO Salad Spinner: removed the rating taken from listing B0FD81VQK7 - that listing is a 4-PACK. No Amazon.com rating was found for B00004OCKR; the same ASIN's ratings on Amazon Germany/UK/Canada are shown separately as non-US data.
+- KitchenAid Shears: model resolved to KE351OHOBA (Amazon URL for B07PZF3QS3 + Home Depot). KC351OHOBA is a separate SKU and is not used.
+- TP19H: reading time corrected to 3-4 seconds (user manual). The '1 second' claim appears only in marketing text.
+- Scrub Daddy -> OXO Good Grips Soap Dispensing Dish Brush (B000CC91GK): its own Amazon page shows 4.5★ / 29,629 ratings and lab testing picked it as best value. Scrub Daddy kept as a reserve (no Amazon rating found).
+- PowerLix: fixed to the Deep Blue listing B08CVPQJHJ; rating is the one shown for that ASIN (Amazon may pool colours).
+- Re-ranked on viewer usefulness, visual storytelling, product variety and evidence quality.
+- Estimated/rounded figures are labelled as such (e.g. Dash 'about 112,000').
 
 ### Reserves (can replace a product you reject)
 
+- Original Scrub Daddy Sponge, 4 Count — Reserve: great visual, but no Amazon rating could be found for the 4-pack (B07ND5C1LW) or the Original listings. Walmart shows 4.8★ from 10.5K ratings for the Original sponge.
 - Etekcity 0.1g Food Kitchen Scale with Bowl, 11 lb — Removed from the top 10: weakest evidence (Etekcity models are often mixed up in reviews).
 - Amazon Basics Silicone Baking Mat, 2-Pack (16.5 x 11.6 in) — Removed from the top 10: useful but low visual impact and overlaps 'baking' only.
 - Basic Haus Reusable Silicone Stretch Lids, 7 Pack — Reserve: useful, but evidence is mostly generic brands and the seal is inconsistent per reviews.

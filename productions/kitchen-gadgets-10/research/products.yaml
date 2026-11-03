@@ -4,32 +4,31 @@ research:
   topic: 10 Kitchen Gadgets That Actually Make Life Easier
   market: Amazon USA
   researched_on: '2026-11-03'
-  revision: 2
+  revision: 3
   researcher: Claude (web search) for Smart Finds Lab
   method: Exact listings were re-checked by searching each ASIN on amazon.com through a search engine
     (title, brand, model number and any rating shown on the Amazon page). Benefits and drawbacks come
     from editorial reviews, retailer pages and Amazon review summaries, each with its source.
-  scoring: 'Each shortlisted product gets 1-5 points for: Evidence (Amazon rating volume + independent
-    reviews), Visual demo (how clearly the benefit shows on camera), Everyday benefit (how often a typical
-    household would use it) and Clear problem/solution. Highest total = #1. Ties go to the stronger evidence.
-    Scores are editorial judgements based on the sourced data, not measurements.'
+  scoring: 'Each shortlisted product gets 1-5 points for: Viewer usefulness (how much it helps a typical
+    household), Visual storytelling (how clearly the benefit shows on camera), Product variety (how different
+    it is from the rest of the list) and Evidence quality (Amazon data found on the exact listing + independent
+    reviews). Highest total = #1. Ties go to evidence, then visual. Scores are editorial judgements based
+    on the sourced data, not measurements.'
   changes:
-  - Replaced Etekcity Food Scale -> Dash Rapid Egg Cooker (new category, ≈112K Amazon ratings, hands-on
-    review).
-  - Replaced Amazon Basics Baking Mat -> Original Scrub Daddy (new cleaning category, tested best sponge,
-    strong visual).
-  - Replaced OXO Avocado Slicer -> PowerLix Milk Frother (new coffee category, foam demo, 66K Amazon ratings).
-  - 'OXO Salad Spinner: ASIN corrected B077TV6BL3 (green ''4.0'' variant) -> B00004OCKR (classic 6.22
-    Qt, model 32480).'
-  - 'Fullstar Chopper: ASIN B0B8SQR665 (conflicting cached versions) -> B0764HS4SL (listing showing model
-    TF1096C-8).'
-  - 'KitchenAid Shears: ASIN B07TLNSW1S (Aqua Sky colour) -> B07PZF3QS3 (black, model KE351OHOBA on listing).'
-  - Model numbers added for every product where the Amazon listing shows one.
-  - 'Amazon data and third-party data are now strictly separate: Amazon fields cite only Amazon pages;
-    figures that third parties *report* about Amazon moved to the third-party section.'
-  - 'New ranking by transparent score; shortlist now shown in countdown order (#10 first, #1 last).'
-  - 'Category mix now: prep 5, cooking 1, breakfast 1, cleaning 1, coffee 1, salad/washing 1 (was 9 prep-type
-    tools).'
+  - 'OXO Salad Spinner: removed the rating taken from listing B0FD81VQK7 - that listing is a 4-PACK. No
+    Amazon.com rating was found for B00004OCKR; the same ASIN''s ratings on Amazon Germany/UK/Canada are
+    shown separately as non-US data.'
+  - 'KitchenAid Shears: model resolved to KE351OHOBA (Amazon URL for B07PZF3QS3 + Home Depot). KC351OHOBA
+    is a separate SKU and is not used.'
+  - 'TP19H: reading time corrected to 3-4 seconds (user manual). The ''1 second'' claim appears only in
+    marketing text.'
+  - 'Scrub Daddy -> OXO Good Grips Soap Dispensing Dish Brush (B000CC91GK): its own Amazon page shows
+    4.5★ / 29,629 ratings and lab testing picked it as best value. Scrub Daddy kept as a reserve (no Amazon
+    rating found).'
+  - 'PowerLix: fixed to the Deep Blue listing B08CVPQJHJ; rating is the one shown for that ASIN (Amazon
+    may pool colours).'
+  - Re-ranked on viewer usefulness, visual storytelling, product variety and evidence quality.
+  - Estimated/rounded figures are labelled as such (e.g. Dash 'about 112,000').
   limitations:
   - 'amazon.com could not be opened from the research environment: NO value is verified against the live
     page.'
@@ -76,11 +75,11 @@ sources:
     title: Microplane Premium Classic Series Zester 46020, Black
     accessed: '2026-11-03'
   AZ-SHEARS:
-    url: https://www.amazon.com/KitchenAid-Protective-Dishwasher-Stainless-8-72-Inch/dp/B07PZF3QS3
+    url: https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3
     type: amazon_search_index
     quality: amazon (search index)
     publisher: Amazon.com
-    title: KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black
+    title: KitchenAid KE351OHOBA All Purpose Shears, Black (B07PZF3QS3)
     accessed: '2026-11-03'
   AZ-ZULAY:
     url: https://www.amazon.com/Rated-Zulay-Premium-Quality-Squeezer/dp/B00YBP918M
@@ -509,114 +508,128 @@ sources:
     publisher: QVC community
     title: EVO oil sprayer thread
     accessed: '2026-11-03'
+  AZDE-SPIN:
+    url: https://www.amazon.de/-/en/OXO-Good-Grips-Salad-Spinner/dp/B00004OCKR
+    type: amazon_search_index
+    quality: amazon (search index) - Germany
+    publisher: Amazon.de
+    title: OXO Good Grips Salad Spinner (B00004OCKR)
+    accessed: '2026-11-03'
+  AZUK-SPIN:
+    url: https://www.amazon.co.uk/OXO-Good-Grips-Salad-Spinner/dp/B00004OCKR
+    type: amazon_search_index
+    quality: amazon (search index) - UK
+    publisher: Amazon.co.uk
+    title: OXO Good Grips Salad Spinner (B00004OCKR)
+    accessed: '2026-11-03'
+  AZCA-SPIN:
+    url: https://www.amazon.ca/OXO-Good-Grips-Spinner-10-25-Inch/dp/B00004OCKR
+    type: amazon_search_index
+    quality: amazon (search index) - Canada
+    publisher: Amazon.ca
+    title: OXO Salad Spinner (B00004OCKR)
+    accessed: '2026-11-03'
+  HD-SPIN:
+    url: https://www.homedepot.com/p/reviews/OXO-Good-Grips-Salad-Spinner-4-0-32480/302680003/1
+    type: retailer
+    quality: retailer
+    publisher: The Home Depot
+    title: Reviews for OXO Good Grips Salad Spinner 4.0 (32480)
+    accessed: '2026-11-03'
+  HD-SHEARS:
+    url: https://www.homedepot.com/p/KitchenAid-8-72-in-Black-All-Purpose-Shears-with-Protective-Sheath-KE351OHOBA/320485474
+    type: retailer
+    quality: retailer
+    publisher: The Home Depot
+    title: KitchenAid 8.72 in. Black All Purpose Shears KE351OHOBA
+    accessed: '2026-11-03'
+  WM-SHEARS-KC:
+    url: https://www.walmart.com/ip/Kitchenaid-Classic-Shears-w-Soft-Grip/45857970
+    type: retailer
+    quality: retailer
+    publisher: Walmart
+    title: KitchenAid shears KC351OHOBA listing
+    accessed: '2026-11-03'
+  RV-SHEARS:
+    url: https://www.reviewed.com/cooking/best-right-now/the-best-kitchen-shears-and-scissors
+    type: editorial_review
+    quality: editorial (tested)
+    publisher: Reviewed (USA Today)
+    title: Best kitchen shears and scissors
+    accessed: '2026-11-03'
+  MANUAL-TP19H:
+    url: https://manuals.plus/asin/B07XXSYLL8
+    type: third_party
+    quality: user manual (third-party copy)
+    publisher: manuals.plus
+    title: ThermoPro TP19H user manual (ASIN B07XXSYLL8)
+    accessed: '2026-11-03'
+  TEMPPRO-TP19H:
+    url: https://temppro.com/products/tp19h-instant-read-meat-thermometer
+    type: manufacturer
+    quality: manufacturer
+    publisher: TempPro
+    title: TempSwift PLUS TP19H product page
+    accessed: '2026-11-03'
+  AZ-BRUSH:
+    url: https://www.amazon.com/gp/customer-reviews/R3R1HB3RDXWDLE?ASIN=B000CC91GK
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: OXO Good Grips Soap Dispensing Dish Brush (B000CC91GK) - review/listing page
+    accessed: '2026-11-03'
+  AZ-BRUSH-PALM:
+    url: https://us.amazon.com/OXO-Good-Grips-Dispensing-Brush/dp/B00004OCLK
+    type: amazon_search_index
+    quality: amazon (search index)
+    publisher: Amazon.com
+    title: OXO Good Grips Soap Dispensing Palm Brush (different product)
+    accessed: '2026-11-03'
+  TGL-BRUSH:
+    url: https://www.techgearlab.com/topics/kitchen/best-cleaning-brush
+    type: editorial_review
+    quality: editorial (lab-tested, ~3.5 years old)
+    publisher: TechGearLab
+    title: The Best Cleaning Brush
+    accessed: '2026-11-03'
+  OXO-WC:
+    url: https://www.oxo.com/blog/behind-the-scenes/best-oxo-products-wirecutter
+    type: manufacturer
+    quality: manufacturer blog (quotes Wirecutter second-hand)
+    publisher: OXO
+    title: Best OXO products recommended by Wirecutter
+    accessed: '2026-11-03'
+  MACYS-BRUSH:
+    url: https://www.macys.com/shop/product/oxo-good-grips-soap-squirting-dish-brush?ID=4028802
+    type: retailer
+    quality: retailer (customer reviews)
+    publisher: Macy's
+    title: OXO Good Grips Soap Squirting Dish Brush
+    accessed: '2026-11-03'
+  CS-BRUSH:
+    url: https://www.chefsupplies.ca/products/oxo-soap-dispensing-dish-brush-1067529wh
+    type: retailer
+    quality: retailer
+    publisher: Chef Supplies
+    title: OXO Soap Dispensing Dish Brush 1067529WH
+    accessed: '2026-11-03'
+  WM-FROTH:
+    url: https://www.walmart.com/ip/PowerLix-Handheld-Electric-Milk-Frother-Stainless-Steel-Stand-Battery-Operated-Whisk-Foam-Maker-Coffee-Latte-Cappuccino-Hot-Chocolate-Frothy-Delights/961001359
+    type: retailer
+    quality: retailer
+    publisher: Walmart
+    title: PowerLix Handheld Electric Milk Frother with Stand
+    accessed: '2026-11-03'
+  WM-SCRUB:
+    url: https://www.walmart.com/reviews/product/35849202
+    type: retailer
+    quality: retailer
+    publisher: Walmart
+    title: Customer reviews for Scrub Daddy Original Sponge
+    accessed: '2026-11-03'
 products:
-- id: salad-spinner
-  rank: 1
-  status: shortlisted
-  name:
-    value: OXO Good Grips Salad Spinner, 6.22 Qt
-    verified: false
-    sources:
-    - AZ-SPIN
-    as_of: '2026-11-03'
-  short_name: OXO Salad Spinner
-  brand:
-    value: OXO
-    verified: false
-    sources:
-    - AZ-SPIN
-    as_of: '2026-11-03'
-  model:
-    value: '32480'
-    verified: false
-    sources:
-    - AZ-SPIN-32480
-    as_of: '2026-11-03'
-    note: model shown on sibling listing B0FD81VQK7; confirm on B00004OCKR
-  asin:
-    value: B00004OCKR
-    verified: false
-    sources:
-    - AZ-SPIN
-    as_of: '2026-11-03'
-    note: from the amazon.com URL in search results; listing not opened live
-  amazon_url:
-    value: https://www.amazon.com/dp/B00004OCKR
-    verified: false
-    sources:
-    - AZ-SPIN
-    as_of: '2026-11-03'
-    note: standard link built from the ASIN
-  price_amazon:
-    value: null
-    verified: false
-    sources: []
-    as_of: null
-    note: not found on Amazon pages via search - check on Amazon
-  rating_amazon:
-    value: 4.7
-    verified: false
-    sources:
-    - AZ-SPIN-32480
-    as_of: '2026-11-03'
-    note: shown on sibling listing B0FD81VQK7 (model 32480); confirm on B00004OCKR
-  review_count_amazon:
-    value: 52141
-    verified: false
-    sources:
-    - AZ-SPIN-32480
-    as_of: '2026-11-03'
-    note: shown on sibling listing B0FD81VQK7
-  amazon_notes:
-  - text: B00004OCKR shown as '#1 Best Seller in Salad Spinners' (search snapshot)
-    source: AZ-SPIN
-    as_of: '2026-11-03'
-  prices_third_party: []
-  ratings_other:
-  - platform: Amazon rating as reported by Skinnytaste
-    value: 4.7
-    count: 38000
-    source: SKINNY
-    as_of: '2026-11-03'
-    note: '''more than 38,000'' reviewers'
-  scores:
-    evidence: 5
-    visual: 5
-    everyday: 4
-    problem: 5
-  category: Prep
-  features:
-  - text: a one-handed pump spins the basket, and a brake button stops it
-    source: AZ-SPIN-32480
-  - text: the basket doubles as a colander and the parts are dishwasher safe
-    source: AZ-SPIN-4
-  pros:
-  - text: Reviewers call it easy to use, and it holds a lot of greens at once
-    source: BI-SPIN
-  - text: The push pump is gentler on your wrists than crank-style spinners
-    source: KWS-SPIN
-  - text: A non-skid base keeps it steady while it spins
-    source: SKINNY
-  cons:
-  - text: At about ten inches wide, it takes up a lot of cabinet space
-    source: KWS-SPIN
-  - text: Some reviewers find it less sturdy than pricier models
-    source: SKINNY
-  best_for: anyone who eats salads or washes herbs and berries often
-  angle: Soggy salad happens when leaves are still wet, and patting them dry with paper towels takes forever
-  why_selected: 'Strongest overall: Amazon shows 4.7★ from 52,141 ratings on the model-32480 listing,
-    it is a #1 Best Seller in its category, and several outlets name it a top salad spinner. Instant,
-    satisfying demo.'
-  verify_notes:
-  - ASIN corrected to the classic 6.22 Qt listing B00004OCKR (was the green '4.0' variant B077TV6BL3)
-  - confirm rating/count on B00004OCKR itself
-  visual_description: a large clear salad spinner with a push-button pump on the lid
-  broll_problem: wet lettuce leaves dripping on a cutting board next to a pile of soaked paper towels
-  broll_use: pressing the pump on top while freshly washed lettuce spins inside the clear bowl
-  callout: Dishwasher-safe parts
-  shorts_hook: Stop eating soggy salad
 - id: egg-cooker
-  rank: 2
+  rank: 1
   status: shortlisted
   name:
     value: Dash Rapid Egg Cooker, 6 Egg Capacity, Black (DEC005BK)
@@ -679,10 +692,10 @@ products:
   prices_third_party: []
   ratings_other: []
   scores:
-    evidence: 5
+    usefulness: 4
     visual: 5
-    everyday: 4
-    problem: 4
+    variety: 5
+    evidence: 5
   category: Breakfast
   features:
   - text: cooks up to six eggs soft, medium or hard boiled, then shuts off by itself
@@ -705,9 +718,9 @@ products:
     source: GREENLIT-DASH
   best_for: busy mornings, meal preppers and anyone who struggles to peel boiled eggs
   angle: Boiling eggs on the stove means watching a pot and guessing the timing
-  why_selected: NEW (replaces the Etekcity scale). Biggest rating volume in the list on Amazon (≈112K
-    ratings, 4.7★), a hands-on editorial verdict, a new category (breakfast) and a very visual steam-and-eggs
-    demo.
+  why_selected: 'Highest total: useful for most households, the clearest before/after visual (steam, perfect
+    eggs), the only appliance/breakfast item, and the strongest Amazon evidence (about 112,000 ratings,
+    4.7★ - rounded figure in the snapshot) plus a hands-on editorial verdict.'
   verify_notes:
   - confirm the black DEC005BK listing is in stock (the white one was unavailable)
   - Reviewed tested the 12-egg Deluxe version, not this exact model
@@ -717,7 +730,7 @@ products:
   callout: Auto shut-off
   shorts_hook: Perfect boiled eggs without watching a pot
 - id: instant-thermometer
-  rank: 3
+  rank: 2
   status: shortlisted
   name:
     value: TempPro TempSwift TP19H Instant Read Meat Thermometer
@@ -775,7 +788,7 @@ products:
   - text: listing mentions a newer version is available
     source: AZ-THERMO
     as_of: '2026-11-03'
-  - text: title says 1-second reading, product details say 4-second response time
+  - text: listing TITLE claims a 1-second reading but its product details say 4 seconds
     source: AZ-THERMO
     as_of: '2026-11-03'
   prices_third_party: []
@@ -787,12 +800,14 @@ products:
     as_of: '2026-11-03'
     note: listing/model match unconfirmed
   scores:
-    evidence: 4
+    usefulness: 5
     visual: 4
-    everyday: 4
-    problem: 5
+    variety: 5
+    evidence: 4
   category: Cooking
   features:
+  - text: gives a reading in about 3 to 4 seconds, according to its user manual
+    source: MANUAL-TP19H
   - text: a large backlit display that flips for left- or right-handed use
     source: AZ-THERMO
   - text: IP65 water resistant with a magnet on the back
@@ -810,20 +825,249 @@ products:
     source: GRILLDAD
   - text: A barbecue reviewer criticized the accuracy of the related TP19 model, so check it in ice water
     source: TXBBQ
+  - text: The maker's own page lists conflicting reading times (1 s and 0.5 s), so treat speed claims
+      with care
+    source: TEMPPRO-TP19H
   best_for: anyone who cooks meat, fish or bread and wants to stop guessing
   angle: Cutting into chicken to check if it's done lets the juices run out, and guessing is risky
-  why_selected: Real food-safety benefit with strong Amazon volume (4.7★, 56,641 ratings). Ranked below
-    the top two because accuracy/durability feedback is mixed.
+  why_selected: The most useful item for safety and results, unique in the list. Ranked below the egg
+    cooker because accuracy/durability feedback is mixed and the advertised reading time was overstated
+    (the manual says 3-4 seconds).
   verify_notes:
-  - brand shows as TempPro (ThermoPro rebrand) - buyers may receive either name
+  - brand shows as TempPro (ThermoPro rebrand); manufacturer page calls it 'TempSwift PLUS TP19H'
   - check whether the 'newer version' should be featured instead
   visual_description: a slim digital food thermometer with a fold-out metal probe and a backlit screen
   broll_problem: a person cutting open a grilled chicken breast to check if it is cooked through
   broll_use: inserting the thin probe into a steak on a board while the screen lights up
   callout: Waterproof (IP65)
   shorts_hook: Never cut into your chicken to check it again
-- id: veggie-chopper
+  spec_notes:
+  - 'Reading time: use ''3-4 seconds'' (user manual). Do NOT use the ''1 second'' marketing claim (the
+    TempPro page also shows 0.5 s in one place - inconsistent).'
+- id: salad-spinner
+  rank: 3
+  status: shortlisted
+  name:
+    value: OXO Good Grips Salad Spinner, 6.22 Qt
+    verified: false
+    sources:
+    - AZ-SPIN
+    as_of: '2026-11-03'
+  short_name: OXO Salad Spinner
+  brand:
+    value: OXO
+    verified: false
+    sources:
+    - AZ-SPIN
+    as_of: '2026-11-03'
+  model:
+    value: '32480'
+    verified: false
+    sources:
+    - HD-SPIN
+    as_of: '2026-11-03'
+    note: Home Depot sells model 32480 as 'OXO Good Grips Salad Spinner 4.0'; that B00004OCKR is this
+      exact model is not confirmed
+  asin:
+    value: B00004OCKR
+    verified: false
+    sources:
+    - AZ-SPIN
+    as_of: '2026-11-03'
+    note: from the amazon.com URL in search results; listing not opened live
+  amazon_url:
+    value: https://www.amazon.com/dp/B00004OCKR
+    verified: false
+    sources:
+    - AZ-SPIN
+    as_of: '2026-11-03'
+    note: standard link built from the ASIN
+  price_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  rating_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: Amazon.com (USA) rating for B00004OCKR not found in search snapshots - record it during verification
+  review_count_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found for Amazon.com - see other Amazon marketplaces below
+  amazon_notes:
+  - text: shown as '#1 Best Seller in Salad Spinners' (search snapshot)
+    source: AZ-SPIN
+    as_of: '2026-11-03'
+  - text: listing B0FD81VQK7 (rating used in revision 2) is a 4-PACK ($131.80) - its rating is no longer
+      used
+    source: AZ-SPIN-32480
+    as_of: '2026-11-03'
+  prices_third_party: []
+  ratings_other:
+  - platform: Amazon Germany (amazon.de, same ASIN - not Amazon USA)
+    value: 4.7
+    count: 37265
+    source: AZDE-SPIN
+    as_of: '2026-11-03'
+  - platform: Amazon UK (amazon.co.uk, same ASIN - not Amazon USA)
+    value: 4.6
+    count: 37395
+    source: AZUK-SPIN
+    as_of: '2026-11-03'
+  - platform: Amazon Canada (amazon.ca, same ASIN - not Amazon USA)
+    value: 4.5
+    count: 37399
+    source: AZCA-SPIN
+    as_of: '2026-11-03'
+  - platform: Amazon rating as reported by Skinnytaste
+    value: 4.7
+    count: 38000
+    source: SKINNY
+    as_of: '2026-11-03'
+    note: '''more than 38,000'' reviewers'
+  scores:
+    usefulness: 4
+    visual: 5
+    variety: 4
+    evidence: 4
+  category: Prep
+  features:
+  - text: a one-handed pump spins the basket, and a brake button stops it
+    source: AZ-SPIN
+  - text: the basket doubles as a colander and the parts are dishwasher safe
+    source: AZ-SPIN
+  pros:
+  - text: Reviewers call it easy to use, and it holds a lot of greens at once
+    source: BI-SPIN
+  - text: The push pump is gentler on your wrists than crank-style spinners
+    source: KWS-SPIN
+  - text: A non-skid base keeps it steady while it spins
+    source: SKINNY
+  cons:
+  - text: At about ten inches wide, it takes up a lot of cabinet space
+    source: KWS-SPIN
+  - text: Some reviewers find it less sturdy than pricier models
+    source: SKINNY
+  best_for: anyone who eats salads or washes herbs and berries often
+  angle: Soggy salad happens when leaves are still wet, and patting them dry with paper towels takes forever
+  why_selected: 'Most consistently recommended item across editorial roundups, #1 Best Seller in its Amazon
+    category, and the clearest wet-vs-dry visual. Amazon.com rating still to be recorded (only non-US
+    Amazon figures found: 4.5-4.7★, ~37K ratings).'
+  verify_notes:
+  - record the Amazon.com star rating and count for B00004OCKR (only non-US Amazon figures found)
+  - confirm size (6.22 Qt) and model on the listing
+  visual_description: a large clear salad spinner with a push-button pump on the lid
+  broll_problem: wet lettuce leaves dripping on a cutting board next to a pile of soaked paper towels
+  broll_use: pressing the pump on top while freshly washed lettuce spins inside the clear bowl
+  callout: Dishwasher-safe parts
+  shorts_hook: Stop eating soggy salad
+- id: dish-brush
   rank: 4
+  status: shortlisted
+  category: Cleaning
+  name:
+    value: OXO Good Grips Soap Dispensing Dish Brush
+    verified: false
+    sources:
+    - AZ-BRUSH
+    as_of: '2026-11-03'
+  short_name: OXO Dish Brush
+  brand:
+    value: OXO
+    verified: false
+    sources:
+    - AZ-BRUSH
+    as_of: '2026-11-03'
+  model:
+    value: 1067529WH
+    verified: false
+    sources:
+    - CS-BRUSH
+    as_of: '2026-11-03'
+    note: model number from a retailer listing; not seen on the Amazon page
+  asin:
+    value: B000CC91GK
+    verified: false
+    sources:
+    - AZ-BRUSH
+    as_of: '2026-11-03'
+    note: from the amazon.com review URL; listing page not opened live
+  amazon_url:
+    value: https://www.amazon.com/dp/B000CC91GK
+    verified: false
+    sources:
+    - AZ-BRUSH
+    as_of: '2026-11-03'
+    note: standard link built from the ASIN
+  price_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found - check on Amazon
+  rating_amazon:
+    value: 4.5
+    verified: false
+    sources:
+    - AZ-BRUSH
+    as_of: '2026-11-03'
+    note: shown on the Amazon page for B000CC91GK (search snapshot)
+  review_count_amazon:
+    value: 29629
+    verified: false
+    sources:
+    - AZ-BRUSH
+    as_of: '2026-11-03'
+    note: global ratings (search snapshot)
+  amazon_notes:
+  - text: the Soap Dispensing PALM Brush (B00004OCLK, 4.5★/18,835) is a different product - not used
+    source: AZ-BRUSH-PALM
+    as_of: '2026-11-03'
+  prices_third_party: []
+  ratings_other: []
+  features:
+  - text: the handle holds dish soap and a button dispenses it while you scrub
+    source: CS-BRUSH
+  - text: the brush head is replaceable
+    source: CS-BRUSH
+  pros:
+  - text: TechGearLab's testing picked an OXO Good Grips dish brush as its best value, excellent for tight
+      spaces
+    source: TGL-BRUSH
+  - text: OXO says Wirecutter lists its brushes among cheap kitchen essentials because they keep hands
+      out of hot water (second-hand, via OXO's blog)
+    source: OXO-WC
+  cons:
+  - text: The most common complaint is that soap leaks or doesn't dispense evenly
+    source: MACYS-BRUSH
+  - text: Replacement heads add an ongoing cost
+    source: MACYS-BRUSH
+  best_for: everyday dishes, glasses and greasy pans
+  angle: Sponges get gross, and hand-washing greasy pans means your hands sit in hot soapy water
+  why_selected: 'NEW (replaces Scrub Daddy). Keeps a cleaning product in the list, with stronger evidence:
+    Amazon shows 4.5★ from 29,629 ratings on this exact listing and lab testing picked it as best value.
+    Less ''wow'' visual than Scrub Daddy.'
+  verify_notes:
+  - confirm B000CC91GK is the single soap-dispensing dish brush (not the palm brush or a 2-pack)
+  - TechGearLab's article is about 3.5 years old - check the pick is still the same model
+  visual_description: a white dish brush with a clear soap-filled handle
+  broll_problem: a greasy frying pan and a worn, dirty sponge in a sink
+  broll_use: pressing a button on a brush handle so soap flows while scrubbing a pan under running water
+  callout: Soap in the handle
+  shorts_hook: Stop touching gross sponges
+  scores:
+    usefulness: 5
+    visual: 3
+    variety: 5
+    evidence: 4
+- id: veggie-chopper
+  rank: 5
   status: shortlisted
   name:
     value: Fullstar Pro Original Vegetable Chopper & Spiralizer (4-in-1)
@@ -897,10 +1141,10 @@ products:
     as_of: '2026-11-03'
     note: white 4-blade model
   scores:
-    evidence: 4
+    usefulness: 4
     visual: 5
-    everyday: 4
-    problem: 4
+    variety: 3
+    evidence: 4
   category: Prep
   features:
   - text: interchangeable stainless steel blades press vegetables straight into a container
@@ -919,8 +1163,8 @@ products:
     source: BR-CHOP
   best_for: meal preppers and anyone who hates dicing onions
   angle: Dicing onions and peppers by hand is slow, uneven, and makes you cry
-  why_selected: 'Very popular, strong Amazon volume (4.6★, 67,144 ratings) and the best before/after demo
-    in the list. Honest con: cleaning.'
+  why_selected: 'Best before/after demo and strong Amazon volume (4.6★, 67,144 ratings on its review page),
+    but it is one of five prep tools, so lower on variety. Honest con: cleaning.'
   verify_notes:
   - ASIN changed to B0764HS4SL (the listing showing model TF1096C-8); confirm colour/blade count
   - Fullstar sells many similar versions (2-in-1 to 14-in-1) - make sure the link is the 4-in-1
@@ -929,8 +1173,110 @@ products:
   broll_use: pressing the hinged lid down so diced onion drops into the clear container
   callout: Dishwasher safe
   shorts_hook: Dice an onion in two seconds
+- id: milk-frother
+  rank: 6
+  status: shortlisted
+  name:
+    value: PowerLix Milk Frother Handheld with Stainless Steel Stand - Deep Blue
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+  short_name: PowerLix Frother
+  brand:
+    value: PowerLix
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+  model:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: model not shown
+  asin:
+    value: B08CVPQJHJ
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+    note: from the amazon.com URL in search results; listing not opened live
+  amazon_url:
+    value: https://www.amazon.com/dp/B08CVPQJHJ
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+    note: standard link built from the ASIN
+  price_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  rating_amazon:
+    value: 4.5
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+    note: shown on the review page of B08CVPQJHJ (Deep Blue). Amazon usually pools ratings across colour
+      variations, so this cannot be confirmed as Deep-Blue-only
+  review_count_amazon:
+    value: 66496
+    verified: false
+    sources:
+    - AZ-FROTH-R
+    as_of: '2026-11-03'
+    note: global ratings on the B08CVPQJHJ review page (likely shared by colours)
+  amazon_notes:
+  - text: colour Deep Blue taken from the review-page title for B08CVPQJHJ; the product page itself was
+      not returned by search
+    source: AZ-FROTH-R
+    as_of: '2026-11-03'
+  - text: other PowerLix listings show 4.3★ (71,995) and 4.4★ (13,852) - NOT used
+    source: AZ-FROTH-R
+    as_of: '2026-11-03'
+  prices_third_party: []
+  ratings_other: []
+  scores:
+    usefulness: 3
+    visual: 5
+    variety: 5
+    evidence: 3
+  category: Coffee
+  features:
+  - text: a battery-powered whisk that froths milk in about 15 to 20 seconds
+    source: WM-FROTH
+  - text: runs on two AA batteries (not included) and comes with a stainless steel stand
+    source: WM-FROTH
+  pros:
+  - text: Roundups describe it as easy to use, portable and durable
+    source: JPOST-FROTH
+  - text: Cuisine at Home scored it 4.4 out of 5
+    source: CAH-FROTH
+  cons:
+  - text: Reviewers say it is loud
+    source: JPOST-FROTH
+  - text: It runs on batteries, which need replacing
+    source: JPOST-FROTH
+  - text: The battery compartment is a tight fit on one model
+    source: BA-FROTH
+  best_for: latte, matcha and hot chocolate drinkers who want cafe foam at home
+  angle: Coffee-shop lattes are expensive, and milk heated in the microwave stays flat
+  why_selected: Adds coffee variety and a great foam visual (4.5★, 66,496 ratings on the Deep Blue review
+    page), but editorial testing of this brand is thin.
+  verify_notes:
+  - confirm B08CVPQJHJ opens the Deep Blue colour with the stand
+  - record the rating shown on that page
+  visual_description: a slim handheld battery milk frother with a small whisk head
+  broll_problem: flat, bubbly microwaved milk in a mug next to a homemade latte that looks sad
+  broll_use: a frother whisking milk into thick foam in a glass, then pouring it over coffee
+  callout: Cafe foam in seconds
+  shorts_hook: Coffee-shop foam for a few dollars
 - id: zester
-  rank: 5
+  rank: 7
   status: shortlisted
   name:
     value: Microplane Premium Classic Series Zester/Grater, Black
@@ -993,10 +1339,10 @@ products:
     as_of: '2026-11-03'
   ratings_other: []
   scores:
-    evidence: 5
+    usefulness: 3
     visual: 4
-    everyday: 3
-    problem: 4
+    variety: 3
+    evidence: 5
   category: Prep
   features:
   - text: photo-etched stainless steel teeth for citrus zest, hard cheese, ginger and garlic
@@ -1015,8 +1361,8 @@ products:
     source: MF-ZEST
   best_for: anyone who uses lemon zest, parmesan, ginger or nutmeg
   angle: Box graters are clumsy for small jobs, and lemon zest always ends up bitter
-  why_selected: Highest Amazon star rating in the list (4.8★, 47,796 ratings); fluffy parmesan is a great
-    visual.
+  why_selected: Highest Amazon star rating found (4.8★, 47,796 ratings) and a lovely visual, but a narrower
+    everyday use.
   verify_notes:
   - each colour has its own model number - 46020 is black
   visual_description: a long narrow stainless steel rasp grater with a black handle
@@ -1024,104 +1370,8 @@ products:
   broll_use: grating fluffy parmesan cheese over a bowl of pasta
   callout: Blades made in the USA
   shorts_hook: Restaurant-style parmesan at home
-- id: scrub-daddy
-  rank: 6
-  status: shortlisted
-  name:
-    value: Original Scrub Daddy Sponge, 4 Count
-    verified: false
-    sources:
-    - AZ-SCRUB
-    as_of: '2026-11-03'
-  short_name: Scrub Daddy
-  brand:
-    value: Scrub Daddy
-    verified: false
-    sources:
-    - AZ-SCRUB
-    as_of: '2026-11-03'
-  model:
-    value: null
-    verified: false
-    sources: []
-    as_of: null
-    note: model not shown
-  asin:
-    value: B07ND5C1LW
-    verified: false
-    sources:
-    - AZ-SCRUB
-    as_of: '2026-11-03'
-    note: from the amazon.com URL in search results; listing not opened live
-  amazon_url:
-    value: https://www.amazon.com/dp/B07ND5C1LW
-    verified: false
-    sources:
-    - AZ-SCRUB
-    as_of: '2026-11-03'
-    note: standard link built from the ASIN
-  price_amazon:
-    value: null
-    verified: false
-    sources: []
-    as_of: null
-    note: not found on Amazon pages via search - check on Amazon
-  rating_amazon:
-    value: null
-    verified: false
-    sources: []
-    as_of: null
-    note: not found on Amazon pages via search - check on Amazon
-  review_count_amazon:
-    value: null
-    verified: false
-    sources: []
-    as_of: null
-    note: not found on Amazon pages via search - check on Amazon
-  amazon_notes:
-  - text: the single-sponge listing (B074MB2V4B) showed 'currently unavailable'
-    source: AZ-SCRUB-1
-    as_of: '2026-11-03'
-  prices_third_party: []
-  ratings_other: []
-  scores:
-    evidence: 3
-    visual: 5
-    everyday: 5
-    problem: 3
-  category: Cleaning
-  features:
-  - text: FlexTexture foam is firm in cold water for scrubbing and soft in warm water for wiping
-    source: AZ-SCRUB
-  - text: scratch-free on most surfaces, odor resistant and dishwasher safe
-    source: AZ-SCRUB
-  pros:
-  - text: Your Best Digs tested eight sponges and called it the best kitchen sponge they tested
-    source: YBD-SCRUB
-  - text: It holds up to grime without the sponge itself getting ruined
-    source: YBD-SCRUB
-  cons:
-  - text: It starts breaking down after a month or two of heavy use
-    source: YBD-SCRUB
-  - text: It doesn't soak up spills as well as a regular cellulose sponge
-    source: HW-SCRUB
-  - text: Keep it away from very hot pans and bleach
-    source: HW-SCRUB
-  best_for: everyday dishes, sticky pans and stovetops
-  angle: Regular sponges get smelly in days and scratch nonstick pans
-  why_selected: 'NEW (replaces the Amazon Basics baking mat). Adds a cleaning category, best ''wow'' visual
-    (firm in cold, soft in warm water) and a tested editorial win. Weaker point: no Amazon rating found
-    for this exact listing.'
-  verify_notes:
-  - no Amazon rating found via search - record the rating on the 4-count listing
-  - choose the pack size you want to link (1, 4 or 8 count)
-  visual_description: a round yellow smiley-face sponge
-  broll_problem: a smelly, shredded old kitchen sponge next to a greasy pan
-  broll_use: scrubbing a sticky pan with a firm yellow smiley sponge under cold running water
-  callout: Firm cold, soft warm
-  shorts_hook: The sponge that changes texture
 - id: lemon-squeezer
-  rank: 7
+  rank: 8
   status: shortlisted
   name:
     value: Zulay Kitchen Metal 2-in-1 Lemon Lime Squeezer
@@ -1188,10 +1438,10 @@ products:
     as_of: '2026-11-03'
     note: differs from the Amazon page (37,677) - attribution unconfirmed
   scores:
-    evidence: 4
+    usefulness: 3
     visual: 4
-    everyday: 3
-    problem: 4
+    variety: 2
+    evidence: 4
   category: Prep
   features:
   - text: two bowl sizes, one for lemons and one for limes
@@ -1210,7 +1460,8 @@ products:
     source: AZ-ZULAY-R
   best_for: cooks, bakers and anyone making lemonade or cocktails
   angle: Squeezing lemons by hand drops seeds in your food and leaves juice behind
-  why_selected: Cheap, satisfying visual and a long-running best seller (4.7★, 37,677 ratings on Amazon).
+  why_selected: Cheap, satisfying visual and solid Amazon evidence (4.7★, 37,677 ratings), but a small
+    prep tool with limited daily use.
   verify_notes:
   - the rating count on Amazon (37,677) differs from a third-party figure (47,137) - record the live one
   visual_description: a yellow and green metal hand-held citrus press with two bowls
@@ -1218,8 +1469,121 @@ products:
   broll_use: pressing a lime half in the hand press so juice streams into a glass
   callout: Seeds stay in
   shorts_hook: Every last drop, zero seeds
+- id: kitchen-shears
+  rank: 9
+  status: shortlisted
+  name:
+    value: KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black
+    verified: false
+    sources:
+    - AZ-SHEARS
+    as_of: '2026-11-03'
+  short_name: KitchenAid Shears
+  brand:
+    value: KitchenAid
+    verified: false
+    sources:
+    - AZ-SHEARS
+    as_of: '2026-11-03'
+  model:
+    value: KE351OHOBA
+    verified: false
+    sources:
+    - AZ-SHEARS
+    - HD-SHEARS
+    as_of: '2026-11-03'
+    note: model number in the Amazon URL for B07PZF3QS3 and on Home Depot's listing of the same 8.72-inch
+      black shears
+  asin:
+    value: B07PZF3QS3
+    verified: false
+    sources:
+    - AZ-SHEARS
+    as_of: '2026-11-03'
+    note: from the amazon.com URL in search results; listing not opened live
+  amazon_url:
+    value: https://www.amazon.com/dp/B07PZF3QS3
+    verified: false
+    sources:
+    - AZ-SHEARS
+    as_of: '2026-11-03'
+    note: standard link built from the ASIN
+  price_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  rating_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  review_count_amazon:
+    value: null
+    verified: false
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
+  amazon_notes:
+  - text: '''20K+ bought in past month'' (snapshot); no star rating shown in search results'
+    source: AZ-SHEARS
+    as_of: '2026-11-03'
+  - text: KC351OHOBA is a separate SKU (Amazon B0050U240O, Walmart, H-E-B) with a similar description;
+      no source explains the difference - NOT used for this product
+    source: AZ-SHEARS-ALT
+    as_of: '2026-11-03'
+  prices_third_party:
+  - value: 7.51
+    currency: USD
+    seller: lowest of range on ShopSavvy ($7.51-$26.85)
+    source: SS-SHEARS
+    as_of: '2026-11-03'
+  ratings_other:
+  - platform: Amazon rating as reported by ShopSavvy
+    value: 4.8
+    count: 71000
+    source: SS-SHEARS
+    as_of: '2026-11-03'
+    note: '''over 71,000'''
+  scores:
+    usefulness: 4
+    visual: 3
+    variety: 3
+    evidence: 3
+  category: Prep
+  features:
+  - text: stainless steel blades with a plastic sheath that protects them in the drawer
+    source: AZ-SHEARS
+  - text: soft-grip handles; listed as dishwasher safe
+    source: AZ-SHEARS
+  pros:
+  - text: Reviewers call them sharp, comfortable and a great value for everyday jobs
+    source: SS-SHEARS
+  - text: The included sheath is something many cheap shears skip
+    source: BR-SHEARS
+  - text: Reviewed found the closely related KC351OHOBA shears long and reasonably sharp
+    source: RV-SHEARS
+  cons:
+  - text: They can dull faster than premium shears
+    source: SS-SHEARS
+  - text: Some buyers reported rust despite the dishwasher-safe label
+    source: SS-SHEARS
+  best_for: snipping herbs, pizza, packaging and chicken without a knife and board
+  angle: Half the time you grab a knife and cutting board, scissors would be faster
+  why_selected: Very useful everyday tool (20K+ bought in a month per snapshot) and the model is now confirmed
+    as KE351OHOBA, but the visual is less dramatic and its rating was only found via a third party.
+  verify_notes:
+  - confirm the listing shows model KE351OHOBA
+  - record the star rating (not found)
+  visual_description: a pair of black kitchen scissors with a protective blade cover
+  broll_problem: a person struggling to open a tough plastic food package with a knife
+  broll_use: snipping fresh herbs straight into a pot
+  callout: Protective sheath included
+  shorts_hook: Use scissors, not a knife, for these jobs
 - id: garlic-press
-  rank: 8
+  rank: 10
   status: shortlisted
   name:
     value: OXO Good Grips Garlic Press (die-cast zinc)
@@ -1293,10 +1657,10 @@ products:
     source: SS-GARLIC
     as_of: '2026-11-03'
   scores:
-    evidence: 3
+    usefulness: 3
     visual: 4
-    everyday: 4
-    problem: 4
+    variety: 2
+    evidence: 3
   category: Prep
   features:
   - text: a large chamber presses several cloves at once
@@ -1315,8 +1679,8 @@ products:
     source: LAKE-GARLIC
   best_for: people who cook with fresh garlic several times a week
   angle: Mincing garlic with a knife is fiddly, sticky, and leaves your fingers smelling for hours
-  why_selected: Proven best seller with strong sales signals, but its star rating was only found via a
-    third party, so it sits mid-list.
+  why_selected: 'Your preferred pick and a proven seller, but its Amazon star rating was not found and
+    it overlaps with other prep tools - so it opens the countdown at #10.'
   verify_notes:
   - record the Amazon star rating and count (not found directly)
   - check colour (Black vs Silver)
@@ -1325,130 +1689,21 @@ products:
   broll_use: squeezing the handles so fresh minced garlic comes out over a pan
   callout: Built-in cleaner
   shorts_hook: The garlic tool chefs keep in the drawer
-- id: kitchen-shears
-  rank: 9
-  status: shortlisted
+- id: scrub-daddy
+  rank: 99
+  status: reserve
   name:
-    value: KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black
+    value: Original Scrub Daddy Sponge, 4 Count
     verified: false
     sources:
-    - AZ-SHEARS
+    - AZ-SCRUB
     as_of: '2026-11-03'
-  short_name: KitchenAid Shears
+  short_name: Scrub Daddy
   brand:
-    value: KitchenAid
+    value: Scrub Daddy
     verified: false
     sources:
-    - AZ-SHEARS
-    as_of: '2026-11-03'
-  model:
-    value: KE351OHOBA
-    verified: false
-    sources:
-    - AZ-SHEARS
-    as_of: '2026-11-03'
-  asin:
-    value: B07PZF3QS3
-    verified: false
-    sources:
-    - AZ-SHEARS
-    as_of: '2026-11-03'
-    note: from the amazon.com URL in search results; listing not opened live
-  amazon_url:
-    value: https://www.amazon.com/dp/B07PZF3QS3
-    verified: false
-    sources:
-    - AZ-SHEARS
-    as_of: '2026-11-03'
-    note: standard link built from the ASIN
-  price_amazon:
-    value: null
-    verified: false
-    sources: []
-    as_of: null
-    note: not found on Amazon pages via search - check on Amazon
-  rating_amazon:
-    value: null
-    verified: false
-    sources: []
-    as_of: null
-    note: not found on Amazon pages via search - check on Amazon
-  review_count_amazon:
-    value: null
-    verified: false
-    sources: []
-    as_of: null
-    note: not found on Amazon pages via search - check on Amazon
-  amazon_notes:
-  - text: '''20K+ bought in past month'' (snapshot); no star rating shown in search results'
-    source: AZ-SHEARS
-    as_of: '2026-11-03'
-  - text: a separate black listing B0050U240O shows model KC351OHOBA, 4.5★ from 1,874 ratings and $6.99
-      (cached) - a different listing
-    source: AZ-SHEARS-ALT
-    as_of: '2026-11-03'
-  prices_third_party:
-  - value: 7.51
-    currency: USD
-    seller: lowest of range on ShopSavvy ($7.51-$26.85)
-    source: SS-SHEARS
-    as_of: '2026-11-03'
-  ratings_other:
-  - platform: Amazon rating as reported by ShopSavvy
-    value: 4.8
-    count: 71000
-    source: SS-SHEARS
-    as_of: '2026-11-03'
-    note: '''over 71,000'''
-  scores:
-    evidence: 3
-    visual: 3
-    everyday: 5
-    problem: 3
-  category: Prep
-  features:
-  - text: stainless steel blades with a plastic sheath that protects them in the drawer
-    source: AZ-SHEARS
-  - text: soft-grip handles; listed as dishwasher safe
-    source: AZ-SHEARS
-  pros:
-  - text: Reviewers call them sharp, comfortable and a great value for everyday jobs
-    source: SS-SHEARS
-  - text: The included sheath is something many cheap shears skip
-    source: BR-SHEARS
-  cons:
-  - text: They can dull faster than premium shears
-    source: SS-SHEARS
-  - text: Some buyers reported rust despite the dishwasher-safe label
-    source: SS-SHEARS
-  best_for: snipping herbs, pizza, packaging and chicken without a knife and board
-  angle: Half the time you grab a knife and cutting board, scissors would be faster
-  why_selected: Extremely popular everyday tool (20K+ a month), but a less dramatic visual and its rating
-    came from a third party.
-  verify_notes:
-  - ASIN changed to the black listing B07PZF3QS3 (B07TLNSW1S is Aqua Sky)
-  - model number differs between listings (KE351OHOBA vs KC351OHOBA)
-  - record the star rating
-  visual_description: a pair of black kitchen scissors with a protective blade cover
-  broll_problem: a person struggling to open a tough plastic food package with a knife
-  broll_use: snipping fresh herbs straight into a pot
-  callout: Protective sheath included
-  shorts_hook: Use scissors, not a knife, for these jobs
-- id: milk-frother
-  rank: 10
-  status: shortlisted
-  name:
-    value: PowerLix Milk Frother Handheld with Stand (Deep Blue)
-    verified: false
-    sources:
-    - AZ-FROTH-R
-    as_of: '2026-11-03'
-  short_name: PowerLix Frother
-  brand:
-    value: PowerLix
-    verified: false
-    sources:
-    - AZ-FROTH-R
+    - AZ-SCRUB
     as_of: '2026-11-03'
   model:
     value: null
@@ -1457,17 +1712,17 @@ products:
     as_of: null
     note: model not shown
   asin:
-    value: B08CVPQJHJ
+    value: B07ND5C1LW
     verified: false
     sources:
-    - AZ-FROTH-R
+    - AZ-SCRUB
     as_of: '2026-11-03'
     note: from the amazon.com URL in search results; listing not opened live
   amazon_url:
-    value: https://www.amazon.com/dp/B08CVPQJHJ
+    value: https://www.amazon.com/dp/B07ND5C1LW
     verified: false
     sources:
-    - AZ-FROTH-R
+    - AZ-SCRUB
     as_of: '2026-11-03'
     note: standard link built from the ASIN
   price_amazon:
@@ -1477,61 +1732,59 @@ products:
     as_of: null
     note: not found on Amazon pages via search - check on Amazon
   rating_amazon:
-    value: 4.5
+    value: null
     verified: false
-    sources:
-    - AZ-FROTH-R
-    as_of: '2026-11-03'
-    note: review page for the Deep Blue variant
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
   review_count_amazon:
-    value: 66496
+    value: null
     verified: false
-    sources:
-    - AZ-FROTH-R
-    as_of: '2026-11-03'
-    note: global ratings (variants show 14K-72K)
+    sources: []
+    as_of: null
+    note: not found on Amazon pages via search - check on Amazon
   amazon_notes:
-  - text: other PowerLix variants show 4.3★ (71,995) and 4.4★ (13,852) - ratings differ by colour/model
-    source: AZ-FROTH-R
+  - text: the single-sponge listing (B074MB2V4B) showed 'currently unavailable'
+    source: AZ-SCRUB-1
     as_of: '2026-11-03'
   prices_third_party: []
-  ratings_other: []
-  scores:
-    evidence: 3
-    visual: 5
-    everyday: 3
-    problem: 3
-  category: Coffee
+  ratings_other:
+  - platform: Walmart (Original sponge)
+    value: 4.8
+    count: 10500
+    source: WM-SCRUB
+    as_of: '2026-11-03'
+    note: '''10.5K ratings'''
+  category: Cleaning
   features:
-  - text: a battery-powered whisk that froths milk in seconds, with a stand to store it
-    source: AZ-FROTH-R
-  - text: stainless steel whisk head that rinses clean
-    source: JPOST-FROTH
+  - text: FlexTexture foam is firm in cold water for scrubbing and soft in warm water for wiping
+    source: AZ-SCRUB
+  - text: scratch-free on most surfaces, odor resistant and dishwasher safe
+    source: AZ-SCRUB
   pros:
-  - text: Roundups describe it as easy to use, portable and durable
-    source: JPOST-FROTH
-  - text: Cuisine at Home scored it 4.4 out of 5
-    source: CAH-FROTH
+  - text: Your Best Digs tested eight sponges and called it the best kitchen sponge they tested
+    source: YBD-SCRUB
+  - text: It holds up to grime without the sponge itself getting ruined
+    source: YBD-SCRUB
   cons:
-  - text: Reviewers say it is loud
-    source: JPOST-FROTH
-  - text: It runs on batteries, which need replacing
-    source: JPOST-FROTH
-  - text: The battery compartment is a tight fit on one model
-    source: BA-FROTH
-  best_for: latte, matcha and hot chocolate drinkers who want cafe foam at home
-  angle: Coffee-shop lattes are expensive, and milk heated in the microwave stays flat
-  why_selected: 'NEW (replaces the OXO avocado slicer). New category (coffee) with a great foam demo and
-    high Amazon volume. Ranked #10 because editorial testing of this brand is thin (Zulay frothers get
-    more editorial picks, but Zulay is already in the list).'
+  - text: It starts breaking down after a month or two of heavy use
+    source: YBD-SCRUB
+  - text: It doesn't soak up spills as well as a regular cellulose sponge
+    source: HW-SCRUB
+  - text: Keep it away from very hot pans and bleach
+    source: HW-SCRUB
+  best_for: everyday dishes, sticky pans and stovetops
+  angle: Regular sponges get smelly in days and scratch nonstick pans
+  why_selected: 'Reserve: great visual, but no Amazon rating could be found for the 4-pack (B07ND5C1LW)
+    or the Original listings. Walmart shows 4.8★ from 10.5K ratings for the Original sponge.'
   verify_notes:
-  - 'pick ONE variant to link: ratings differ by colour/model'
-  - confirm stand is included
-  visual_description: a slim handheld battery milk frother with a small whisk head
-  broll_problem: flat, bubbly microwaved milk in a mug next to a homemade latte that looks sad
-  broll_use: a frother whisking milk into thick foam in a glass, then pouring it over coffee
-  callout: Cafe foam in seconds
-  shorts_hook: Coffee-shop foam for a few dollars
+  - no Amazon rating found via search - record the rating on the 4-count listing
+  - choose the pack size you want to link (1, 4 or 8 count)
+  visual_description: a round yellow smiley-face sponge
+  broll_problem: a smelly, shredded old kitchen sponge next to a greasy pan
+  broll_use: scrubbing a sticky pan with a firm yellow smiley sponge under cold running water
+  callout: Firm cold, soft warm
+  shorts_hook: The sponge that changes texture
 - id: kitchen-scale
   rank: 99
   status: reserve

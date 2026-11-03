@@ -22,8 +22,8 @@ SOURCED_FIELDS = ["name", "brand", "model", "asin", "amazon_url", "price_amazon"
                   "review_count_amazon"]
 AMAZON_FIELDS = {"asin", "amazon_url", "price_amazon", "rating_amazon", "review_count_amazon"}
 AMAZON_SOURCE_TYPES = {"amazon", "owner_check", "amazon_search_index"}
-SCORE_KEYS = [("evidence", "Evidence"), ("visual", "Visual demo"), ("everyday", "Everyday benefit"),
-              ("problem", "Clear problem/solution")]
+SCORE_KEYS = [("usefulness", "Viewer usefulness"), ("visual", "Visual storytelling"), ("variety", "Product variety"),
+              ("evidence", "Evidence quality")]
 
 
 def load_research(prod: Production) -> dict:
@@ -254,6 +254,8 @@ def write_reports(prod: Production):
             L += [f"**Best for:** {p['best_for']}", ""]
         if p.get("why_selected"):
             L += [f"**Why selected:** {p['why_selected']}", ""]
+        if p.get("spec_notes"):
+            L += ["**Specification notes:** " + "; ".join(p["spec_notes"]), ""]
         if p.get("verify_notes"):
             L += ["**Check on Amazon:** " + "; ".join(p["verify_notes"]), ""]
     L += ["## Sources", "", "Quality: *editorial* = publication with its own testing/reviews · *aggregator* = summarises "
@@ -279,7 +281,7 @@ def write_reports(prod: Production):
         name = f"[{fval(p['name'])}]({url})" if url else fval(p["name"])
         rat, cnt, ap = fval(p.get("rating_amazon")), fval(p.get("review_count_amazon")), fval(p.get("price_amazon"))
         amz = []
-        approx = "≈" if any(w in str((p.get("review_count_amazon") or {}).get("note", "")) for w in ("rough", "round")) else ""
+        approx = "≈" if any(w in str((p.get("review_count_amazon") or {}).get("note", "")) for w in ("rough", "round", "about")) else ""
         if rat:
             amz.append(f"{rat}★" + (f" ({approx}{int(cnt):,} ratings)" if cnt and str(cnt).isdigit() else ""))
         else:
@@ -294,8 +296,8 @@ def write_reports(prod: Production):
             tp.append(f"{_fmt_money(t['value'])} ({t.get('seller', '')})")
         S.append(f"| {i} | **#{p['rank']}** | {name} | {fval(p.get('brand')) or '—'} · {fval(p.get('model')) or '—'} | "
                  f"{fval(p.get('asin')) or '—'} | {amz} | {'; '.join(tp) or '—'} | {_score(p)}/20 |")
-    S += ["", "Score = Evidence + Visual demo + Everyday benefit + Clear problem/solution (each 1–5). "
-          "Ties go to the stronger evidence.", "", "### Why each product (countdown order)", ""]
+    S += ["", "Score = Viewer usefulness + Visual storytelling + Product variety + Evidence quality (each 1–5). "
+          "Ties go to evidence, then visual.", "", "### Why each product (countdown order)", ""]
     for p in countdown(data):
         S.append(f"- **#{p['rank']} {fval(p['name'])}** — {p.get('why_selected', '—')}")
         if p.get("verify_notes"):
