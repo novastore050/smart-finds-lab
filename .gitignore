@@ -42,3 +42,4 @@ output/**/zz-*
 # draft / animatic renders and their reports
 output/**/*_draft*
 output/**/*.precheck.*
+productions/*/superseded/**/*.jpg
