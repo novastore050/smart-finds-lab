@@ -124,6 +124,23 @@ And the production package (Shorts scripts, voice sections, thumbnail concepts, 
 python scripts/studio.py package cleaning-gadgets-7
 ```
 
+### Shot types in `script/script.yaml`
+
+| type | What it is | File |
+|---|---|---|
+| `ai_broll` | Higgsfield clip (generic, never the exact product) | `assets/video/<slug>/<shot-id>.mp4` |
+| `stock` | licensed stock video (check the licence first) | `assets/video/<slug>/<shot-id>.mp4` |
+| `product_photo` | your real product photo; `motion` (zoom_in, zoom_out, pan_left/right/up/down, none) and `crop` (`full` = whole product, anything else = closer detail crop; optional `focus_x`/`focus_y`, `zoom`) | `assets/images/<slug>/<product-id>.jpg` |
+| `graphic` | card drawn by the editor: `pros_cons` ("+ good, good \| - bad"), `spec`, `disclosure`, `halfway`, `recap`, `note` ("Line · line"), `cta` | none |
+
+**Standalone Shorts:** a Short with its own `narration` and `shots` gets its own voice file
+(`voice/short1.mp3` …), its own vertical shots and its own ending (a `graphic` shot of kind `cta` becomes the closing
+text). Shorts without `narration` still re-use a long-video scene.
+
+**Safety lists in `production.yaml`:** `withdrawn_claims` (phrases that must never appear again; `check-script` blocks
+them) and `seo.display_names` (product names to show in the description instead of the Amazon title).
+QC also flags voice files recorded from older script text and timelines built from an older script.
+
 ## 6. Voice-over (ElevenLabs)
 
 ```bash

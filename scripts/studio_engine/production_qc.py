@@ -79,7 +79,24 @@ def run(prod: Production, log, decode=True):
         add("error", "Script", "no script yet")
     # ---- assets
     if script:
-        sc_ids = [sc["id"] for sc in script["scenes"]]
+        from .script import voice_units
+        from .voice import stale_voice
+        sc_ids = [u["id"] for u in voice_units(script)]
+        stale = stale_voice(prod, voice_units(script))
+        if stale:
+            add("error", "Voice-over", f"voice recorded from OLDER script text (or not stamped): {', '.join(stale)} - "
+                                       "re-record or re-import these scenes")
+        tl = prod.p("edit", "timeline.yaml")
+        if tl.exists():
+            import hashlib
+            import yaml as _y
+            meta = (_y.safe_load(tl.read_text(encoding="utf-8")) or {}).get("project") or {}
+            cur = hashlib.md5(prod.p("script", "script.yaml").read_bytes()).hexdigest()
+            if meta.get("source_script_md5") != cur:
+                add("error", "Timeline", "edit/timeline.yaml was built from a different script version - run "
+                                         "build-timeline (or render) again")
+            else:
+                add("ok", "Timeline", "edit/timeline.yaml matches the current script/script.yaml")
         no_voice = [s for s in sc_ids if not scene_audio(prod, s)]
         add("error" if no_voice else "ok", "Voice-over",
             f"missing voice for: {', '.join(no_voice)}" if no_voice else f"voice for all {len(sc_ids)} scenes")
@@ -90,9 +107,10 @@ def run(prod: Production, log, decode=True):
         elif not no_voice:
             add("ok", "Subtitles", "word-level subtitle timing for every scene")
         missing = []
-        for sc in script["scenes"]:
+        from .script import dedicated_shorts
+        for sc in list(script["scenes"]) + dedicated_shorts(script):
             for sh in sc.get("shots") or []:
-                if not shot_file(prod, sh):
+                if sh.get("type") != "graphic" and not shot_file(prod, sh):
                     missing.append(sh["id"])
         add("error" if missing else "ok", "Clips & photos",
             f"{len(missing)} shot(s) not imported: {', '.join(missing[:15])}{'…' if len(missing) > 15 else ''}"

@@ -25,7 +25,7 @@ from sfl_engine.subtitles import write_srt
 from sfl_engine.util import AUDIO_EXT, ROOT, SFLError, probe, rel
 
 from .common import Production, load_yaml, save_yaml
-from .script import est_seconds, load_script
+from .script import est_seconds, load_script, voice_units
 
 API = "https://api.elevenlabs.io"
 
@@ -41,6 +41,28 @@ def speakable(text: str, cfg: dict) -> str:
         if word != say:
             out = re.sub(rf"\b{re.escape(word)}\b", say, out)
     return re.sub(r"\s+", " ", out).strip()
+
+
+def text_md5(text: str) -> str:
+    import hashlib
+    return hashlib.md5(" ".join(str(text).split()).encode("utf-8")).hexdigest()
+
+
+def stamp_voice(prod: Production, sid: str, narration: str):
+    """Remember which narration text a voice file was made from (to catch stale audio later)."""
+    prod.p("voice", f"{sid}.text-md5").write_text(text_md5(narration) + "\n", encoding="utf-8")
+
+
+def stale_voice(prod: Production, units: list) -> list:
+    """Voice files whose recorded text no longer matches the script (or that have no record)."""
+    out = []
+    for u in units:
+        if not scene_audio(prod, u["id"]):
+            continue
+        rec = prod.p("voice", f"{u['id']}.text-md5")
+        if not rec.exists() or rec.read_text().strip() != text_md5(u.get("narration", "")):
+            out.append(u["id"])
+    return out
 
 
 def scene_audio(prod: Production, sid: str):
@@ -60,7 +82,7 @@ def export_pack(prod: Production, log):
     tdir = prod.p("voice", "text")
     tdir.mkdir(parents=True, exist_ok=True)
     jobs, total_chars = [], 0
-    for sc in s.get("scenes") or []:
+    for sc in voice_units(s):
         text = speakable(sc.get("narration", ""), cfg)
         (tdir / f"{sc['id']}.txt").write_text(text + "\n", encoding="utf-8")
         total_chars += len(text)
@@ -68,6 +90,7 @@ def export_pack(prod: Production, log):
                      "est_seconds": est_seconds(sc.get("narration", ""), wpm),
                      "save_audio_as": rel(prod.p("voice", f"{sc['id']}.mp3")),
                      "save_word_timings_as": rel(prod.p("voice", f"{sc['id']}.words.json")),
+                     "kind": sc["kind"],
                      "status": "imported" if scene_audio(prod, sc["id"]) else "pending"})
     pack = {"voice_name": cfg["voice"]["name"], "voice_id": cfg["voice"]["voice_id"], "model_id": cfg["model_id"],
             "output_format": cfg.get("output_format"), "voice_settings": cfg.get("voice_settings"),
@@ -96,7 +119,7 @@ def export_pack(prod: Production, log):
 
 
 # ---------------------------------------------------------------------------- import
-SCENE_RE = re.compile(r"(?<![a-z0-9])(s\d{2})(?![0-9])", re.I)
+SCENE_RE = re.compile(r"(?<![a-z0-9])(s\d{2}|short\d+)(?![0-9])", re.I)
 
 
 def import_voice(prod: Production, folder, log):
@@ -104,14 +127,14 @@ def import_voice(prod: Production, folder, log):
     if not src.is_dir():
         raise SFLError(f"Folder not found: {src}")
     s = load_script(prod)
-    scenes = {sc["id"]: sc for sc in s.get("scenes") or []}
+    scenes = {sc["id"]: sc for sc in voice_units(s)}
     wpm = float(s.get("words_per_minute") or 155)
     n = 0
     for f in sorted(src.iterdir()):
         m = SCENE_RE.search(f.stem)
         if not m or m.group(1).lower() not in scenes:
             if f.suffix.lower() in AUDIO_EXT:
-                log.info(f"   skipped {f.name} (no scene id like s03 in the name)")
+                log.info(f"   skipped {f.name} (no scene id like s03 or short1 in the name)")
             continue
         sid = m.group(1).lower()
         ext = f.suffix.lower()
@@ -127,6 +150,8 @@ def import_voice(prod: Production, folder, log):
             log.warn(f"{rel(dest)} already exists - not replaced (delete it first to re-import)")
             continue
         shutil.copy2(f, dest)
+        if ext in AUDIO_EXT:
+            stamp_voice(prod, sid, scenes[sid].get("narration", ""))
         n += 1
         msg = ""
         if ext in AUDIO_EXT:
@@ -208,7 +233,7 @@ def align(prod: Production, log):
     """Turn every voice/<scene>.words.json into voice/<scene>.srt (exact word timing)."""
     s = load_script(prod)
     made = 0
-    for sc in s.get("scenes") or []:
+    for sc in voice_units(s):
         j = prod.p("voice", f"{sc['id']}.words.json")
         if not j.exists():
             continue
@@ -293,6 +318,8 @@ def tts_api(prod: Production, log, scenes=None, confirm_spend=False):
         if r.status_code != 200:
             raise SFLError(f"ElevenLabs API error {r.status_code} for {j['scene']}: {r.text[:300]}")
         save_api_response(r.json(), prod.p("voice", f"{j['scene']}.mp3"), prod.p("voice", f"{j['scene']}.words.json"))
+        unit = next((u for u in voice_units(load_script(prod)) if u["id"] == j["scene"]), {})
+        stamp_voice(prod, j["scene"], unit.get("narration", ""))
         done.append(j["scene"])
         log.info(f"   {j['scene']}: saved")
     align(prod, log)

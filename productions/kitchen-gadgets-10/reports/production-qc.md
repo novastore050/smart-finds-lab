@@ -1,19 +1,20 @@
 # Final production QC — 10 Kitchen Gadgets That Actually Make Life Easier
 
-Generated: 2026-11-03 08:26  
-**Automated status: FAIL** (6 errors, 12 warnings)  
+Generated: 2026-11-03 21:35  
+**Automated status: FAIL** (7 errors, 12 warnings)  
 **Human review: ⏳ NOT DONE**
 
 ## Part A — Automated checks (measured by software)
 
 | | Area | Result |
 |---|---|---|
-| ❌ | Voice-over | missing voice for: s01, s02, s03, s04, s05, s06, s07, s08, s09, s10, s11, s12, s13 |
-| ❌ | Clips & photos | 44 shot(s) not imported: s01-a, s01-b, s01-c, s02-a, s02-b, s03-a, s03-b, s03-photo, s04-a, s04-b, s04-c, s04-photo, s05-a, s05-b, s05-c… |
+| ❌ | Voice-over | missing voice for: s01, s02, s03, s04, s05, s06, s07, s08, s09, s10, s11, s12, s13, short1, short2, short3 |
+| ❌ | Clips & photos | 105 shot(s) not imported: s01-a, s01-b, s01-c, s01-d, s02-a, s02-b, s03-a, s03-b, s03-c, s03-d, s03-photo, s03-photo2, s03-h, s03-i, s04-a… |
 | ❌ | Long video | not rendered yet (output/long-videos/kitchen-gadgets-10.mp4) |
 | ❌ | Short 1 | not rendered yet (output/shorts/kitchen-gadgets-10-short-1.mp4) |
 | ❌ | Short 2 | not rendered yet (output/shorts/kitchen-gadgets-10-short-2.mp4) |
 | ❌ | Short 3 | not rendered yet (output/shorts/kitchen-gadgets-10-short-3.mp4) |
+| ❌ | Thumbnail | no thumbnail generated |
 | ⚠️ | Verification | Dash Rapid Egg Cooker, 6 Egg Capacity, Black (DEC005BK): not verified on Amazon: asin, amazon_url, price_amazon, rating_amazon |
 | ⚠️ | Verification | Rubbermaid Brilliance Leak-Proof Food Storage Containers with Airtight Lids, Set of 3 (6 Pieces Total): not verified on Amazon: asin, amazon_url, price_amazon, rating_amazon |
 | ⚠️ | Verification | TempPro TempSwift TP19H Instant Read Meat Thermometer: not verified on Amazon: asin, amazon_url, price_amazon, rating_amazon |
@@ -25,12 +26,11 @@ Generated: 2026-11-03 08:26
 | ⚠️ | Verification | KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black: not verified on Amazon: asin, amazon_url, price_amazon, rating_amazon |
 | ⚠️ | Verification | Zulay Kitchen Metal 2-in-1 Lemon Lime Squeezer: not verified on Amazon: asin, amazon_url, price_amazon, rating_amazon |
 | ⚠️ | SEO | chapter times are estimated - regenerate SEO after voice import |
-| ⚠️ | SEO | unverified Amazon links: Zulay Lemon Squeezer, KitchenAid Shears, Microplane Zester, OXO Dish Brush, PowerLix Frother, Fullstar Chopper, OXO Salad Spinner, TP19H Thermometer, Rubbermaid Brilliance, Dash Egg Cooker |
+| ⚠️ | SEO | unverified Amazon links: Rubbermaid Brilliance, Zulay Lemon Squeezer, KitchenAid Shears, Microplane Zester, OXO Dish Brush, PowerLix Frother, Fullstar Chopper, OXO Salad Spinner, TP19H Thermometer, Dash Egg Cooker |
 | ✅ | Research | products approved by owner (2026-11-03 08:11) |
-| ✅ | Script | 13 scenes, ~8.6 min narration, honesty/claims/originality checks passed (1 reference transcripts compared) |
-| ✅ | Thumbnail | kitchen-gadgets-10-a.jpg: 1280x720, 0.07 MB |
-| ✅ | Thumbnail | kitchen-gadgets-10-b.jpg: 1280x720, 0.08 MB |
-| ✅ | SEO | description 2061 characters (max 5000) |
+| ✅ | Script | 13 scenes, ~7.7 min narration, honesty/claims/originality checks passed (1 reference transcripts compared) |
+| ✅ | Timeline | edit/timeline.yaml matches the current script/script.yaml |
+| ✅ | SEO | description 2324 characters (max 5000) |
 | ✅ | SEO | affiliate disclosure in description |
 | ✅ | SEO | 5 title options, all ≤ 100 characters |
 | ✅ | SEO | 12 chapters starting at 0:00 |

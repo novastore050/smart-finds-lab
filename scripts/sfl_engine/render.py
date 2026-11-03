@@ -129,18 +129,22 @@ def render_segment(seg: Segment, plan: Plan, cache: Path, log) -> Path:
         else:
             fc.append("[0:v]format=yuv420p[img]")
             fc.append(fit_graph("img", "fit", W, H, fit, fx, fy))
-        if motion == "none":
+        base = float(c.zoom or 1.0)  # >1 = closer 'detail' crop around the focus point
+        if motion == "none" and base <= 1.0:
             post = [f"loop=loop={N}:size=1:start=0", f"fps={fps}"]
         else:
             amt = 0.10
             p = _ease(f"on/{max(1, N - 1)}")
-            z, x, y = "1", "iw/2-(iw/zoom/2)", "ih/2-(ih/zoom/2)"
+            z = f"{base:.3f}"
+            x, y = f"(iw-iw/zoom)*{fx:.3f}", f"(ih-ih/zoom)*{fy:.3f}"
             if motion == "zoom_in":
-                z = f"1+{amt}*{p}"
+                z = f"{base:.3f}+{amt}*{p}"
             elif motion == "zoom_out":
-                z = f"{1 + amt}-{amt}*{p}"
+                z = f"{base + amt:.3f}-{amt}*{p}"
+            elif motion == "none":
+                z = f"{base:.3f}"
             else:
-                z = f"{1 + amt}"
+                z = f"{base + amt:.3f}"
                 span_x, span_y = "(iw-iw/zoom)", "(ih-ih/zoom)"
                 x = {"pan_right": f"{span_x}*{p}", "pan_left": f"{span_x}*(1-{p})"}.get(motion, x)
                 y = {"pan_down": f"{span_y}*{p}", "pan_up": f"{span_y}*(1-{p})"}.get(motion, y)

@@ -78,6 +78,8 @@ def build(prod: Production, log):
     title = s.get("title") or prod.title
     year = dt.date.today().year
     custom = prod.meta.get("seo") or {}
+    # display names for the description (e.g. without unverified marketing words from the Amazon title)
+    shown = {pid: (custom.get("display_names") or {}).get(pid) or fval(p["name"]) for pid, p in byid.items()}
     titles = custom.get("titles") or [title, f"{title} ({year})", f"{title} | Researched Picks"]
     titles = [t for t in titles if len(t) <= 100]
     prods = [sc for sc in s.get("scenes") or [] if sc.get("role") == "product"]
@@ -89,7 +91,8 @@ def build(prod: Production, log):
         url = fval(p.get("amazon_url"))
         if url and not fverified(p.get("amazon_url")):
             unverified_links.append(names.get(p.get("id")))
-        D.append(f"#{sc.get('rank')} {fval(p.get('name'))}: {link(url, tag) or '[Amazon link to add]'}")
+        D.append(f"#{sc.get('rank')} {shown.get(sc.get('product'), fval(p.get('name')))}: "
+                 f"{link(url, tag) or '[Amazon link to add]'}")
     D += ["", "⏱️ CHAPTERS"] + [f"{_ts(t)} {label}" for t, label in chaps]
     D += ["", "ℹ️ " + cfg["disclosure"]["affiliate"], "ℹ️ " + cfg["disclosure"]["research_based"], "",
           f"🔔 Subscribe to {cfg['channel']['name']} — {cfg['channel']['tagline']}", "",
@@ -104,8 +107,13 @@ def build(prod: Production, log):
         p = byid.get(sh.get("product"), {})
         url = link(fval(p.get("amazon_url")), tag)
         st = f"{sh.get('hook') or names.get(p.get('id'))} #Shorts"
+        if str(sh.get("narration") or "").strip():  # standalone Short: no reference to the long video
+            first = (f"{shown.get(p.get('id'), fval(p.get('name')))}. Research-based: we did not test this "
+                     "product ourselves.")
+        else:
+            first = f"{shown.get(p.get('id'), fval(p.get('name')))} — part of our {title}."
         shorts.append({"id": sh["id"], "title": st[:100],
-                       "description": "\n".join([f"{fval(p.get('name'))} — part of our {title}.",
+                       "description": "\n".join([first,
                                                  f"Amazon: {url or '[link to add]'}", "",
                                                  cfg["disclosure"]["affiliate"],
                                                  " ".join(cfg["seo"]["hashtags"] + ["#Shorts"])])})

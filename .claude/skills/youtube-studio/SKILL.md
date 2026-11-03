@@ -32,6 +32,9 @@ viewers about Amazon products. Everything runs through two CLIs in this reposito
 9. **Originality:** reference channels are for structure/pacing inspiration only. Never copy scripts,
    footage, thumbnails or music. Their transcripts stay out of git (`references/*/transcripts/`).
 
+10. **Withdrawn claims stay withdrawn:** list them in `production.yaml → withdrawn_claims`; `check-script` blocks them.
+    Old files from a replaced script go to `productions/<slug>/superseded/` (never deleted, never used).
+
 ## Pipeline (one production = `productions/<slug>/`)
 
 | # | Stage | Command / action | Detail |
@@ -50,6 +53,10 @@ viewers about Amazon products. Everything runs through two CLIs in this reposito
 | 11 | **STOP** | Owner reviews Part B → `studio.py review-done <slug>` → uploads manually | |
 
 `python scripts/studio.py status <slug>` always shows what is done and the exact next command.
+
+Shot types: `ai_broll`, `stock`, `product_photo` (`motion`, `crop`), `graphic` (`pros_cons`, `spec`, `disclosure`,
+`halfway`, `recap`, `note`, `cta`). Shorts with their own `narration` are standalone (voice file `voice/<short-id>.mp3`,
+own vertical shots, own ending) and must not mention ranks or the long video (`check-script` enforces this).
 
 Reference channels: `studio.py reference-new <name> --channel URL --video URL…` → owner fills
 `references/<name>/reference.yaml` (+ transcripts) → `studio.py reference-analyze <name> [--video-file f]`.

@@ -282,6 +282,8 @@ class Graphics:
                 self.txt(t0, t1, W / 2, H - 70 * u, note, "body", self.sz["callout"] * 0.85, self.col["muted"],
                          an=2, extra="\\alpha&HFF&\\t(700,1100,\\alpha&H40&)\\fad(0,400)", layer=5)
             # centre area left empty on purpose: add YouTube end-screen elements there in YouTube Studio
+        elif kind == "card_graphic":
+            self.graphic_card(t0, t1, d)
         else:
             title, sub = d.get("title", ""), d.get("subtitle", "")
             fs = float(d.get("size") or self.sz["card_title"])
@@ -294,6 +296,62 @@ class Graphics:
             if sub:
                 self.txt(t0, t1, W / 2, y + fs * 1.1 * len(lines) + 20 * u, sub, "body", fs2,
                          self.col["primary"], an=8, extra="\\alpha&HFF&\\t(200,500,\\alpha&H00&)" + fo, layer=5)
+
+    # ------------------------------------------------------------------ graphic cards
+    def graphic_card(self, t0, t1, d):
+        """Text for a graphic card clip (the gradient background is rendered by the segment).
+
+        pros_cons: "+ good, good | - bad, bad"  -> two labelled blocks
+        spec / disclosure / note / recap / halfway / cta: "Line one · line two · ..." -> headline + lines
+        """
+        u, W, H = self.u, self.W, self.H
+        kind = str(d.get("graphic") or "note")
+        text = str(d.get("text") or "")
+        maxw = W * (0.82 if self.fmt == "long" else 0.80)
+        fade = "\\fad(180,220)"
+        pop = "\\fscx88\\fscy88\\t(0,240,0.6,\\fscx100\\fscy100)" + fade
+        if kind == "pros_cons":
+            parts = [x.strip() for x in text.split("|") if x.strip()]
+            blocks = []
+            for part in parts:
+                good = not part.startswith("-")
+                body = part.lstrip("+-–— ").strip()
+                items = [x.strip() for x in body.split(",") if x.strip()]
+                blocks.append(("THE GOOD" if good else "THE CATCH", items, good))
+            hs, fs = self.sz["callout"] * 1.05, self.sz["card_sub"] * 1.05
+            lines_h = sum(hs * 1.5 + fs * 1.25 * sum(len(self.wrap("body", fs, "• " + it, maxw)) for it in items)
+                          + 34 * u for _, items, _ in blocks)
+            y = max(self.m["t"], (H - lines_h) / 2)
+            for k, (label, items, good) in enumerate(blocks):
+                col = self.col["primary"] if good else self.col["secondary"]
+                delay = k * 350
+                ex = f"\\alpha&HFF&\\t({delay},{delay + 250},\\alpha&H00&)" + fade
+                self.txt(t0, t1, W / 2, y, label, "heading", hs, col, an=8, extra=ex, layer=5)
+                y += hs * 1.5
+                for it in items:
+                    for ln in self.wrap("body", fs, "• " + it, maxw):
+                        self.txt(t0, t1, W / 2, y, ln, "body", fs, self.col["light"], an=8, extra=ex, layer=5)
+                        y += fs * 1.25
+                y += 34 * u
+            return
+        parts = [x.strip() for x in text.replace("|", "·").split("·") if x.strip()] or [""]
+        head, rest = parts[0], parts[1:]
+        hsize = self.sz["card_title"] * (0.72 if kind in ("spec", "disclosure", "note") else 0.9)
+        hcol = self.col["secondary"] if kind == "cta" else self.col["light"]
+        hl = self.wrap("heading", hsize, head, maxw)
+        fs = self.sz["card_sub"]
+        rl = [ln for r in rest for ln in self.wrap("body", fs, r, maxw)]
+        total = hsize * 1.1 * len(hl) + (24 * u + fs * 1.3 * len(rl) if rl else 0)
+        y = (H - total) / 2
+        self.txt(t0, t1, W / 2, y, "\\N".join(hl), "heading", hsize, hcol, an=8, extra=pop, layer=5)
+        y += hsize * 1.1 * len(hl) + 24 * u
+        if rl:
+            self.draw(t0, t1, W / 2, y - 14 * u, 160 * u, 6 * u, 3 * u, self.col["primary"], 0, fade, layer=5, an=8)
+            for ln in rl:
+                y += 10 * u
+                self.txt(t0, t1, W / 2, y, ln, "body", fs, self.col["muted"], an=8,
+                         extra="\\alpha&HFF&\\t(250,550,\\alpha&H00&)" + fade, layer=5)
+                y += fs * 1.3
 
     # ------------------------------------------------------------------ subtitles
     def subtitles(self):

@@ -1,0 +1,177 @@
+{
+  "voice_name": "Aabo - Engaging Confident Explainer Voice",
+  "voice_id": "KeU8nqWFDbaoi0QVUjD3",
+  "model_id": "eleven_multilingual_v2",
+  "output_format": "mp3_44100_128",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true,
+    "speed": 1.0
+  },
+  "total_characters": 8673,
+  "credit_note": "ElevenLabs bills by characters. On most models about 1 credit per character (Flash/Turbo about 0.5). Check the exact cost with an estimate before generating.",
+  "jobs": [
+    {
+      "scene": "s01",
+      "text": "Plenty of kitchen gadgets end up forgotten in a drawer. These ten fix jobs you actually do, and number one turns a breakfast you usually have to babysit into a one-button job.",
+      "chars": 175,
+      "est_seconds": 12.8,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s01.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s01.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s02",
+      "text": "We didn't test these ourselves, and this isn't a lab ranking or a sales chart. The order is our editorial call, based on manufacturer information, expert reviews and buyer feedback, and we'll tell you which is which. Links in the description are affiliate links.",
+      "chars": 262,
+      "est_seconds": 17.0,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s02.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s02.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s03",
+      "text": "Let's start with leftovers. Number ten is a Rubbermaid Brilliance food storage set: three clear containers with airtight lids that latch down. Rubbermaid sells them as leak-proof, which is exactly what you want for soups and packed lunches. Here's the limitation, and it's why this set sits at number ten. We couldn't find an independent test of this exact three-container set, so for now, leak-proof is Rubbermaid's promise, not something we could confirm. If you're tempted, read recent reviews of this exact set first. Next, a small tool for fresh citrus.",
+      "chars": 558,
+      "est_seconds": 36.4,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s03.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s03.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s04",
+      "text": "Number nine is the Zoo-lay two-in-one lemon squeezer: a hinged metal press with a small bowl for limes and a larger one for lemons. Squeeze the handles, the juice pours out, and the seeds stay in the bowl. Buyers often mention how sturdy it feels and how quickly it rinses clean. The catch: it isn't made for big oranges, one buyer found tiny seed bits slipping through with key limes, and another reported chipped paint after a few months. If you cook with citrus, it earns its place. Now, a tool that can stand in for your knife.",
+      "chars": 531,
+      "est_seconds": 38.7,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s04.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s04.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s05",
+      "text": "Number eight: KitchenAid's all-purpose shears. Many jobs we do with a knife and a cutting board are quicker with scissors: snipping herbs into the pot, trimming chicken, slicing pizza, or opening stubborn packaging. The listing describes stainless steel blades, soft-grip handles and a plastic sheath that protects the blades in a drawer. Customer reviews call KitchenAid's shears sharp, comfortable and good value. On the downside, they can dull sooner than pricier shears, and some owners report rust even though they're listed as dishwasher safe, so hand washing is the safer bet. Then there's a tool that makes a box grater feel clumsy.",
+      "chars": 640,
+      "est_seconds": 40.3,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s05.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s05.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s06",
+      "text": "Number seven is the Micro-plane Premium Classic zester. Zest a lemon on a box grater, and the bitter white pith tends to come along for the ride. This long, narrow grater has sharp, photo-etched stainless steel teeth that take just the zest, and they turn hard cheese like parmesan into light, fluffy shreds. Ginger, garlic and nutmeg work too, and Micro-plane says it comes with a reusable protective cover. Buyers mostly praise how sharp it is and how easy it is to clean. The trade-offs: it costs more than a basic grater, and that blade demands care at the sink.",
+      "chars": 566,
+      "est_seconds": 39.5,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s06.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s06.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s07",
+      "text": "And speaking of the sink, number six is the ox-oh Good Grips soap-dispensing dish brush. Instead of a sponge sitting in a puddle, the soap lives inside the handle. ox-oh says you press a button to send soap to the bristles, and a valve keeps it from dripping between uses. There's a scraper for stuck-on food, the bristles are safe for nonstick pans, and the head is replaceable. Some buyers still report leaks or uneven flow, though their reviews don't always say which version they had, and replacement heads are an extra cost. Still, it's a simple upgrade from a soggy sponge. That's the halfway mark, and the top five starts with your morning coffee.",
+      "chars": 654,
+      "est_seconds": 45.3,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s07.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s07.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s08",
+      "text": "Number five: the Power Licks handheld milk frother. Milk warmed in the microwave just sits there, flat. This little battery-powered whisk whips it into foam in under a minute, and it comes with a stand. Use it for lattes, matcha or hot chocolate. Review roundups call it easy to use and durable. Two drawbacks: it's loud, and it needs two double-A batteries that aren't included. Next, the job that makes a lot of us cry: chopping onions.",
+      "chars": 438,
+      "est_seconds": 30.2,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s08.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s08.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s09",
+      "text": "Number four: the Fullstar vegetable chopper. Dicing onions by hand is slow and uneven, and yes, it can make you cry. Here you set the vegetable on a stainless steel blade grid, press the lid down, and the pieces drop into the container underneath. The blade grids swap out for different cuts. One heads-up: Fullstar sells several versions, and the reviews we found don't always name the model, so check which blades come in the box. In those reviews, the time it saves gets the praise, and cleaning the grid's little crevices gets the complaints. If salad's on the menu, number three handles the next step.",
+      "chars": 606,
+      "est_seconds": 41.4,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s09.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s09.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s10",
+      "text": "Number three: the ox-oh Good Grips salad spinner, because wet lettuce makes for a soggy salad. Instead of patting leaves dry with paper towels, you press the pump on top with one hand, the basket spins the water off, and a brake button stops it. According to the listing, the basket doubles as a colander, the parts are dishwasher safe, and a non-skid base keeps it steady. Reviewers like how easy it is and how much it holds. The trade-off is size: it's big and takes up real cabinet space, and some reviewers find it less sturdy than pricier spinners. Now, from taste to food safety.",
+      "chars": 585,
+      "est_seconds": 41.8,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s10.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s10.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s11",
+      "text": "Number two. Cutting into chicken to check it can let some of the juices escape, and guessing can leave it overcooked or undercooked. The T P nineteen H instant-read thermometer, sold under the Temp Pro name, formerly Thermo Pro, fixes that. Flip out the probe, and according to its manual, the backlit screen shows a reading in about three to four seconds. It's water resistant and has a magnet on the back. The Grilling Dad's review calls it a strong performer for the money. We put it this high because it's about food safety, and its key spec comes straight from the manual. The catch: buyer feedback on long-term accuracy and durability is mixed, so check it in ice water now and then. Now, the pick we promised at the start.",
+      "chars": 729,
+      "est_seconds": 49.5,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s11.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s11.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s12",
+      "text": "Remember that breakfast you usually have to babysit? Here's the one-button fix. Number one is the Dash Rapid Egg Cooker. Instead of watching a pot, you add water with the included measuring cup, set in up to six eggs, and press the button. It shuts itself off when they're done, soft, medium or hard, depending on how much water you use. Buyers praise the automatic shut-off and quick cleanup. It's not perfect. Some reviewers say the buzzer is loud, and six eggs at a time can be limiting for a big family. Dialing in your perfect doneness also takes some trial and error. But if boiled eggs are part of your week, it's our pick for the gadget most likely to change your mornings.",
+      "chars": 681,
+      "est_seconds": 48.8,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s12.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s12.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "s13",
+      "text": "That's our list: ten gadgets that fix small jobs, from easy eggs to drier salads and faster prep. Prices change often, so check the description for today's price. Which one would you actually use? Tell us in the comments, and subscribe for more research-based finds.",
+      "chars": 266,
+      "est_seconds": 17.8,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/s13.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/s13.words.json",
+      "kind": "scene",
+      "status": "pending"
+    },
+    {
+      "scene": "short1",
+      "text": "Stop babysitting a pot of boiling eggs. The Dash Rapid Egg Cooker does the watching for you. Pour in water with the included measuring cup, set in up to six eggs, and press one button. It shuts itself off when they're done, soft, medium or hard. Buyers praise the automatic shut-off and how quickly it cleans up. Two honest catches: some reviewers say the buzzer is loud, and finding your perfect doneness takes a little trial and error. We didn't test it ourselves; this comes from the manual and buyer reviews. Would you use one? Tell us in the comments, and subscribe for more research-based kitchen finds.",
+      "chars": 609,
+      "est_seconds": 42.2,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/short1.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/short1.words.json",
+      "kind": "short",
+      "status": "pending"
+    },
+    {
+      "scene": "short2",
+      "text": "If your lemon zest tastes bitter, your grater might be the problem. A box grater digs into the white pith under the peel, and that's where the bitterness lives. The Micro-plane Premium Classic has a long, narrow blade with sharp, photo-etched teeth that shave off just the bright outer zest. It also turns parmesan into fluffy shreds and handles ginger and garlic. The honest catch: that blade needs care when you wash it, so use the protective cover Micro-plane says comes with it. It also costs more than a basic grater. We didn't test it ourselves; this is from Micro-plane's specs and buyer reviews. What would you zest first? Tell us in the comments, and subscribe for more kitchen finds.",
+      "chars": 693,
+      "est_seconds": 46.8,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/short2.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/short2.words.json",
+      "kind": "short",
+      "status": "pending"
+    },
+    {
+      "scene": "short3",
+      "text": "Stop cutting your chicken open to see if it's done. Slicing in to check can let some of those juices escape. The T P nineteen H instant-read thermometer answers the question without the knife. Flip out the probe, and according to its manual, the backlit screen shows a reading in about three to four seconds. It's water resistant, and a magnet on the back means it can live on your fridge. The Grilling Dad's review calls it a strong performer for the money. One catch: buyer feedback on long-term accuracy is mixed, so check it in ice water now and then. We didn't test it ourselves; this is from the manual and published reviews. Subscribe for more research-based kitchen finds.",
+      "chars": 680,
+      "est_seconds": 46.5,
+      "save_audio_as": "productions/kitchen-gadgets-10/voice/short3.mp3",
+      "save_word_timings_as": "productions/kitchen-gadgets-10/voice/short3.words.json",
+      "kind": "short",
+      "status": "pending"
+    }
+  ]
+}

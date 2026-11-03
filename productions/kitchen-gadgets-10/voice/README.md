@@ -1,6 +1,6 @@
 # Voice-over pack — 10 Kitchen Gadgets That Actually Make Life Easier
 
-Voice: **Aabo - Engaging Confident Explainer Voice** (`KeU8nqWFDbaoi0QVUjD3`) · model `eleven_multilingual_v2` · total **7,544 characters** (~7,544 credits on standard models — estimate only).
+Voice: **Aabo - Engaging Confident Explainer Voice** (`KeU8nqWFDbaoi0QVUjD3`) · model `eleven_multilingual_v2` · total **8,673 characters** (~8,673 credits on standard models — estimate only).
 
 **Nothing has been generated.** Choose one way:
 
@@ -16,16 +16,19 @@ python scripts/studio.py import-voice kitchen-gadgets-10 "PATH/TO/DOWNLOADS"
 
 | Scene | Characters | ~Seconds | Status |
 |---|---|---|---|
-| s01 | 209 | 13.9 | ⏳ pending |
-| s02 | 225 | 15.1 | ⏳ pending |
-| s03 | 627 | 46.1 | ⏳ pending |
-| s04 | 680 | 43.0 | ⏳ pending |
-| s05 | 617 | 42.2 | ⏳ pending |
-| s06 | 625 | 41.8 | ⏳ pending |
-| s07 | 621 | 42.6 | ⏳ pending |
-| s08 | 681 | 46.1 | ⏳ pending |
-| s09 | 660 | 47.2 | ⏳ pending |
-| s10 | 747 | 49.9 | ⏳ pending |
-| s11 | 771 | 51.5 | ⏳ pending |
-| s12 | 701 | 49.9 | ⏳ pending |
-| s13 | 380 | 26.7 | ⏳ pending |
+| s01 | 175 | 12.8 | ⏳ pending |
+| s02 | 262 | 17.0 | ⏳ pending |
+| s03 | 558 | 36.4 | ⏳ pending |
+| s04 | 531 | 38.7 | ⏳ pending |
+| s05 | 640 | 40.3 | ⏳ pending |
+| s06 | 566 | 39.5 | ⏳ pending |
+| s07 | 654 | 45.3 | ⏳ pending |
+| s08 | 438 | 30.2 | ⏳ pending |
+| s09 | 606 | 41.4 | ⏳ pending |
+| s10 | 585 | 41.8 | ⏳ pending |
+| s11 | 729 | 49.5 | ⏳ pending |
+| s12 | 681 | 48.8 | ⏳ pending |
+| s13 | 266 | 17.8 | ⏳ pending |
+| short1 | 609 | 42.2 | ⏳ pending |
+| short2 | 693 | 46.8 | ⏳ pending |
+| short3 | 680 | 46.5 | ⏳ pending |

@@ -1,162 +1,232 @@
 # Script — 10 Kitchen Gadgets That Actually Make Life Easier
 
-Status: **final-draft** · Type: **research_based** · Estimated length: **8:36** (+ intro/outro cards) at 155 words/min
+Status: **APPROVED - promoted 2026-11-03 from script/review/script-final-v2.yaml (option B, conditional editorial approval). Only change: 3 stock searches replaced (s03-d, s05-h, s07-e).** · Type: **research_based** · Estimated length: **7:39** (+ intro/outro cards) at 155 words/min
 
 ✅ All script checks passed.
 
-## s01 · hook · ~14s
+## s01 · hook · ~13s
 
-> Most kitchen gadgets get used once and then disappear into a drawer. These ten are different: they fix the small, annoying jobs you do every single day. And number one might just change your breakfast routine.
+> Plenty of kitchen gadgets end up forgotten in a drawer. These ten fix jobs you actually do, and number one turns a breakfast you usually have to babysit into a one-button job.
 
 **On screen:** title: *10 Kitchen Gadgets That Actually Make Life Easier*
-- shot `s01-a` (ai_broll): a cluttered kitchen drawer stuffed with unused gadgets, a hand closing it with a sigh
-- shot `s01-b` (ai_broll): quick close-up of steaming eggs being lifted from a small countertop egg cooker tray
-- shot `s01-c` (ai_broll): freshly washed lettuce spinning in a clear salad spinner, droplets flying
+- shot `s01-a` (ai_broll): a cluttered kitchen drawer stuffed with unused gadgets, a hand closing it
+- shot `s01-b` (ai_broll): steam rising as a clear dome lid lifts off a small countertop egg cooker
+- shot `s01-c` (stock): 
+- shot `s01-d` (stock): 
 
-## s02 · setup · ~15s
+## s02 · setup · ~17s
 
-> Quick note before we start. We didn't buy and test these ourselves. We compared the specs, expert reviews and what buyers report, so you get the useful parts in one place. Product links in the description are affiliate links.
+> We didn't test these ourselves, and this isn't a lab ranking or a sales chart. The order is our editorial call, based on manufacturer information, expert reviews and buyer feedback, and we'll tell you which is which. Links in the description are affiliate links.
 
 **On screen:** 
-- shot `s02-a` (ai_broll): hands scrolling through generic product review pages on a tablet propped on a kitchen counter, screen content blurred, no logos
-- shot `s02-b` (ai_broll): a notebook with handwritten pros and cons lists next to a coffee mug on a wooden kitchen table, writing not readable
+- shot `s02-a` (stock): 
+- shot `s02-b` (stock): 
+- shot `s02-c` (graphic): 
 
-## s03 · product · #10 · ~46s
+## s03 · product · #10 · ~36s
 
-> Number ten: the Zulay two-in-one lemon squeezer. Squeezing citrus by hand is messy. Seeds end up in your food, and a lot of juice stays in the fruit. This hinged metal press has two bowl sizes, one for lemons and one for limes, and the seeds stay behind in the bowl. Buyers often mention how sturdy it feels and how easily it rinses clean. The catch? It isn't built for big oranges, small seed bits can slip through with key limes, and one buyer reported the paint chipping after a few months. If you cook with lemon or make drinks at home, it earns its drawer space. And speaking of jobs that take longer than they should...
+> Let's start with leftovers. Number ten is a Rubbermaid Brilliance food storage set: three clear containers with airtight lids that latch down. Rubbermaid sells them as leak-proof, which is exactly what you want for soups and packed lunches. Here's the limitation, and it's why this set sits at number ten. We couldn't find an independent test of this exact three-container set, so for now, leak-proof is Rubbermaid's promise, not something we could confirm. If you're tempted, read recent reviews of this exact set first. Next, a small tool for fresh citrus.
 
-**On screen:** badge: *#10* · lower_third: *Zulay 2-in-1 Lemon Squeezer* · lower_third_sub: *Best for: lemonade, cooking, cocktails* · callout: *Seeds stay in the bowl*
-- shot `s03-a` (ai_broll): sticky hands squeezing a lemon half over a bowl of salad while seeds fall in
-- shot `s03-b` (ai_broll): a hand-held hinged metal citrus press squeezing a lime half, juice streaming into a glass, seeds staying inside the press
-- shot `s03-photo` (product_photo): Real product photo (your own, or a manufacturer image you are allowed to use).
+**On screen:** badge: *#10* · lower_third: *Rubbermaid Brilliance Containers* · lower_third_sub: *Good for: leftovers, meal prep, lunches* · callout: *Latching lids (maker: leak-proof)*
+- shot `s03-a` (stock): 
+- shot `s03-b` (ai_broll): hands placing a clear plastic food container with a grey latching lid into an insulated lunch bag on a kitchen counter
+- shot `s03-c` (ai_broll): hands snapping the latches of a clear food container lid shut
+- shot `s03-d` (stock): 
+- shot `s03-photo` (product_photo): 
+- shot `s03-f` (graphic): 
+- shot `s03-photo2` (product_photo): 
+- shot `s03-h` (stock): 
+- shot `s03-i` (stock): 
+
+- ⚠️ **Needs verification:** Moved from #2 to #10 (owner decision 2026-11-03: keep this set out of #2)
+- ⚠️ **Needs verification:** Set contents differ between retailer listings - confirm on the live Amazon page
+- ⚠️ **Needs verification:** Alternative: ATK-tested 10-piece set (1976520 / B01JCNEIC6) at #2 - see script/review/rubbermaid-atk-check.md
+
+## s04 · product · #9 · ~39s
+
+> Number nine is the Zulay two-in-one lemon squeezer: a hinged metal press with a small bowl for limes and a larger one for lemons. Squeeze the handles, the juice pours out, and the seeds stay in the bowl. Buyers often mention how sturdy it feels and how quickly it rinses clean. The catch: it isn't made for big oranges, one buyer found tiny seed bits slipping through with key limes, and another reported chipped paint after a few months. If you cook with citrus, it earns its place. Now, a tool that can stand in for your knife.
+
+**On screen:** badge: *#9* · lower_third: *Zulay 2-in-1 Lemon Squeezer* · lower_third_sub: *Good for: lemonade, cooking, cocktails* · callout: *Seeds stay in the bowl*
+- shot `s04-a` (stock): 
+- shot `s04-b` (ai_broll): a hinged metal citrus press squeezing a lime half, juice streaming into a glass, seeds staying in the press
+- shot `s04-c` (ai_broll): a hand-held citrus press opening to show seeds trapped in the bowl
+- shot `s04-photo` (product_photo): 
+- shot `s04-e` (stock): 
+- shot `s04-f` (graphic): 
+- shot `s04-photo2` (product_photo): 
+- shot `s04-h` (stock): 
+- shot `s04-i` (stock): 
 
 - ⚠️ **Needs verification:** Live Amazon rating/count (Amazon page showed about 37,677; a third party said 47,137) - not mentioned in narration
 - ⚠️ **Needs verification:** Product is still the yellow/green 2-in-1 model B00YBP918M
 
-## s04 · product · #9 · ~43s
+## s05 · product · #8 · ~40s
 
-> Number nine: KitchenAid's all-purpose kitchen shears. Half the time you grab a knife and a cutting board, scissors would be faster: snipping herbs straight into the pot, trimming chicken, cutting pizza, or opening that impossible plastic packaging. These have stainless steel blades, soft-grip handles and a protective sheath for the drawer, something a lot of cheap shears skip. Reviewers describe them as sharp, comfortable and good value. Two honest downsides: they can dull sooner than premium shears, and some buyers report rust even though they're listed as dishwasher safe, so a quick hand wash and dry is the safer habit. Next up, a tool for flavor without the bitterness.
+> Number eight: KitchenAid's all-purpose shears. Many jobs we do with a knife and a cutting board are quicker with scissors: snipping herbs into the pot, trimming chicken, slicing pizza, or opening stubborn packaging. The listing describes stainless steel blades, soft-grip handles and a plastic sheath that protects the blades in a drawer. Customer reviews call KitchenAid's shears sharp, comfortable and good value. On the downside, they can dull sooner than pricier shears, and some owners report rust even though they're listed as dishwasher safe, so hand washing is the safer bet. Then there's a tool that makes a box grater feel clumsy.
 
-**On screen:** badge: *#9* · lower_third: *KitchenAid All-Purpose Shears* · lower_third_sub: *Best for: herbs, pizza, packaging* · callout: *Protective sheath included*
-- shot `s04-a` (ai_broll): a person struggling to cut open tough plastic food packaging with a large kitchen knife
-- shot `s04-b` (ai_broll): black kitchen scissors snipping fresh chives straight into a pot of soup
-- shot `s04-c` (ai_broll): black kitchen scissors cutting a slice from a pizza on a wooden board
-- shot `s04-photo` (product_photo): Real product photo (your own, or a manufacturer image you are allowed to use).
+**On screen:** badge: *#8* · lower_third: *KitchenAid All-Purpose Shears* · lower_third_sub: *Good for: herbs, pizza, packaging* · callout: *Protective sheath included*
+- shot `s05-a` (stock): 
+- shot `s05-b` (ai_broll): black kitchen scissors snipping fresh chives straight into a pot of soup
+- shot `s05-c` (ai_broll): black kitchen scissors cutting a slice from a pizza on a wooden board
+- shot `s05-d` (stock): 
+- shot `s05-photo` (product_photo): 
+- shot `s05-f` (graphic): 
+- shot `s05-photo2` (product_photo): 
+- shot `s05-h` (stock): 
 
 - ⚠️ **Needs verification:** Listing B07PZF3QS3 shows model KE351OHOBA and black colour
 - ⚠️ **Needs verification:** Amazon.com rating not found (only Australia/Singapore figures) - not mentioned in narration
 
-## s05 · product · #8 · ~42s
+## s06 · product · #7 · ~40s
 
-> Number eight: the Microplane Premium Classic zester. A box grater is clumsy for small jobs, and zesting a lemon usually drags the bitter white pith along with it. This long, narrow grater has very sharp stainless steel teeth that take just the zest, and they turn hard cheese like parmesan into light, fluffy shreds. It also handles ginger, garlic and nutmeg, and it comes with a protective cover. Buyers mostly praise how sharp it is and how easy it is to clean. The trade-offs: it costs more than a basic grater, and that blade deserves respect when you wash it. Of course, once you've cooked, there's the cleanup.
+> Number seven is the Microplane Premium Classic zester. Zest a lemon on a box grater, and the bitter white pith tends to come along for the ride. This long, narrow grater has sharp, photo-etched stainless steel teeth that take just the zest, and they turn hard cheese like parmesan into light, fluffy shreds. Ginger, garlic and nutmeg work too, and Microplane says it comes with a reusable protective cover. Buyers mostly praise how sharp it is and how easy it is to clean. The trade-offs: it costs more than a basic grater, and that blade demands care at the sink.
 
-**On screen:** badge: *#8* · lower_third: *Microplane Premium Zester* · lower_third_sub: *Best for: zest, parmesan, ginger* · callout: *Zest without the bitter pith*
-- shot `s05-a` (ai_broll): a bulky box grater slipping while someone grates a small piece of hard cheese, cheese crumbs scattered
-- shot `s05-b` (ai_broll): a long narrow stainless steel rasp grater dusting fluffy parmesan over a bowl of pasta
-- shot `s05-c` (ai_broll): bright yellow lemon zest falling onto a cutting board from a narrow rasp grater
-- shot `s05-photo` (product_photo): Real product photo (your own, or a manufacturer image you are allowed to use).
+**On screen:** badge: *#7* · lower_third: *Microplane Premium Zester* · lower_third_sub: *Good for: zest, parmesan, ginger* · callout: *Zest without the bitter pith*
+- shot `s06-a` (stock): 
+- shot `s06-b` (ai_broll): a long narrow stainless steel rasp grater dusting fluffy parmesan over a bowl of pasta
+- shot `s06-c` (ai_broll): bright lemon zest falling onto a cutting board from a narrow rasp grater
+- shot `s06-d` (stock): 
+- shot `s06-photo` (product_photo): 
+- shot `s06-f` (graphic): 
+- shot `s06-photo2` (product_photo): 
+- shot `s06-h` (stock): 
 
 - ⚠️ **Needs verification:** Model 46020 is the black version; colour on the linked listing
+- ⚠️ **Needs verification:** Protective cover: confirmed on microplane.com (Premium Classic) - check the US listing photo shows it
 
-## s06 · product · #7 · ~42s
+## s07 · product · #6 · ~45s
 
-> Number seven: the OXO Good Grips soap-dispensing dish brush. Sponges get smelly fast, and scrubbing a greasy pan usually means your hands sit in hot, soapy water. This brush keeps dish soap in the handle. Press the button and it flows straight to the bristles. There's a scraper on the back for baked-on bits, and the bristles are safe for nonstick pans. Apartment Therapy's editors say it makes doing the dishes easier. The most common complaint is that the soap can leak or come out unevenly, and replacement heads are an ongoing cost. For everyday dishes, though, it's a simple upgrade. Now, something for your mornings.
+> And speaking of the sink, number six is the OXO Good Grips soap-dispensing dish brush. Instead of a sponge sitting in a puddle, the soap lives inside the handle. OXO says you press a button to send soap to the bristles, and a valve keeps it from dripping between uses. There's a scraper for stuck-on food, the bristles are safe for nonstick pans, and the head is replaceable. Some buyers still report leaks or uneven flow, though their reviews don't always say which version they had, and replacement heads are an extra cost. Still, it's a simple upgrade from a soggy sponge. That's the halfway mark, and the top five starts with your morning coffee.
 
-**On screen:** badge: *#7* · lower_third: *OXO Soap Dispensing Brush* · lower_third_sub: *Best for: everyday dishes, pans* · callout: *Soap in the handle*
-- shot `s06-a` (ai_broll): a greasy frying pan and a worn, dirty sponge sitting in a kitchen sink
-- shot `s06-b` (ai_broll): a thumb pressing a button on a dish brush handle so soap flows while scrubbing a pan under running water
-- shot `s06-photo` (product_photo): Real product photo (your own, or a manufacturer image you are allowed to use).
+**On screen:** badge: *#6* · lower_third: *OXO Soap Dispensing Brush* · lower_third_sub: *Good for: everyday dishes, pans* · callout: *Soap in the handle*
+- shot `s07-a` (stock): 
+- shot `s07-b` (ai_broll): a thumb pressing a button on a dish brush handle so soap flows while scrubbing a pan under running water
+- shot `s07-c` (ai_broll): the back scraper of a dish brush lifting stuck-on food from a baking dish
+- shot `s07-photo` (product_photo): 
+- shot `s07-e` (stock): 
+- shot `s07-f` (graphic): 
+- shot `s07-photo2` (product_photo): 
+- shot `s07-h` (stock): 
+- shot `s07-z` (graphic): 
 
-- ⚠️ **Needs verification:** B0BK2R8TQB is the single current brush (old listing B000CC91GK was unavailable)
-- ⚠️ **Needs verification:** Amazon.com rating not found - not mentioned in narration
+- ⚠️ **Needs verification:** B0BK2R8TQB is the single current brush; confirm oxo.com page describes the same version
+- ⚠️ **Needs verification:** Leak reports come from reviews that don't name the version - narration says so
 
-## s07 · product · #6 · ~43s
+## s08 · product · #5 · ~30s
 
-> Number six: the PowerLix handheld milk frother. Coffee-shop lattes add up, and milk warmed in the microwave just sits there, flat. This little battery-powered whisk spins milk into foam in roughly fifteen to twenty seconds, and it comes with a stainless steel stand. It works for lattes, matcha and hot chocolate. Roundup reviewers call it easy to use and durable. The downsides: it's loud, and it runs on two double-A batteries that aren't included and will need replacing. If you like cafe-style drinks at home, it's an easy way to get there. Back to prep work, because this next one makes onions a lot less painful.
+> Number five: the PowerLix handheld milk frother. Milk warmed in the microwave just sits there, flat. This little battery-powered whisk whips it into foam in under a minute, and it comes with a stand. Use it for lattes, matcha or hot chocolate. Review roundups call it easy to use and durable. Two drawbacks: it's loud, and it needs two double-A batteries that aren't included. Next, the job that makes a lot of us cry: chopping onions.
 
-**On screen:** badge: *#6* · lower_third: *PowerLix Milk Frother* · lower_third_sub: *Best for: lattes, matcha, cocoa* · callout: *Cafe foam in seconds*
-- shot `s07-a` (ai_broll): a mug of flat microwaved milk next to a coffee, looking dull, morning kitchen light
-- shot `s07-b` (ai_broll): a slim handheld battery milk frother whisking milk into thick foam inside a clear glass
-- shot `s07-c` (ai_broll): frothed milk being poured over coffee in a white cup, creating a smooth foam layer
-- shot `s07-photo` (product_photo): Real product photo (your own, or a manufacturer image you are allowed to use).
+**On screen:** badge: *#5* · lower_third: *PowerLix Milk Frother* · lower_third_sub: *Good for: lattes, matcha, cocoa* · callout: *Battery whisk + stand*
+- shot `s08-a` (stock): 
+- shot `s08-b` (ai_broll): a slim handheld battery milk frother whisking milk into thick foam inside a clear glass
+- shot `s08-c` (ai_broll): frothed milk poured over coffee in a white cup, forming a smooth foam layer
+- shot `s08-d` (stock): 
+- shot `s08-photo` (product_photo): 
+- shot `s08-f` (graphic): 
+- shot `s08-g` (stock): 
 
-- ⚠️ **Needs verification:** B08CVPQJHJ opens the Deep Blue colour with the stand
-- ⚠️ **Needs verification:** Frothing time (15-20 s) and battery type (2 x AA, not included) come from a Walmart listing - confirm on Amazon
+- ⚠️ **Needs verification:** PowerLix variant: Deep Blue B08CVPQJHJ; manual found is for ASIN B01BY9RTNQ (same model line, other colour)
+- ⚠️ **Needs verification:** Frothing time: sources say 15-30 s - narration only says 'under a minute'
 
-## s08 · product · #5 · ~46s
+## s09 · product · #4 · ~41s
 
-> Number five: the Fullstar vegetable chopper. Dicing onions and peppers by hand is slow, uneven, and yes, it makes you cry. Here you set the vegetable on a stainless steel grid, press the lid down, and even pieces drop straight into the container underneath. The blades are interchangeable, and the container is dishwasher safe. Reviewers say it makes vegetable prep much faster, and in one lab test it didn't slip while chopping. Be ready for two things, though: the grid has little crevices that take careful cleaning, and hard or large vegetables can need real force. For meal preppers, it saves a lot of knife work. And if salad is on the menu, number four fixes the soggy part.
+> Number four: the Fullstar vegetable chopper. Dicing onions by hand is slow and uneven, and yes, it can make you cry. Here you set the vegetable on a stainless steel blade grid, press the lid down, and the pieces drop into the container underneath. The blade grids swap out for different cuts. One heads-up: Fullstar sells several versions, and the reviews we found don't always name the model, so check which blades come in the box. In those reviews, the time it saves gets the praise, and cleaning the grid's little crevices gets the complaints. If salad's on the menu, number three handles the next step.
 
-**On screen:** badge: *#5* · lower_third: *Fullstar Vegetable Chopper* · lower_third_sub: *Best for: onions, peppers, meal prep* · callout: *Dishwasher-safe container*
-- shot `s08-a` (ai_broll): a person wiping teary eyes while slowly dicing an onion with a knife on a cutting board
-- shot `s08-b` (ai_broll): a hand pressing the hinged lid of a clear box vegetable chopper so diced onion drops into the container
-- shot `s08-c` (ai_broll): a container full of evenly diced colorful bell peppers on a kitchen counter
-- shot `s08-photo` (product_photo): Real product photo (your own, or a manufacturer image you are allowed to use).
+**On screen:** badge: *#4* · lower_third: *Fullstar Vegetable Chopper* · lower_third_sub: *Good for: onions, peppers, meal prep* · callout: *Swap-in blade grids*
+- shot `s09-a` (stock): 
+- shot `s09-b` (ai_broll): a hand pressing the hinged lid of a clear box vegetable chopper so diced onion drops into the container
+- shot `s09-c` (ai_broll): a container full of evenly diced colorful bell peppers
+- shot `s09-d` (stock): 
+- shot `s09-photo` (product_photo): 
+- shot `s09-f` (graphic): 
+- shot `s09-photo2` (product_photo): 
+- shot `s09-j` (graphic): 
+- shot `s09-h` (stock): 
 
-- ⚠️ **Needs verification:** Listing B0764HS4SL is the 4-in-1 model TF1096C-8 (Fullstar sells many similar versions)
+- ⚠️ **Needs verification:** Which blades/parts come with B0764HS4SL (TF1096C-8)
+- ⚠️ **Needs verification:** Dishwasher safety removed: retailer listings conflict (top rack vs hand wash)
 
-## s09 · product · #4 · ~47s
+## s10 · product · #3 · ~42s
 
-> Number four: the OXO Good Grips salad spinner. Wet lettuce is the reason so many salads end up soggy, and patting leaves dry with paper towels takes forever. Here you press the pump on top with one hand, the basket spins the water off, and a brake button stops it when you're done. The basket doubles as a colander, a non-skid base keeps it steady, and the parts are dishwasher safe. Reviewers like how easy it is to use and how much it holds. The honest downside is size: it's about ten inches across, so it takes real cabinet space, and some reviewers find it less sturdy than pricier spinners. Next, a gadget that's less about taste and more about safety.
+> Number three: the OXO Good Grips salad spinner, because wet lettuce makes for a soggy salad. Instead of patting leaves dry with paper towels, you press the pump on top with one hand, the basket spins the water off, and a brake button stops it. According to the listing, the basket doubles as a colander, the parts are dishwasher safe, and a non-skid base keeps it steady. Reviewers like how easy it is and how much it holds. The trade-off is size: it's big and takes up real cabinet space, and some reviewers find it less sturdy than pricier spinners. Now, from taste to food safety.
 
-**On screen:** badge: *#4* · lower_third: *OXO Good Grips Salad Spinner* · lower_third_sub: *Best for: salads, herbs, berries* · callout: *One-hand pump + brake*
-- shot `s09-a` (ai_broll): wet lettuce leaves dripping on a cutting board next to a pile of soaked paper towels
-- shot `s09-b` (ai_broll): a palm pressing the pump on top of a large clear salad spinner while lettuce spins inside
-- shot `s09-c` (ai_broll): crisp dry salad greens tossed in a wooden bowl with dressing
-- shot `s09-photo` (product_photo): Real product photo (your own, or a manufacturer image you are allowed to use).
+**On screen:** badge: *#3* · lower_third: *OXO Good Grips Salad Spinner* · lower_third_sub: *Good for: salads, herbs, berries* · callout: *One-hand pump + brake*
+- shot `s10-a` (stock): 
+- shot `s10-b` (ai_broll): a palm pressing the pump on top of a large clear salad spinner while lettuce spins inside
+- shot `s10-c` (ai_broll): a hand pressing a brake button on top of a salad spinner, the basket stopping
+- shot `s10-d` (stock): 
+- shot `s10-photo` (product_photo): 
+- shot `s10-f` (graphic): 
+- shot `s10-g` (stock): 
+- shot `s10-photo2` (product_photo): 
+- shot `s10-i` (stock): 
 
-- ⚠️ **Needs verification:** Amazon.com rating for B00004OCKR not found (only Germany/UK/Canada) - not mentioned in narration
-- ⚠️ **Needs verification:** Size 6.22 Qt and width (about 10 inches, third-party figure) on the listing
+- ⚠️ **Needs verification:** Model 32480 / B00004OCKR is the single large spinner (not a multipack)
+- ⚠️ **Needs verification:** Colander/dishwasher/non-skid features are from the Amazon listing (attributed in narration); no oxo.com page found
 
-## s10 · product · #3 · ~50s
+## s11 · product · #2 · ~50s
 
-> Number three: the TP19H instant-read thermometer, sold under the TempPro name, though you may know the brand as ThermoPro. Cutting into chicken to see if it's done lets the juices escape, and guessing is how food ends up overcooked or undercooked. Flip out the probe, insert it, and the large backlit screen shows the temperature in about three to four seconds, according to its manual. It's water resistant, and a magnet on the back keeps it handy. One reviewer called it the best performance for the money among the thermometers they tried. But it's slower than premium models, and buyer feedback on long-term accuracy is mixed, so check it in ice water now and then. Number two solves a problem you've probably had in your lunch bag.
+> Number two. Cutting into chicken to check it can let some of the juices escape, and guessing can leave it overcooked or undercooked. The TP19H instant-read thermometer, sold under the TempPro name, formerly ThermoPro, fixes that. Flip out the probe, and according to its manual, the backlit screen shows a reading in about three to four seconds. It's water resistant and has a magnet on the back. The Grilling Dad's review calls it a strong performer for the money. We put it this high because it's about food safety, and its key spec comes straight from the manual. The catch: buyer feedback on long-term accuracy and durability is mixed, so check it in ice water now and then. Now, the pick we promised at the start.
 
-**On screen:** badge: *#3* · lower_third: *TP19H Instant-Read Thermometer* · lower_third_sub: *Best for: meat, fish, baking* · callout: *Reading in about 3-4 seconds*
-- shot `s10-a` (ai_broll): a person cutting open a grilled chicken breast with a knife to check if it is cooked, juices running out
-- shot `s10-b` (ai_broll): a slim digital thermometer probe inserted into a steak on a board, the backlit screen glowing
-- shot `s10-c` (ai_broll): a small digital thermometer stuck by its magnet to the side of a stainless steel fridge
-- shot `s10-photo` (product_photo): Real product photo (your own, or a manufacturer image you are allowed to use).
+**On screen:** badge: *#2* · lower_third: *TP19H Instant-Read Thermometer* · lower_third_sub: *Good for: meat, fish, baking* · callout: *~3-4 s reading (per manual)*
+- shot `s11-a` (stock): 
+- shot `s11-b` (ai_broll): a slim digital thermometer probe inserted into a steak on a board, the backlit screen glowing
+- shot `s11-c` (ai_broll): a small digital thermometer stuck by its magnet to a stainless steel fridge
+- shot `s11-d` (stock): 
+- shot `s11-photo` (product_photo): 
+- shot `s11-f` (graphic): 
+- shot `s11-g` (graphic): 
+- shot `s11-h` (stock): 
+- shot `s11-i` (stock): 
 
+- ⚠️ **Needs verification:** Moved from #3 to #2 (better product-specific evidence: manual + review of the exact TP19H)
 - ⚠️ **Needs verification:** Reading time: 3-4 s per the user manual; listing title claims 1 s - do not use the 1 s claim
-- ⚠️ **Needs verification:** Brand on the box may be TempPro or ThermoPro; listing mentions a newer version
 
-## s11 · product · #2 · ~52s
+## s12 · product · #1 · ~49s
 
-> Number two: Rubbermaid Brilliance leak-proof food storage containers. Most leftover containers leak in your bag, stain, or lose their lids. These have airtight lids that latch on the sides, and the containers are clear, so you can see what's inside at a glance. America's Test Kitchen says the Brilliance line won its plastic food storage container testing, and in another reviewer's leak test, no water got out when the containers were shaken or submerged. The weak spot is the lids: some buyers report cracked lids or broken latches, and lids aren't sold separately. The latches also take two hands to open, and tomato sauce can stain them. But for meal prep and packed lunches, a container you can trust upside down is a real upgrade. And that brings us to number one.
+> Remember that breakfast you usually have to babysit? Here's the one-button fix. Number one is the Dash Rapid Egg Cooker. Instead of watching a pot, you add water with the included measuring cup, set in up to six eggs, and press the button. It shuts itself off when they're done, soft, medium or hard, depending on how much water you use. Buyers praise the automatic shut-off and quick cleanup. It's not perfect. Some reviewers say the buzzer is loud, and six eggs at a time can be limiting for a big family. Dialing in your perfect doneness also takes some trial and error. But if boiled eggs are part of your week, it's our pick for the gadget most likely to change your mornings.
 
-**On screen:** badge: *#2* · lower_third: *Rubbermaid Brilliance Containers* · lower_third_sub: *Best for: leftovers, meal prep, lunches* · callout: *Leak-proof latching lids*
-- shot `s11-a` (ai_broll): a cheap takeout container tipped over inside a lunch bag with soup leaking out
-- shot `s11-b` (ai_broll): a clear food container full of soup with grey latching lid flipped upside down over a sink, not a drop leaking
-- shot `s11-c` (ai_broll): neatly stacked clear food containers with meal-prepped lunches in a refrigerator
-- shot `s11-photo` (product_photo): Real product photo (your own, or a manufacturer image you are allowed to use).
+**On screen:** badge: *#1* · lower_third: *Dash Rapid Egg Cooker* · lower_third_sub: *Good for: busy mornings, meal prep* · callout: *Shuts itself off*
+- shot `s12-a` (stock): 
+- shot `s12-b` (ai_broll): lifting a clear dome lid from a small round countertop egg cooker as steam rises from cooked eggs
+- shot `s12-c` (ai_broll): hands pouring water from a small measuring cup into the base of a countertop egg cooker
+- shot `s12-d` (stock): 
+- shot `s12-photo` (product_photo): 
+- shot `s12-f` (graphic): 
+- shot `s12-g` (stock): 
+- shot `s12-photo2` (product_photo): 
+- shot `s12-i` (stock): 
 
-- ⚠️ **Needs verification:** Live rating count (Amazon.com page showed 1,900 vs 83,371 on Amazon Singapore) - not mentioned in narration
-- ⚠️ **Needs verification:** Set is 3 containers / 6 pieces (B01JCNEJSO, model 2025903)
-- ⚠️ **Needs verification:** Cracked-lid reports came from the glass version of the line - wording says 'buyers report', keep it general
+- ⚠️ **Needs verification:** Reviewed.com claim removed: it covered the larger Deluxe model, not DEC005
+- ⚠️ **Needs verification:** Egg capacity: manual says up to 6; one retailer lists a 7-egg tray - narration uses 6 (manual)
 
-## s12 · product · #1 · ~50s
+## s13 · wrapup · ~18s
 
-> And number one: the Dash Rapid Egg Cooker. Boiling eggs on the stove means watching the pot, guessing the timing, and hoping you got it right. This one is simple. Add water with the included measuring cup, set in up to six eggs, press the button, and it shuts itself off when they're done, soft, medium or hard. Buyers praise the automatic shut-off and how quickly it cleans up, and Reviewed, which tried the larger Deluxe version, found it works very well. It isn't perfect: the buzzer is loud, six eggs at a time can be limiting for big families, and your ideal doneness may take some trial and error. For busy mornings and meal prep, it's the gadget on this list most likely to change your routine.
-
-**On screen:** badge: *#1* · lower_third: *Dash Rapid Egg Cooker* · lower_third_sub: *Best for: busy mornings, meal prep* · callout: *Shuts itself off*
-- shot `s12-a` (ai_broll): eggs cracking in a pot of rolling boiling water on a stovetop, steam rising
-- shot `s12-b` (ai_broll): lifting a clear dome lid from a small round black countertop egg cooker as steam rises from cooked eggs on a tray
-- shot `s12-c` (ai_broll): halved soft-boiled eggs with bright yolks on avocado toast on a breakfast plate
-- shot `s12-photo` (product_photo): Real product photo (your own, or a manufacturer image you are allowed to use).
-
-- ⚠️ **Needs verification:** Black 6-egg DEC005BK listing B00DDXWFY0 is in stock (the white 7-egg version was unavailable)
-- ⚠️ **Needs verification:** Reviewed tested the 12-egg Deluxe model, not this exact one - narration says so
-
-## s13 · wrapup · ~27s
-
-> So that's the list: ten gadgets that fix small everyday jobs, from easy eggs and leak-proof leftovers to cleaner dishes and better coffee. Prices change all the time, so check the links in the description for today's price. Which one would you actually use the most? Tell us in the comments. And if you want more research-based finds, subscribe, and we'll see you in the next one.
+> That's our list: ten gadgets that fix small jobs, from easy eggs to drier salads and faster prep. Prices change often, so check the description for today's price. Which one would you actually use? Tell us in the comments, and subscribe for more research-based finds.
 
 **On screen:** cta: *Links in the description*
-- shot `s13-a` (ai_broll): a tidy bright kitchen counter with a few simple tools laid out neatly, a hand setting down a cup of coffee
+- shot `s13-a` (stock): 
+- shot `s13-b` (graphic): 
+- shot `s13-c` (stock): 
+- shot `s13-d` (stock): 
 
 ## Shorts
 
-- **short1**: hook "Perfect boiled eggs without watching a pot" — scenes ['s12']
-- **short2**: hook "Leftover containers that actually don't leak" — scenes ['s11']
-- **short3**: hook "Stop cutting into your chicken to check it" — scenes ['s10']
+### short1 · This Egg Cooker Shuts Itself Off · ~42s (standalone, voice file voice/short1.mp3)
+
+Hook on screen: **Stop babysitting boiling eggs**
+
+> Stop babysitting a pot of boiling eggs. The Dash Rapid Egg Cooker does the watching for you. Pour in water with the included measuring cup, set in up to six eggs, and press one button. It shuts itself off when they're done, soft, medium or hard. Buyers praise the automatic shut-off and how quickly it cleans up. Two honest catches: some reviewers say the buzzer is loud, and finding your perfect doneness takes a little trial and error. We didn't test it ourselves; this comes from the manual and buyer reviews. Would you use one? Tell us in the comments, and subscribe for more research-based kitchen finds.
+
+### short2 · Why Your Lemon Zest Tastes Bitter · ~47s (standalone, voice file voice/short2.mp3)
+
+Hook on screen: **Bitter lemon zest? Blame your grater**
+
+> If your lemon zest tastes bitter, your grater might be the problem. A box grater digs into the white pith under the peel, and that's where the bitterness lives. The Microplane Premium Classic has a long, narrow blade with sharp, photo-etched teeth that shave off just the bright outer zest. It also turns parmesan into fluffy shreds and handles ginger and garlic. The honest catch: that blade needs care when you wash it, so use the protective cover Microplane says comes with it. It also costs more than a basic grater. We didn't test it ourselves; this is from Microplane's specs and buyer reviews. What would you zest first? Tell us in the comments, and subscribe for more kitchen finds.
+
+### short3 · Stop Guessing When Chicken Is Done · ~46s (standalone, voice file voice/short3.mp3)
+
+Hook on screen: **Stop cutting chicken open**
+
+> Stop cutting your chicken open to see if it's done. Slicing in to check can let some of those juices escape. The TP19H instant-read thermometer answers the question without the knife. Flip out the probe, and according to its manual, the backlit screen shows a reading in about three to four seconds. It's water resistant, and a magnet on the back means it can live on your fridge. The Grilling Dad's review calls it a strong performer for the money. One catch: buyer feedback on long-term accuracy is mixed, so check it in ice water now and then. We didn't test it ourselves; this is from the manual and published reviews. Subscribe for more research-based kitchen finds.
+

@@ -10,7 +10,7 @@ Tick in order. Commands run from the Smart-Finds-Lab folder.
 
 ## 2. Assets
 - [ ] Choose the voice (listen to `productions/_voice-samples/`), set `status: chosen` in `config/voice.yaml`
-- [ ] Approve ElevenLabs cost (~7,544 characters per take), generate, then `import-voice` + `align`
+- [ ] Approve ElevenLabs cost (~8,673 characters per take), generate, then `import-voice` + `align`
 - [ ] Generate Higgsfield clips from `prompts/higgsfield-prompts.md` (needs paid credits), then `import-clips kitchen-gadgets-10 <folder>`
 - [ ] Add real product photos to `assets/images/<slug>/<product-id>.jpg` (yours or licensed)
 - [ ] Add licensed background music and set `music:` in `production.yaml`

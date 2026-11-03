@@ -17,3 +17,13 @@ regenerated from that script once it is promoted (see `preproduction/production-
 | thumbnails/ | old mockup JPGs with "Researched & compared" text (local only, not in git) |
 
 Unchanged backups of the approved originals: `backup/approved-2026-11-03/`.
+
+## Added at the promotion of script-final-v2 (2026-11-03)
+
+| Folder | What it was |
+|---|---|
+| script/ | the previously approved `script.yaml` + `script.md` (same as `backup/approved-2026-11-03/script.yaml`) |
+| proposal-history/ | earlier proposal plans/budgets/stock lists (proposed, revised, final v1). Some still mention the withdrawn Rubbermaid/ATK claims. Kept for the record only |
+
+The active script is now `script/script.yaml` (promoted from `script/review/script-final-v2.yaml`). The review texts
+in `script/review/` are kept unchanged as the editorial history.

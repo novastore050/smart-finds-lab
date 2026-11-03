@@ -160,6 +160,18 @@ def load_script(prod: Production) -> dict:
     return load_yaml(prod.p("script", "script.yaml"))
 
 
+def dedicated_shorts(s: dict) -> list:
+    """Shorts that have their own narration (and own voice file voice/<short-id>.mp3)."""
+    return [sh for sh in s.get("shorts") or [] if str(sh.get("narration") or "").strip()]
+
+
+def voice_units(s: dict) -> list:
+    """Everything that needs its own voice file: every scene, then every dedicated Short."""
+    units = [{"id": sc["id"], "narration": sc.get("narration", ""), "kind": "scene"} for sc in s.get("scenes") or []]
+    units += [{"id": sh["id"], "narration": sh.get("narration", ""), "kind": "short"} for sh in dedicated_shorts(s)]
+    return units
+
+
 def reference_texts():
     """Owner-provided transcripts of reference videos (kept out of git)."""
     out = []
@@ -251,10 +263,43 @@ def check(prod: Production, script: dict | None = None):
             if common:
                 issues.append(("error", sid, f"{len(common)} phrase(s) of {n}+ words match reference {name}, e.g. "
                                              f"\"{sorted(common)[0]}\" - rewrite in your own words"))
+    withdrawn = [str(w) for w in (prod.meta.get("withdrawn_claims") or []) if str(w).strip()]
+    for sc in s.get("scenes") or []:
+        for w in withdrawn:
+            if w.lower() in str(sc.get("narration") or "").lower():
+                issues.append(("error", sc.get("id", "?"), f"contains a WITHDRAWN claim: \"{w}\""))
     for sh in s.get("shorts") or []:
         for u in sh.get("use_scenes") or []:
             if u not in seen_ids:
                 issues.append(("error", sh.get("id", "short"), f"uses unknown scene '{u}'"))
+        text = str(sh.get("narration") or "")
+        if not text.strip():
+            continue
+        sid = sh.get("id", "short")
+        if sid in seen_ids:
+            issues.append(("error", sid, "a Short id must not be the same as a scene id"))
+        sec = est_seconds(text, wpm)
+        if not 15 <= sec <= 60:
+            issues.append(("warning", sid, f"Short narration is ~{sec:.0f}s (aim for 15-60 s)"))
+        for pat in CLAIM_PATTERNS:
+            m = re.search(pat, text, re.I)
+            if m and vtype != "hands_on":
+                issues.append(("error", sid, f"says \"{m.group(0)}\" but this is a research-based video"))
+        if PRICE_RE.search(text):
+            issues.append(("error", sid, "Short narration states a price"))
+        for rx, what in ((RATING_RE, "star rating"), (COUNT_RE, "rating/review count")):
+            if rx.search(text):
+                issues.append(("error", sid, f"Short narration mentions a {what}"))
+        if re.search(r"\b(?:number (?:one|two|three|four|five|six|seven|eight|nine|ten)|full (?:list|video|top)|"
+                     r"on the channel|in (?:this|the) video)\b", text, re.I):
+            issues.append(("error", sid, "a dedicated Short must not refer to the long video or a rank"))
+        for w in withdrawn:
+            if w.lower() in text.lower():
+                issues.append(("error", sid, f"contains a WITHDRAWN claim: \"{w}\""))
+        mine = _ngrams(text, n)
+        for name, grams in ref_grams:
+            if mine & grams:
+                issues.append(("error", sid, f"phrase(s) of {n}+ words match reference {name} - rewrite"))
     if len(s.get("shorts") or []) != 3:
         issues.append(("warning", "shorts", f"{len(s.get('shorts') or [])} Shorts planned (3 wanted)"))
     stats = {"scenes": len(s.get("scenes") or []), "est_seconds": round(total, 1), "wpm": wpm,
@@ -287,7 +332,13 @@ def write_markdown(prod: Production):
             L += [f"- ⚠️ **Needs verification:** {v}" for v in sc["needs_verification"]]
         L.append("")
     if s.get("shorts"):
-        L += ["## Shorts", ""] + [f"- **{x['id']}**: hook \"{x.get('hook')}\" — scenes {x.get('use_scenes')}"
-                                  for x in s["shorts"]]
+        L += ["## Shorts", ""]
+        for x in s["shorts"]:
+            if str(x.get("narration") or "").strip():
+                L += [f"### {x['id']} · {x.get('title', '')} · ~{est_seconds(x['narration'], wpm):.0f}s (standalone, "
+                      f"voice file voice/{x['id']}.mp3)", "", f"Hook on screen: **{x.get('hook')}**", "",
+                      f"> {x['narration']}", ""]
+            else:
+                L.append(f"- **{x['id']}**: hook \"{x.get('hook')}\" — scenes {x.get('use_scenes')}")
     prod.p("script", "script.md").write_text("\n".join(L) + "\n", encoding="utf-8")
     return issues, st

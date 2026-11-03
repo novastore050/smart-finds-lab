@@ -87,6 +87,8 @@ TRANSITIONS = {"cut", "fade", "fadeblack", "fadewhite", "dissolve", "wipeleft", 
 OVERLAY_TYPES = {"title", "lower_third", "badge", "callout", "text", "cta", "hook"}
 FITS = {"cover", "contain", "blur", "auto", "center", "focus"}
 MOTIONS = {"none", "zoom_in", "zoom_out", "pan_left", "pan_right", "pan_up", "pan_down"}
+# graphic cards: a 'card' clip with 'graphic: <kind>' and 'text' (drawn by graphics.py)
+GRAPHIC_KINDS = {"pros_cons", "spec", "disclosure", "halfway", "recap", "cta", "note"}
 
 
 def deep_merge(base: dict, extra: dict) -> dict:
@@ -141,6 +143,9 @@ class Clip:
     speed: float = 1.0
     clip_audio: float = 0.0        # 0 = mute original sound, 1 = full volume
     background: str | None = None  # for cards: gradient | #hex | image path
+    zoom: float | None = None      # images: base zoom (1 = whole picture, 1.4 = closer detail crop)
+    graphic: str | None = None     # cards: graphic card kind (pros_cons, spec, ...), see GRAPHIC_KINDS
+    text: str = ""                 # cards: graphic card text
     raw: dict = field(default_factory=dict)
 
 
@@ -253,8 +258,20 @@ def parse_clip(d: dict, where: str, issues: list) -> Clip:
         speed=_num(d.get("speed"), f"{where}.speed", issues, 1.0) or 1.0,
         clip_audio=_num(d.get("clip_audio", d.get("clip_audio_volume")), f"{where}.clip_audio", issues, 0.0),
         background=d.get("background"),
+        zoom=_num(d.get("zoom"), f"{where}.zoom", issues),
+        graphic=(str(d["graphic"]) if d.get("graphic") else None),
+        text=str(d.get("text") or ""),
         raw=d,
     )
+    if c.zoom is not None and not (1.0 <= c.zoom <= 2.5):
+        issues.append(("error", f"{where}: zoom must be between 1.0 and 2.5"))
+        c.zoom = None
+    if c.graphic is not None:
+        if c.kind != "card":
+            issues.append(("error", f"{where}: 'graphic' is only allowed on card clips"))
+        elif c.graphic not in GRAPHIC_KINDS:
+            issues.append(("error", f"{where}: graphic '{c.graphic}' unknown. Use one of {sorted(GRAPHIC_KINDS)}"))
+            c.graphic = None
     if c.end is not None and c.end <= c.start:
         issues.append(("error", f"{where}: end ({c.end}) must be after start ({c.start})"))
     if not (0.25 <= c.speed <= 4):
@@ -273,7 +290,7 @@ def parse_scene(d: dict, idx: int, issues: list, brand: dict) -> Scene:
     else:  # a title card
         clips = [parse_clip({"type": "card", "background": d.get("background")}, where, issues)]
     card = None
-    if clips and clips[0].kind == "card" and len(clips) == 1:
+    if clips and clips[0].kind == "card" and len(clips) == 1 and not clips[0].graphic:
         card = {"title": d.get("title", ""), "subtitle": d.get("subtitle", "")}
     trans = d.get("transition")
     if trans and str(trans) not in TRANSITIONS:

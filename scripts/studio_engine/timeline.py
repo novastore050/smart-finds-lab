@@ -5,13 +5,39 @@ so they can be checked, edited by hand and rendered exactly like before.
 """
 from __future__ import annotations
 
+import hashlib
+
+from sfl_engine.config import GRAPHIC_KINDS, MOTIONS
 from sfl_engine.util import ROOT, rel
 
 from .common import Production, fval, save_yaml
 from .prompts import shot_file
 from .research import load_research
-from .script import est_seconds, load_script
+from .script import dedicated_shorts, est_seconds, load_script
 from .voice import scene_audio
+
+# product-photo "crop" in the script -> how the editor frames the photo
+#   full  : whole product visible (contain, no crop)
+#   other : a closer detail crop (cover + base zoom) around focus_x/focus_y (default centre)
+DETAIL_ZOOM = 1.35
+
+
+def photo_clip(f, sh: dict) -> dict:
+    motion = sh.get("motion") if sh.get("motion") in MOTIONS else "zoom_in"
+    crop = str(sh.get("crop") or "full")
+    clip = {"source": rel(f), "motion": motion, "duration": float(sh.get("seconds") or 4)}
+    if crop == "full":
+        clip["fit"] = "contain"
+    else:
+        clip.update({"fit": "cover", "zoom": float(sh.get("zoom") or DETAIL_ZOOM),
+                     "focus_x": float(sh.get("focus_x", 0.5)), "focus_y": float(sh.get("focus_y", 0.5))})
+    return clip
+
+
+def graphic_clip(sh: dict) -> dict:
+    kind = sh.get("graphic") if sh.get("graphic") in GRAPHIC_KINDS else "note"
+    return {"type": "card", "background": "gradient", "duration": float(sh.get("seconds") or 4),
+            "graphic": kind, "text": str(sh.get("text") or "")}
 
 
 def _scene_entry(prod: Production, sc: dict, wpm: float, missing: list, placeholders: bool, vertical=False):
@@ -30,10 +56,13 @@ def _scene_entry(prod: Production, sc: dict, wpm: float, missing: list, placehol
         missing.append(f"voice {sc['id']}  ->  {rel(prod.p('voice', sc['id'] + '.mp3'))}")
     clips = []
     for sh in sc.get("shots") or []:
+        if sh.get("type") == "graphic":
+            clips.append(graphic_clip(sh))  # made by the editor - never "missing"
+            continue
         if sh.get("type") == "product_photo":
             f = shot_file(prod, sh)
             if f:
-                clips.append({"source": rel(f), "fit": "contain", "motion": "zoom_in", "duration": 4})
+                clips.append(photo_clip(f, sh))
             else:
                 missing.append(f"photo {sh['id']}  ->  assets/images/{prod.slug}/{sh.get('product')}.jpg")
             continue
@@ -81,7 +110,11 @@ def build(prod: Production, log, placeholders=False):
     audio = {}
     if music.get("file"):
         audio = {"music": music["file"], "music_license": music.get("license", "")}
-    tl = {"project": {"title": s.get("title") or prod.title, "output": prod.slug, "format": "long"},
+    src = prod.p("script", "script.yaml")
+    src_md5 = hashlib.md5(src.read_bytes()).hexdigest()
+    tl = {"project": {"title": s.get("title") or prod.title, "output": prod.slug, "format": "long",
+                      "source_script": rel(src), "source_script_md5": src_md5,
+                      "source_script_status": str(s.get("status") or "")[:120]},
           "audio": audio, "subtitles": {"mode": "auto"}, "intro": {"position": "after_first_scene"},
           "scenes": scenes}
     path = prod.p("edit", "timeline.yaml")
@@ -93,17 +126,34 @@ def build(prod: Production, log, placeholders=False):
     pnames = {p["id"]: (p.get("short_name") or fval(p["name"])) for p in research.get("products", [])}
     shorts = []
     smissing = []
-    for k, sh in enumerate(s.get("shorts") or [], 1):
-        sc_list = [_scene_entry(prod, by_id[u], wpm, smissing, placeholders, vertical=True)
-                   for u in sh.get("use_scenes") or [] if u in by_id]
-        shorts.append({"output": f"{prod.slug}-short-{k}", "title": sh.get("title") or pnames.get(sh.get("product"), ""),
-                       "hook": sh.get("hook"), "scenes": sc_list})
     n_products = sum(1 for sc in s.get("scenes") or [] if sc.get("role") == "product")
-    sdoc = {"defaults": {"audio": audio, "cta": f"Full top {n_products} on the channel"}, "shorts": shorts}
+    dedicated = {sh["id"] for sh in dedicated_shorts(s)}
+    for k, sh in enumerate(s.get("shorts") or [], 1):
+        item = {"output": f"{prod.slug}-short-{k}", "title": sh.get("title") or pnames.get(sh.get("product"), ""),
+                "hook": sh.get("hook")}
+        if sh.get("id") in dedicated:
+            # standalone Short: its own narration, voice file (voice/<short-id>.mp3), vertical shots and ending.
+            # A graphic shot of kind 'cta' becomes the closing call-to-action text instead of a full card.
+            cta = next((x.get("text") for x in sh.get("shots") or []
+                        if x.get("type") == "graphic" and x.get("graphic") == "cta"), "")
+            body = [x for x in sh.get("shots") or [] if not (x.get("type") == "graphic" and x.get("graphic") == "cta")]
+            src_scene = next((by_id[u] for u in sh.get("use_scenes") or [] if u in by_id), {})
+            lt = (src_scene.get("on_screen") or {}).get("lower_third")
+            pseudo = {"id": sh["id"], "narration": sh["narration"], "shots": body,
+                      "on_screen": {"lower_third": lt} if lt else {}}
+            item.update({"narration": " ".join(sh["narration"].split()), "cta": {"text": cta or ""},
+                         "scenes": [_scene_entry(prod, pseudo, wpm, smissing, placeholders, vertical=True)]})
+        else:
+            # legacy: re-use long-video scenes (their voice-over) reframed to 9:16
+            item.update({"cta": {"text": f"Full top {n_products} on the channel"},
+                         "scenes": [_scene_entry(prod, by_id[u], wpm, smissing, placeholders, vertical=True)
+                                    for u in sh.get("use_scenes") or [] if u in by_id]})
+        shorts.append(item)
+    sdoc = {"defaults": {"audio": audio}, "shorts": shorts}
     spath = prod.p("edit", "shorts.yaml")
     save_yaml(spath, sdoc, f"# GENERATED by studio.py build-timeline - Shorts for {prod.slug}")
     log.info(f"Timeline: {rel(path)} ({len(scenes)} scenes)")
-    log.info(f"Shorts:   {rel(spath)} ({len(shorts)} Shorts)")
+    log.info(f"Shorts:   {rel(spath)} ({len(shorts)} Shorts, {len(dedicated)} with their own narration)")
     if not music.get("file"):
         log.info("   note: no background music set (production.yaml -> music: {file:, license:})")
     if missing:

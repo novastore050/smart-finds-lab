@@ -20,20 +20,18 @@ stages:
     at: 2026-11-03 08:11
     note: Owner approved Version 4 shortlist (revision 4) on 2026-11-03
   script:
-    at: 2026-11-03 08:17
-    note: 13 scenes
+    at: 2026-11-03 21:35
+    note: 13 scenes + 3 standalone Shorts (promoted from script/review/script-final-v2.yaml)
   prompts:
-    at: 2026-11-03 08:15
-  thumbnail:
-    at: 2026-11-03 08:26
-    note: 2 variants
+    at: 2026-11-03 21:27
   timeline:
-    at: 2026-11-03 08:17
-    note: 57 items missing
+    at: 2026-11-03 21:35
+    note: 95 items missing (placeholder preview)
   seo:
-    at: 2026-11-03 08:26
+    at: 2026-11-03 21:35
+    note: chapters estimated
   qc:
-    at: 2026-11-03 08:26
+    at: 2026-11-03 21:35
     note: FAIL
 approved_products:
 - egg-cooker
@@ -55,9 +53,9 @@ seo:
   - 10 Clever Kitchen Gadgets for Busy Mornings and Easy Meal Prep
   description_intro: 'Plenty of kitchen gadgets end up forgotten in a drawer. These 10 fix small everyday
     jobs - from one-button boiled eggs and drier salads to faster chopping, cleaner dishes, better coffee
-    and food containers that Rubbermaid sells as leak-proof. This countdown is our editorial selection, based
-    on manufacturer information, expert reviews and buyer feedback - we did not test these products ourselves.
-    For each one: what it does, what buyers like, and the honest downside.'
+    and food containers that Rubbermaid sells as leak-proof. This countdown is our editorial selection,
+    based on manufacturer information, expert reviews and buyer feedback - we did not test these products
+    ourselves. For each one: what it does, what buyers like, and the honest downside.'
   tags:
   - kitchen gadgets that actually work
   - useful kitchen gadgets
@@ -72,6 +70,8 @@ seo:
   - kitchen shears
   - lemon squeezer
   - dish brush
+  display_names:
+    food-storage: Rubbermaid Brilliance Food Storage Containers, Set of 3 (6 Pieces Total)
 thumbnail:
   variants:
   - text: 10 Gadgets That Actually Help
@@ -80,3 +80,23 @@ thumbnail:
   - text: Stop Buying Useless Gadgets
     sub: 10 that are worth it
     badge: TOP 10
+withdrawn_claims:
+- America's Test Kitchen
+- Test Kitchen says
+- won its plastic
+- lids aren't sold separately
+- not sold separately
+- tomato sauce can stain
+- cracked lids or broken latches
+- no water escaped
+- no water got out
+- 'Number two: Rubbermaid'
+- Reviewed, which tried
+- fifteen to twenty seconds
+- ten inches across
+- Every cut lets the juices run out
+script_source:
+  active: script/script.yaml
+  promoted_from: script/review/script-final-v2.yaml
+  promoted_on: '2026-11-03'
+  old_script: superseded/2026-11-03-pre-final-v2/script/script.yaml

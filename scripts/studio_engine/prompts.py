@@ -17,25 +17,35 @@ from sfl_engine.util import IMAGE_EXT, VIDEO_EXT, SFLError, probe, rel, unique_o
 
 from .common import Production, fval
 from .research import load_research
-from .script import load_script, studio_cfg
+from .script import dedicated_shorts, load_script, studio_cfg
 
-SHOT_RE = re.compile(r"(s\d{2})[-_ ]?(photo|[a-z])(?:[-_ ]?(v))?(?![a-z0-9])", re.I)
+SHOT_RE = re.compile(r"(s\d{2}|short\d+)[-_ ]?(photo|[a-z])(?:[-_ ]?(v))?(?![a-z0-9])", re.I)
 
 
 def shots(prod: Production):
     """All shots in script order, with the scenes used by Shorts flagged (they get a 9:16 version)."""
     s = load_script(prod)
-    short_scenes = {u for sh in s.get("shorts") or [] for u in sh.get("use_scenes") or []}
+    # only Shorts that re-use long-video scenes need vertical '-v' copies of those scenes' clips
+    ded_ids = {sh["id"] for sh in dedicated_shorts(s)}
+    short_scenes = {u for sh in s.get("shorts") or [] if sh.get("id") not in ded_ids for u in sh.get("use_scenes") or []}
     out = []
     for i, sc in enumerate(s.get("scenes") or [], 1):
         for sh in sc.get("shots") or []:
             out.append({**sh, "scene": sc["id"], "scene_no": i, "role": sc.get("role"), "rank": sc.get("rank"),
                         "for_shorts": sc["id"] in short_scenes})
+    # dedicated Shorts have their own vertical shots (no '-v' copy of long-video clips needed)
+    for k, sh in enumerate(dedicated_shorts(s), 1):
+        for x in sh.get("shots") or []:
+            out.append({**x, "scene": sh["id"], "scene_no": len(s.get("scenes") or []) + k, "role": "short",
+                        "rank": None, "product": x.get("product") or sh.get("product"), "for_shorts": False,
+                        "short_title": sh.get("title")})
     return out
 
 
 def shot_file(prod: Production, shot: dict, vertical=False):
     """Where the imported file for a shot lives (first existing match), or None."""
+    if shot.get("type") == "graphic":
+        return None  # graphic cards are drawn by the editor, there is no file
     if shot.get("type") == "product_photo":
         base = prod.image_dir
         stem = shot.get("product") or shot["id"]
@@ -72,7 +82,9 @@ def write_prompts(prod: Production, log):
     for sh in all_shots:
         if sh["scene"] != current:
             current = sh["scene"]
-            label = {"hook": "Hook", "wrapup": "Wrap-up"}.get(sh["role"], f"#{sh['rank']} {names.get(sh.get('product'), '')}")
+            label = {"hook": "Hook", "wrapup": "Wrap-up", "setup": "Disclosure",
+                     "short": f"Short — {sh.get('short_title', '')} (vertical 9:16)"}.get(
+                sh["role"], f"#{sh['rank']} {names.get(sh.get('product'), '')}")
             L += [f"## Scene {sh['scene_no']} — {sh['scene']} · {label}", ""]
         if sh.get("type") == "product_photo":
             target = f"assets/images/{prod.slug}/{sh.get('product')}.jpg"
@@ -86,9 +98,27 @@ def write_prompts(prod: Production, log):
                          "save_as": target, "prompt": sh.get("prompt", ""),
                          "status": "imported" if have else "pending"})
             continue
+        if sh.get("type") == "graphic":
+            L += [f"### `{sh['id']}` — graphic card (made by the editor, nothing to generate)", "",
+                  f"- {sh.get('graphic')}: {sh.get('text', '')}", ""]
+            continue
+        if sh.get("type") == "stock":
+            aspect = sh.get("aspect", "16:9")
+            have = shot_file(prod, sh)
+            save = f"{sh['id']}.mp4"
+            L += [f"### `{sh['id']}` — licensed stock video (NOT AI)", "",
+                  f"- Search: \"{sh.get('search', '')}\" · aspect {aspect} · ~{sh.get('seconds', '')} s",
+                  f"- Save as: `assets/video/{prod.slug}/{save}` — only after the licence check in "
+                  "`preproduction/stock-footage-manifest.csv` (no logos, no look-alike products, no unverified results)",
+                  f"- Status: {'✅ imported: ' + rel(have) if have else '⏳ not chosen yet'}", ""]
+            rows.append({"shot_id": sh["id"], "scene": sh["scene"], "scene_no": sh["scene_no"], "type": "stock",
+                         "product": names.get(sh.get("product"), ""), "aspect": aspect, "seconds": sh.get("seconds", ""),
+                         "save_as": f"assets/video/{prod.slug}/{save}", "prompt": "search: " + sh.get("search", ""),
+                         "status": "imported" if have else "pending"})
+            continue
         cam = f" Camera: {sh['camera']}." if sh.get("camera") else ""
         full = f"{sh['prompt'].rstrip('.')}.{cam} {vs['suffix']}"
-        versions = [("16:9", "", "long video")]
+        versions = [(sh.get("aspect") or "16:9", "", "Short (vertical)" if sh["role"] == "short" else "long video")]
         if sh["for_shorts"]:
             versions.append(("9:16", "-v", "Short (vertical)"))
         L += [f"### `{sh['id']}` — AI b-roll", ""]
@@ -222,7 +252,7 @@ def write_visual_plan(prod: Production, log, script: dict | None = None, out_nam
         shot_total = 0
         for sh in sc.get("shots") or []:
             src = {"product_photo": f"📷 product photo ({sh.get('motion', 'zoom_in')}, crop: {sh.get('crop', 'full')})",
-                   "stock": "🎞️ free-licence stock", "graphic": "🔤 graphic (made by the editor)"}.get(
+                   "stock": "🎞️ stock (licence check required)", "graphic": "🔤 graphic (made by the editor)"}.get(
                 sh.get("type"), "🎬 AI b-roll")
             have = shot_file(prod, sh)
             shot_total += float(sh.get("seconds") or 0)
@@ -238,6 +268,21 @@ def write_visual_plan(prod: Production, log, script: dict | None = None, out_nam
         L.append("")
     L += [f"**Estimated narration total:** {total / 60:.1f} min (+ intro sting 2.6 s, outro 12 s, transitions).", "",
           "Higgsfield prompts for every 🎬 shot: `prompts/higgsfield-prompts.md` · shot list: `prompts/shotlist.csv`."]
+    ded = dedicated_shorts(s)
+    if ded:
+        L += ["", "## Shorts (vertical 1080×1920, each with its own narration and voice file)", ""]
+        for sh in ded:
+            L += [f"### `{sh['id']}` · {sh.get('title', '')} (~{est_seconds(sh['narration'], wpm):.0f} s) · "
+                  f"voice file `voice/{sh['id']}.mp3`", "", f"Hook on screen: **{sh.get('hook', '')}**", "",
+                  "| Shot | Source | Camera / move | ~Seconds | What we see |", "|---|---|---|---|---|"]
+            for x in sh.get("shots") or []:
+                src = {"product_photo": f"📷 product photo ({x.get('motion', 'zoom_in')}, crop: {x.get('crop', 'full')})",
+                       "stock": "🎞️ stock (licence check required)", "graphic": "🔤 graphic (made by the editor)"}.get(
+                    x.get("type"), "🎬 AI b-roll 9:16")
+                what = {"product_photo": "real product photo", "stock": f"search: \"{x.get('search', '')}\"",
+                        "graphic": f"{x.get('graphic', '')}: {x.get('text', '')}"}.get(x.get("type"), x.get("prompt", ""))
+                L.append(f"| `{x['id']}` | {src} | {x.get('camera', '—')} | {x.get('seconds', '—')} | {what} |")
+            L.append("")
     out = prod.dir / "production" / out_name
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text("\n".join(L) + "\n", encoding="utf-8")

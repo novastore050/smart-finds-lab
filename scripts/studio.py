@@ -65,7 +65,9 @@ def cmd_check_script(a):
         prod.unmark("script")
         log.info(f"RESULT: {errs} error(s) - fix script/script.yaml and run check-script again")
         return 2
-    prod.mark("script", f"{st['scenes']} scenes")
+    n_sh = len(script.dedicated_shorts(script.load_script(prod)))
+    src = (prod.meta.get("script_source") or {}).get("promoted_from")
+    prod.mark("script", f"{st['scenes']} scenes + {n_sh} standalone Shorts" + (f" (promoted from {src})" if src else ""))
     log.info("RESULT: script OK")
     return 0
 
@@ -97,6 +99,21 @@ def cmd_review_done(a):
         return 1
     prod.mark("human_review", a.note or "owner approved")
     print("Human review recorded. Upload manually in YouTube Studio when you are ready.")
+
+
+def cmd_build_timeline(a):
+    prod = P(a)
+    _, _, missing = timeline.build(prod, Log("timeline"), a.placeholders)
+    note = f"{len(missing)} items missing" if missing else "complete"
+    prod.mark("timeline", note + (" (placeholder preview)" if a.placeholders else ""))
+    return 0
+
+
+def cmd_seo(a):
+    prod = P(a)
+    pack = seo.build(prod, Log("seo"))
+    prod.mark("seo", "chapters estimated" if pack.get("chapters_estimated") else "")
+    return 0
 
 
 def cmd_status(a):
@@ -152,7 +169,7 @@ def main():
     s.add_argument("--scene", action="append")
     s.add_argument("--confirm-spend", action="store_true")
     # edit & publish prep
-    s = add("build-timeline", lambda a: timeline.build(P(a), Log("timeline"), a.placeholders) and 0,
+    s = add("build-timeline", cmd_build_timeline,
             "script + assets -> edit/timeline.yaml + edit/shorts.yaml")
     s.add_argument("--placeholders", action="store_true", help="title cards instead of missing clips (preview)")
     s = add("render", lambda a: 0 if pipeline.render(P(a), Log("render"), a.draft, a.skip_shorts,
@@ -162,7 +179,7 @@ def main():
     s.add_argument("--skip-shorts", action="store_true")
     s.add_argument("--placeholders", action="store_true")
     add("thumbnail", lambda a: pipeline.thumbnails(P(a), Log("thumb")) and 0, "thumbnail variants")
-    add("seo", lambda a: seo.build(P(a), Log("seo")) and 0, "titles, description, chapters, tags")
+    add("seo", cmd_seo, "titles, description, chapters, tags")
     s = add("qc", cmd_qc, "final production QC report")
     s.add_argument("--fast", action="store_true", help="skip full decode check")
     s = add("review-done", cmd_review_done, "OWNER: record that you reviewed the final video")

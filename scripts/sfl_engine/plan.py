@@ -94,7 +94,7 @@ def _seg_key(seg: Segment, proj: Project):
         src = [str(seg.clip.source), st.st_mtime, st.st_size]
     data = [src, seg.clip.kind, round(seg.src_start, 3), seg.frames, seg.src_frames, seg.speed, seg.fit,
             round(seg.focus_x, 3), round(seg.focus_y, 3), seg.look, seg.card_bg, seg.clip.motion,
-            seg.clip.clip_audio, proj.W, proj.H, proj.fps, proj.brand["colors"], 4]
+            seg.clip.clip_audio, seg.clip.zoom, proj.W, proj.H, proj.fps, proj.brand["colors"], 5]
     return hashlib.md5(json.dumps(data, sort_keys=True, default=str).encode()).hexdigest()[:16]
 
 
@@ -202,6 +202,16 @@ def make_plan(proj: Project, log=None, allow_missing=False) -> Plan:
             plan.overlays.append({"type": f"card_{sc.auto or 'plain'}", "t0": t0 + 0.5 * d_in / fps,
                                   "t1": t_end - 0.6 * d_out / fps,
                                   "data": sc.card or {}, "scene": sc.id})
+        # graphic cards: text drawn over each card segment (a card can repeat when clips cycle)
+        seg_f = start_f
+        for s in segs:
+            if s.clip.kind == "card" and s.clip.graphic:
+                a = (seg_f + (d_in if seg_f == start_f else 0) * 0.5) / fps
+                b = (seg_f + s.frames) / fps - (0.6 * d_out / fps if seg_f + s.frames >= start_f + T_f else 0.05)
+                if b - a >= 0.4:
+                    plan.overlays.append({"type": "card_graphic", "t0": a, "t1": b, "scene": sc.id,
+                                          "data": {"graphic": s.clip.graphic, "text": s.clip.text}})
+            seg_f += s.frames
         for o in sc.overlays:
             st = float(o.get("start", 0.35 + d_in / fps))
             dur = o.get("duration")

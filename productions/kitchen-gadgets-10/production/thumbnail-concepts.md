@@ -14,7 +14,7 @@
 - Big text: **Stop Buying Useless Gadgets**
 - Sub text: 10 that are worth it
 - Badge: TOP 10
-- Hero image: TempPro TempSwift TP19H instant-read thermometer (#2 in the final script; real photo), cut out on the dark brand background
+- Hero image: TempPro TempSwift TP19H Instant Read Meat Thermometer (real photo), cut out on the dark brand background
 
 ## Concept C (optional)
 
