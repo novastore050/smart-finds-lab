@@ -282,8 +282,10 @@ def write_reports(prod: Production):
         rat, cnt, ap = fval(p.get("rating_amazon")), fval(p.get("review_count_amazon")), fval(p.get("price_amazon"))
         amz = []
         approx = "≈" if any(w in str((p.get("review_count_amazon") or {}).get("note", "")) for w in ("rough", "round", "about")) else ""
+        conflict = "CONFLICT" in str((p.get("review_count_amazon") or {}).get("note", "")).upper()
         if rat:
-            amz.append(f"{rat}★" + (f" ({approx}{int(cnt):,} ratings)" if cnt and str(cnt).isdigit() else ""))
+            amz.append(f"{rat}★" + (f" ({approx}{int(cnt):,} ratings)" if cnt and str(cnt).isdigit() else "")
+                       + (" ⚠️ count conflicts between Amazon pages" if conflict else ""))
         else:
             amz.append("rating not found")
         if ap:

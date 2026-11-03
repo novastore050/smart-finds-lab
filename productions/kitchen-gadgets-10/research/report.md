@@ -1,18 +1,16 @@
 # Research report — 10 Kitchen Gadgets That Actually Make Life Easier
 
-Market: **Amazon USA** · Researched: **2026-11-03** · By: Claude (web search) for Smart Finds Lab · Revision: 3
+Market: **Amazon USA** · Researched: **2026-11-03** · By: Claude (web search) for Smart Finds Lab · Revision: 4
 
 > **Important:** nothing below has been checked on the live Amazon.com page yet. **Amazon data** comes from Amazon pages as seen through a search engine (capture date unknown). **Third-party data** comes from other sites and is never Amazon data. Both are ⚠️ unverified until you check them with the verification sheet.
 
 ## Changes in this revision
 
-- OXO Salad Spinner: removed the rating taken from listing B0FD81VQK7 - that listing is a 4-PACK. No Amazon.com rating was found for B00004OCKR; the same ASIN's ratings on Amazon Germany/UK/Canada are shown separately as non-US data.
-- KitchenAid Shears: model resolved to KE351OHOBA (Amazon URL for B07PZF3QS3 + Home Depot). KC351OHOBA is a separate SKU and is not used.
-- TP19H: reading time corrected to 3-4 seconds (user manual). The '1 second' claim appears only in marketing text.
-- Scrub Daddy -> OXO Good Grips Soap Dispensing Dish Brush (B000CC91GK): its own Amazon page shows 4.5★ / 29,629 ratings and lab testing picked it as best value. Scrub Daddy kept as a reserve (no Amazon rating found).
-- PowerLix: fixed to the Deep Blue listing B08CVPQJHJ; rating is the one shown for that ASIN (Amazon may pool colours).
-- Re-ranked on viewer usefulness, visual storytelling, product variety and evidence quality.
-- Estimated/rounded figures are labelled as such (e.g. Dash 'about 112,000').
+- OXO Garlic Press -> Rubbermaid Brilliance Leak-Proof Food Storage, 6-piece (B01JCNEJSO): different brand, new storage category, test-kitchen win for the line, strong leak-proof visual. Kuhn Rikon garlic press was considered but not recommended (unclear listing identity, no rating found, counterfeit warnings) - kept as a reserve.
+- KitchenAid Shears: KEPT - model resolved, same-ASIN ratings 4.7-4.8★ (63-65K) on Amazon Australia/Singapore, most versatile tool; ranked #9.
+- OXO Salad Spinner: KEPT - clear product identity (#1 Best Seller listing B00004OCKR) and strongest visual; Amazon.com rating still to be recorded.
+- OXO Dish Brush: the actual product page B000CC91GK is 'currently unavailable' and shows no rating; the 4.5★/29,629 figure (from a customer-review URL) is withdrawn. ASIN changed to the current version B0BK2R8TQB; only non-US ratings found (Singapore 4.5★/30,200, Canada 4.3★/3,975).
+- Re-ranked; brands now: Dash, Rubbermaid, TempPro, OXO x2, Fullstar, PowerLix, Microplane, KitchenAid, Zulay.
 
 ## Method
 
@@ -30,102 +28,7 @@ Each shortlisted product gets 1-5 points for: Viewer usefulness (how much it hel
 - Several third-party sources are affiliate roundups; editorial hands-on reviews are labelled.
 - Products were not purchased or tested. The video stays research-based (no testing claims).
 
-## #10 — OXO Good Grips Garlic Press (die-cast zinc)
-
-Brand: **OXO** · Model: **11107400** · Category: Prep · Product id: `garlic-press` · Score: **12/20**
-
-**Amazon data** (from Amazon pages via search engine — not yet checked live)
-
-| Field | Value | Status | Source | As of |
-|---|---|---|---|---|
-| ASIN | B00HEZ888K (from the amazon.com URL in search results; listing not opened live) | ⚠️ unverified | [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K) | 2026-11-03 |
-| Amazon URL | https://www.amazon.com/dp/B00HEZ888K (standard link built from the ASIN) | ⚠️ unverified | [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K) | 2026-11-03 |
-| Model (listing) | 11107400 | ⚠️ unverified | [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K) | 2026-11-03 |
-| Price | $20.99 (Amazon search-results page snapshot, date unknown (list price shown $28.99)) | ⚠️ unverified | [AZ-GARLIC-S](https://www.amazon.com/Garlic-Presses-OXO-Tools/s?keywords=Garlic+Presses&rh=n:678518011,p_89:OXO&c=ts&ts_id=678518011) | 2026-11-03 |
-| Star rating | — (not found on Amazon pages via search - check on Amazon) | — not collected |  |  |
-| Number of ratings | — (not found on Amazon pages via search - check on Amazon) | — not collected |  |  |
-| Listing note | '1K+ bought in past week' and ranked #2 in garlic presses (snapshot) | ⚠️ unverified | [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K) | 2026-11-03 |
-| Listing note | listing colour field says Silver while the title says Black | ⚠️ unverified | [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K) | 2026-11-03 |
-
-**Third-party data** (other websites — never Amazon data)
-
-| Item | Value | Source | As of |
-|---|---|---|---|
-| Rating — Amazon rating as reported by ShopSavvy | 4.7 / 5 from 35,993 ratings | [SS-GARLIC](https://shopsavvy.com/reviews-tldr/oxo-garlic-press.md) | 2026-11-03 |
-| Price — Macy's (sale) | $20.99 | [MACYS-GARLIC](https://www.macys.com/shop/product/oxo-good-grips-garlic-press?ID=13645073) | 2026-11-02 |
-
-**Selection score:** Viewer usefulness 3/5 · Visual storytelling 4/5 · Product variety 2/5 · Evidence quality 3/5 = **12/20**
-
-**Key features**
-
-- a large chamber presses several cloves at once — [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K)
-- a built-in cleaner pushes out the leftover skins — [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K)
-
-**Main benefits (what buyers/reviewers like)**
-
-- Reviewers call it one of the best garlic tools they have used — [SS-GARLIC](https://shopsavvy.com/reviews-tldr/oxo-garlic-press.md)
-- It is easy to clean and can go in the dishwasher — [SS-GARLIC](https://shopsavvy.com/reviews-tldr/oxo-garlic-press.md)
-
-**Disadvantages (common complaints)**
-
-- Some buyers say pressing takes effort and leaves garlic behind — [SS-GARLIC](https://shopsavvy.com/reviews-tldr/oxo-garlic-press.md)
-- A few find the handles large, and one UK reviewer reported a broken press — [LAKE-GARLIC](https://www.lakeland.co.uk/11560/oxo-good-grips-garlic-press)
-
-**Best for:** people who cook with fresh garlic several times a week
-
-**Why selected:** Your preferred pick and a proven seller, but its Amazon star rating was not found and it overlaps with other prep tools - so it opens the countdown at #10.
-
-**Check on Amazon:** record the Amazon star rating and count (not found directly); check colour (Black vs Silver)
-
-## #9 — KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black
-
-Brand: **KitchenAid** · Model: **KE351OHOBA** · Category: Prep · Product id: `kitchen-shears` · Score: **13/20**
-
-**Amazon data** (from Amazon pages via search engine — not yet checked live)
-
-| Field | Value | Status | Source | As of |
-|---|---|---|---|---|
-| ASIN | B07PZF3QS3 (from the amazon.com URL in search results; listing not opened live) | ⚠️ unverified | [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3) | 2026-11-03 |
-| Amazon URL | https://www.amazon.com/dp/B07PZF3QS3 (standard link built from the ASIN) | ⚠️ unverified | [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3) | 2026-11-03 |
-| Model (listing) | KE351OHOBA (model number in the Amazon URL for B07PZF3QS3 and on Home Depot's listing of the same 8.72-inch black shears) | ⚠️ unverified | [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3), [HD-SHEARS](https://www.homedepot.com/p/KitchenAid-8-72-in-Black-All-Purpose-Shears-with-Protective-Sheath-KE351OHOBA/320485474) | 2026-11-03 |
-| Price | — (not found on Amazon pages via search - check on Amazon) | — not collected |  |  |
-| Star rating | — (not found on Amazon pages via search - check on Amazon) | — not collected |  |  |
-| Number of ratings | — (not found on Amazon pages via search - check on Amazon) | — not collected |  |  |
-| Listing note | '20K+ bought in past month' (snapshot); no star rating shown in search results | ⚠️ unverified | [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3) | 2026-11-03 |
-| Listing note | KC351OHOBA is a separate SKU (Amazon B0050U240O, Walmart, H-E-B) with a similar description; no source explains the difference - NOT used for this product | ⚠️ unverified | [AZ-SHEARS-ALT](https://www.amazon.com/KitchenAid-KC351OHOBA-Multi-Purpose-Scissors-Stainless/dp/B0050U240O) | 2026-11-03 |
-
-**Third-party data** (other websites — never Amazon data)
-
-| Item | Value | Source | As of |
-|---|---|---|---|
-| Rating — Amazon rating as reported by ShopSavvy | 4.8 / 5 from 71,000 ratings ('over 71,000') | [SS-SHEARS](https://shopsavvy.com/reviews-tldr/%22kitchenaid-kitchen-shears%22) | 2026-11-03 |
-| Price — lowest of range on ShopSavvy ($7.51-$26.85) | $7.51 | [SS-SHEARS](https://shopsavvy.com/reviews-tldr/%22kitchenaid-kitchen-shears%22) | 2026-11-03 |
-
-**Selection score:** Viewer usefulness 4/5 · Visual storytelling 3/5 · Product variety 3/5 · Evidence quality 3/5 = **13/20**
-
-**Key features**
-
-- stainless steel blades with a plastic sheath that protects them in the drawer — [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3)
-- soft-grip handles; listed as dishwasher safe — [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3)
-
-**Main benefits (what buyers/reviewers like)**
-
-- Reviewers call them sharp, comfortable and a great value for everyday jobs — [SS-SHEARS](https://shopsavvy.com/reviews-tldr/%22kitchenaid-kitchen-shears%22)
-- The included sheath is something many cheap shears skip — [BR-SHEARS](https://bestreviews.com/kitchen/knives/best-kitchen-shears)
-- Reviewed found the closely related KC351OHOBA shears long and reasonably sharp — [RV-SHEARS](https://www.reviewed.com/cooking/best-right-now/the-best-kitchen-shears-and-scissors)
-
-**Disadvantages (common complaints)**
-
-- They can dull faster than premium shears — [SS-SHEARS](https://shopsavvy.com/reviews-tldr/%22kitchenaid-kitchen-shears%22)
-- Some buyers reported rust despite the dishwasher-safe label — [SS-SHEARS](https://shopsavvy.com/reviews-tldr/%22kitchenaid-kitchen-shears%22)
-
-**Best for:** snipping herbs, pizza, packaging and chicken without a knife and board
-
-**Why selected:** Very useful everyday tool (20K+ bought in a month per snapshot) and the model is now confirmed as KE351OHOBA, but the visual is less dramatic and its rating was only found via a third party.
-
-**Check on Amazon:** confirm the listing shows model KE351OHOBA; record the star rating (not found)
-
-## #8 — Zulay Kitchen Metal 2-in-1 Lemon Lime Squeezer
+## #10 — Zulay Kitchen Metal 2-in-1 Lemon Lime Squeezer
 
 Brand: **Zulay Kitchen** · Model: **—** · Category: Prep · Product id: `lemon-squeezer` · Score: **13/20**
 
@@ -166,11 +69,61 @@ Brand: **Zulay Kitchen** · Model: **—** · Category: Prep · Product id: `lem
 
 **Best for:** cooks, bakers and anyone making lemonade or cocktails
 
-**Why selected:** Cheap, satisfying visual and solid Amazon evidence (4.7★, 37,677 ratings), but a small prep tool with limited daily use.
+**Why selected:** Cheap, satisfying visual and solid Amazon evidence (≈37,677 ratings, 4.7★), but the narrowest everyday use and the most overlap with other prep tools - so it opens the countdown at #10.
 
 **Check on Amazon:** the rating count on Amazon (37,677) differs from a third-party figure (47,137) - record the live one
 
-## #7 — Microplane Premium Classic Series Zester/Grater, Black
+## #9 — KitchenAid All Purpose Kitchen Shears with Protective Sheath, 8.72 Inch, Black
+
+Brand: **KitchenAid** · Model: **KE351OHOBA** · Category: Prep · Product id: `kitchen-shears` · Score: **14/20**
+
+**Amazon data** (from Amazon pages via search engine — not yet checked live)
+
+| Field | Value | Status | Source | As of |
+|---|---|---|---|---|
+| ASIN | B07PZF3QS3 (from the amazon.com URL in search results; listing not opened live) | ⚠️ unverified | [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3) | 2026-11-03 |
+| Amazon URL | https://www.amazon.com/dp/B07PZF3QS3 (standard link built from the ASIN) | ⚠️ unverified | [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3) | 2026-11-03 |
+| Model (listing) | KE351OHOBA (model number in the Amazon URL for B07PZF3QS3 and on Home Depot's listing of the same 8.72-inch black shears) | ⚠️ unverified | [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3), [HD-SHEARS](https://www.homedepot.com/p/KitchenAid-8-72-in-Black-All-Purpose-Shears-with-Protective-Sheath-KE351OHOBA/320485474) | 2026-11-03 |
+| Price | — (not found on Amazon pages via search - check on Amazon) | — not collected |  |  |
+| Star rating | — (not found on Amazon pages via search - check on Amazon) | — not collected |  |  |
+| Number of ratings | — (not found on Amazon pages via search - check on Amazon) | — not collected |  |  |
+| Listing note | '20K+ bought in past month' (snapshot); no star rating shown in search results | ⚠️ unverified | [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3) | 2026-11-03 |
+| Listing note | KC351OHOBA is a separate SKU (Amazon B0050U240O, Walmart, H-E-B) with a similar description; no source explains the difference - NOT used for this product | ⚠️ unverified | [AZ-SHEARS-ALT](https://www.amazon.com/KitchenAid-KC351OHOBA-Multi-Purpose-Scissors-Stainless/dp/B0050U240O) | 2026-11-03 |
+
+**Third-party data** (other websites — never Amazon data)
+
+| Item | Value | Source | As of |
+|---|---|---|---|
+| Rating — Amazon Australia (same ASIN - not Amazon USA) | 4.7 / 5 from 63,579 ratings | [AZAU-SHEARS](https://amazon.com.au/KitchenAid-Shears-8-75-inch-Black/dp/B07PZF3QS3) | 2026-11-03 |
+| Rating — Amazon Singapore (same ASIN - not Amazon USA) | 4.8 / 5 from 65,559 ratings | [AZSG-SHEARS](https://www.amazon.sg/KitchenAid-Purpose-Shears-Protective-Sheath/dp/B07PZF3QS3) | 2026-11-03 |
+| Rating — Amazon rating as reported by ShopSavvy | 4.8 / 5 from 71,000 ratings ('over 71,000') | [SS-SHEARS](https://shopsavvy.com/reviews-tldr/%22kitchenaid-kitchen-shears%22) | 2026-11-03 |
+| Price — lowest of range on ShopSavvy ($7.51-$26.85) | $7.51 | [SS-SHEARS](https://shopsavvy.com/reviews-tldr/%22kitchenaid-kitchen-shears%22) | 2026-11-03 |
+
+**Selection score:** Viewer usefulness 4/5 · Visual storytelling 3/5 · Product variety 3/5 · Evidence quality 4/5 = **14/20**
+
+**Key features**
+
+- stainless steel blades with a plastic sheath that protects them in the drawer — [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3)
+- soft-grip handles; listed as dishwasher safe — [AZ-SHEARS](https://www.amazon.com/KitchenAid-KE351OHOBA-Purpose-Shears-Black/dp/B07PZF3QS3)
+
+**Main benefits (what buyers/reviewers like)**
+
+- Reviewers call them sharp, comfortable and a great value for everyday jobs — [SS-SHEARS](https://shopsavvy.com/reviews-tldr/%22kitchenaid-kitchen-shears%22)
+- The included sheath is something many cheap shears skip — [BR-SHEARS](https://bestreviews.com/kitchen/knives/best-kitchen-shears)
+- Reviewed found the closely related KC351OHOBA shears long and reasonably sharp — [RV-SHEARS](https://www.reviewed.com/cooking/best-right-now/the-best-kitchen-shears-and-scissors)
+
+**Disadvantages (common complaints)**
+
+- They can dull faster than premium shears — [SS-SHEARS](https://shopsavvy.com/reviews-tldr/%22kitchenaid-kitchen-shears%22)
+- Some buyers reported rust despite the dishwasher-safe label — [SS-SHEARS](https://shopsavvy.com/reviews-tldr/%22kitchenaid-kitchen-shears%22)
+
+**Best for:** snipping herbs, pizza, packaging and chicken without a knife and board
+
+**Why selected:** KEPT: the most versatile everyday tool in the list (herbs, pizza, packaging, chicken), the model is resolved (KE351OHOBA), and the same ASIN shows 4.7-4.8★ from 63-65K ratings on Amazon Australia/Singapore plus '20K+ bought in past month' on Amazon.com. Ranked #9 because the visual is less dramatic and it is a prep tool.
+
+**Check on Amazon:** confirm the listing shows model KE351OHOBA; record the Amazon.com rating (only Australia/Singapore figures found for this ASIN)
+
+## #8 — Microplane Premium Classic Series Zester/Grater, Black
 
 Brand: **Microplane** · Model: **46020** · Category: Prep · Product id: `zester` · Score: **15/20**
 
@@ -213,6 +166,53 @@ Brand: **Microplane** · Model: **46020** · Category: Prep · Product id: `zest
 **Why selected:** Highest Amazon star rating found (4.8★, 47,796 ratings) and a lovely visual, but a narrower everyday use.
 
 **Check on Amazon:** each colour has its own model number - 46020 is black
+
+## #7 — OXO Good Grips Soap Dispensing Dish Brush with Handle
+
+Brand: **OXO** · Model: **—** · Category: Cleaning · Product id: `dish-brush` · Score: **16/20**
+
+**Amazon data** (from Amazon pages via search engine — not yet checked live)
+
+| Field | Value | Status | Source | As of |
+|---|---|---|---|---|
+| ASIN | B0BK2R8TQB (current listing; the old ASIN's page points to this newer version) | ⚠️ unverified | [AZ-BRUSH-NEW](https://www.amazon.com/OXO-Good-Grips-Dispensing-Brush/dp/B0BK2R8TQB) | 2026-11-03 |
+| Amazon URL | https://www.amazon.com/dp/B0BK2R8TQB (standard link built from the ASIN) | ⚠️ unverified | [AZ-BRUSH-NEW](https://www.amazon.com/OXO-Good-Grips-Dispensing-Brush/dp/B0BK2R8TQB) | 2026-11-03 |
+| Model (listing) | — (model number of the new version not found (old version B000CC91GK listed model 1067529)) | — not collected |  |  |
+| Price | — (not found - check on Amazon) | — not collected |  |  |
+| Star rating | — (Amazon.com rating for B0BK2R8TQB not found in search snapshots - record it during verification) | — not collected |  |  |
+| Number of ratings | — (not found for Amazon.com) | — not collected |  |  |
+| Listing note | old listing B000CC91GK (used in revision 3) shows 'currently unavailable' and points to a newer version; its product page showed no rating. The 4.5★/29,629 figure came only from a customer-review URL and is withdrawn | ⚠️ unverified | [AZ-BRUSH-OLD](https://www.amazon.com/OXO-Good-Grips-Dispensing-Brush/dp/B000CC91GK) | 2026-11-03 |
+| Listing note | the Soap Dispensing PALM Brush (B00004OCLK) is a different product - not used | ⚠️ unverified | [AZ-BRUSH-PALM](https://us.amazon.com/OXO-Good-Grips-Dispensing-Brush/dp/B00004OCLK) | 2026-11-03 |
+
+**Third-party data** (other websites — never Amazon data)
+
+| Item | Value | Source | As of |
+|---|---|---|---|
+| Rating — Amazon Singapore (same ASIN - not Amazon USA) | 4.5 / 5 from 30,200 ratings | [AZSG-BRUSH](https://www.amazon.sg/OXO-Good-Grips-Dispensing-Brush/dp/B0BK2R8TQB) | 2026-11-03 |
+| Rating — Amazon Canada (same ASIN - not Amazon USA) | 4.3 / 5 from 3,975 ratings | [AZCA-BRUSH](https://www.amazon.ca/Good-Grips-Soap-Dispensing-Brush/dp/B0BK2R8TQB) | 2026-11-03 |
+
+**Selection score:** Viewer usefulness 5/5 · Visual storytelling 3/5 · Product variety 5/5 · Evidence quality 3/5 = **16/20**
+
+**Key features**
+
+- dispenses pre-loaded dish soap at the touch of a button — [AZ-BRUSH-NEW](https://www.amazon.com/OXO-Good-Grips-Dispensing-Brush/dp/B0BK2R8TQB)
+- a built-in scraper on the back lifts baked-on food, and the bristles are safe for nonstick — [AZ-BRUSH-NEW](https://www.amazon.com/OXO-Good-Grips-Dispensing-Brush/dp/B0BK2R8TQB)
+
+**Main benefits (what buyers/reviewers like)**
+
+- Apartment Therapy's editors say it makes doing the dishes easier — [AT-BRUSH](https://www.apartmenttherapy.com/oxo-soap-dispensing-dish-brush-review-37073547)
+- TechGearLab's testing picked an OXO Good Grips dish brush as best value (likely the previous version) — [TGL-BRUSH](https://www.techgearlab.com/topics/kitchen/best-cleaning-brush)
+
+**Disadvantages (common complaints)**
+
+- The most common complaint is that soap leaks or doesn't dispense evenly — [MACYS-BRUSH](https://www.macys.com/shop/product/oxo-good-grips-soap-squirting-dish-brush?ID=4028802)
+- Replacement heads add an ongoing cost — [MACYS-BRUSH](https://www.macys.com/shop/product/oxo-good-grips-soap-squirting-dish-brush?ID=4028802)
+
+**Best for:** everyday dishes, glasses and greasy pans
+
+**Why selected:** KEPT (owner choice), ASIN corrected to the current listing B0BK2R8TQB because the old one is unavailable. Only cleaning product; useful every day. Evidence is weaker than thought: no Amazon.com rating found (Singapore 4.5★/30,200, Canada 4.3★/3,975).
+
+**Check on Amazon:** confirm B0BK2R8TQB is the single brush (not a 2-pack or the palm brush); record the Amazon.com rating (only Singapore/Canada figures found)
 
 ## #6 — PowerLix Milk Frother Handheld with Stainless Steel Stand - Deep Blue
 
@@ -305,50 +305,7 @@ Brand: **Fullstar** · Model: **TF1096C-8** · Category: Prep · Product id: `ve
 
 **Check on Amazon:** ASIN changed to B0764HS4SL (the listing showing model TF1096C-8); confirm colour/blade count; Fullstar sells many similar versions (2-in-1 to 14-in-1) - make sure the link is the 4-in-1
 
-## #4 — OXO Good Grips Soap Dispensing Dish Brush
-
-Brand: **OXO** · Model: **1067529WH** · Category: Cleaning · Product id: `dish-brush` · Score: **17/20**
-
-**Amazon data** (from Amazon pages via search engine — not yet checked live)
-
-| Field | Value | Status | Source | As of |
-|---|---|---|---|---|
-| ASIN | B000CC91GK (from the amazon.com review URL; listing page not opened live) | ⚠️ unverified | [AZ-BRUSH](https://www.amazon.com/gp/customer-reviews/R3R1HB3RDXWDLE?ASIN=B000CC91GK) | 2026-11-03 |
-| Amazon URL | https://www.amazon.com/dp/B000CC91GK (standard link built from the ASIN) | ⚠️ unverified | [AZ-BRUSH](https://www.amazon.com/gp/customer-reviews/R3R1HB3RDXWDLE?ASIN=B000CC91GK) | 2026-11-03 |
-| Model (listing) | 1067529WH (model number from a retailer listing; not seen on the Amazon page) | ⚠️ unverified | [CS-BRUSH](https://www.chefsupplies.ca/products/oxo-soap-dispensing-dish-brush-1067529wh) | 2026-11-03 |
-| Price | — (not found - check on Amazon) | — not collected |  |  |
-| Star rating | 4.5 / 5 (shown on the Amazon page for B000CC91GK (search snapshot)) | ⚠️ unverified | [AZ-BRUSH](https://www.amazon.com/gp/customer-reviews/R3R1HB3RDXWDLE?ASIN=B000CC91GK) | 2026-11-03 |
-| Number of ratings | 29,629 (global ratings (search snapshot)) | ⚠️ unverified | [AZ-BRUSH](https://www.amazon.com/gp/customer-reviews/R3R1HB3RDXWDLE?ASIN=B000CC91GK) | 2026-11-03 |
-| Listing note | the Soap Dispensing PALM Brush (B00004OCLK, 4.5★/18,835) is a different product - not used | ⚠️ unverified | [AZ-BRUSH-PALM](https://us.amazon.com/OXO-Good-Grips-Dispensing-Brush/dp/B00004OCLK) | 2026-11-03 |
-
-**Third-party data** (other websites — never Amazon data)
-
-*No third-party ratings or prices recorded.*
-
-**Selection score:** Viewer usefulness 5/5 · Visual storytelling 3/5 · Product variety 5/5 · Evidence quality 4/5 = **17/20**
-
-**Key features**
-
-- the handle holds dish soap and a button dispenses it while you scrub — [CS-BRUSH](https://www.chefsupplies.ca/products/oxo-soap-dispensing-dish-brush-1067529wh)
-- the brush head is replaceable — [CS-BRUSH](https://www.chefsupplies.ca/products/oxo-soap-dispensing-dish-brush-1067529wh)
-
-**Main benefits (what buyers/reviewers like)**
-
-- TechGearLab's testing picked an OXO Good Grips dish brush as its best value, excellent for tight spaces — [TGL-BRUSH](https://www.techgearlab.com/topics/kitchen/best-cleaning-brush)
-- OXO says Wirecutter lists its brushes among cheap kitchen essentials because they keep hands out of hot water (second-hand, via OXO's blog) — [OXO-WC](https://www.oxo.com/blog/behind-the-scenes/best-oxo-products-wirecutter)
-
-**Disadvantages (common complaints)**
-
-- The most common complaint is that soap leaks or doesn't dispense evenly — [MACYS-BRUSH](https://www.macys.com/shop/product/oxo-good-grips-soap-squirting-dish-brush?ID=4028802)
-- Replacement heads add an ongoing cost — [MACYS-BRUSH](https://www.macys.com/shop/product/oxo-good-grips-soap-squirting-dish-brush?ID=4028802)
-
-**Best for:** everyday dishes, glasses and greasy pans
-
-**Why selected:** NEW (replaces Scrub Daddy). Keeps a cleaning product in the list, with stronger evidence: Amazon shows 4.5★ from 29,629 ratings on this exact listing and lab testing picked it as best value. Less 'wow' visual than Scrub Daddy.
-
-**Check on Amazon:** confirm B000CC91GK is the single soap-dispensing dish brush (not the palm brush or a 2-pack); TechGearLab's article is about 3.5 years old - check the pick is still the same model
-
-## #3 — OXO Good Grips Salad Spinner, 6.22 Qt
+## #4 — OXO Good Grips Salad Spinner, 6.22 Qt
 
 Brand: **OXO** · Model: **32480** · Category: Prep · Product id: `salad-spinner` · Score: **17/20**
 
@@ -394,11 +351,11 @@ Brand: **OXO** · Model: **32480** · Category: Prep · Product id: `salad-spinn
 
 **Best for:** anyone who eats salads or washes herbs and berries often
 
-**Why selected:** Most consistently recommended item across editorial roundups, #1 Best Seller in its Amazon category, and the clearest wet-vs-dry visual. Amazon.com rating still to be recorded (only non-US Amazon figures found: 4.5-4.7★, ~37K ratings).
+**Why selected:** KEPT: the product identity is clear (ASIN B00004OCKR titled 'OXO Good Grips 6.22 Qt Salad Spinner', #1 Best Seller in Salad Spinners), it is the most consistently recommended product in editorial roundups, and it has the strongest wet-vs-dry visual. Its Amazon.com rating is still missing (same-ASIN non-US figures: 4.5-4.7★, ~37K).
 
 **Check on Amazon:** record the Amazon.com star rating and count for B00004OCKR (only non-US Amazon figures found); confirm size (6.22 Qt) and model on the listing
 
-## #2 — TempPro TempSwift TP19H Instant Read Meat Thermometer
+## #3 — TempPro TempSwift TP19H Instant Read Meat Thermometer
 
 Brand: **TempPro (formerly ThermoPro)** · Model: **TP19H** · Category: Cooking · Product id: `instant-thermometer` · Score: **18/20**
 
@@ -443,11 +400,56 @@ Brand: **TempPro (formerly ThermoPro)** · Model: **TP19H** · Category: Cooking
 
 **Best for:** anyone who cooks meat, fish or bread and wants to stop guessing
 
-**Why selected:** The most useful item for safety and results, unique in the list. Ranked below the egg cooker because accuracy/durability feedback is mixed and the advertised reading time was overstated (the manual says 3-4 seconds).
+**Why selected:** The most useful item for food safety and unique in the list. Below the top two because accuracy/durability feedback is mixed and the advertised reading time was overstated (manual: 3-4 seconds).
 
 **Specification notes:** Reading time: use '3-4 seconds' (user manual). Do NOT use the '1 second' marketing claim (the TempPro page also shows 0.5 s in one place - inconsistent).
 
 **Check on Amazon:** brand shows as TempPro (ThermoPro rebrand); manufacturer page calls it 'TempSwift PLUS TP19H'; check whether the 'newer version' should be featured instead
+
+## #2 — Rubbermaid Brilliance Leak-Proof Food Storage Containers with Airtight Lids, Set of 3 (6 Pieces Total)
+
+Brand: **Rubbermaid** · Model: **2025903** · Category: Storage · Product id: `food-storage` · Score: **19/20**
+
+**Amazon data** (from Amazon pages via search engine — not yet checked live)
+
+| Field | Value | Status | Source | As of |
+|---|---|---|---|---|
+| ASIN | B01JCNEJSO (from the amazon.com URL; listing not opened live) | ⚠️ unverified | [AZ-RUB](https://www.amazon.com/-/es/Contenedor-almacenamiento-Rubbermaid-transparente-Transparente/dp/B01JCNEJSO) | 2026-11-03 |
+| Amazon URL | https://www.amazon.com/dp/B01JCNEJSO (standard link built from the ASIN) | ⚠️ unverified | [AZ-RUB](https://www.amazon.com/-/es/Contenedor-almacenamiento-Rubbermaid-transparente-Transparente/dp/B01JCNEJSO) | 2026-11-03 |
+| Model (listing) | 2025903 (model number in the Amazon Singapore title for the same ASIN) | ⚠️ unverified | [AZSG-RUB](https://www.amazon.sg/Rubbermaid-2025903-Brilliance-Container-Leak-Proof/dp/B01JCNEJSO) | 2026-11-03 |
+| Price | — (not found - check on Amazon) | — not collected |  |  |
+| Star rating | 4.6 / 5 (Amazon.com Spanish-language page for B01JCNEJSO (search snapshot)) | ⚠️ unverified | [AZ-RUB](https://www.amazon.com/-/es/Contenedor-almacenamiento-Rubbermaid-transparente-Transparente/dp/B01JCNEJSO) | 2026-11-03 |
+| Number of ratings | 1,900 (shown on the Amazon.com Spanish-language page; CONFLICTS with 83,371 on Amazon Singapore for the same ASIN - likely an old snapshot, record the live figure) | ⚠️ unverified | [AZ-RUB](https://www.amazon.com/-/es/Contenedor-almacenamiento-Rubbermaid-transparente-Transparente/dp/B01JCNEJSO) | 2026-11-03 |
+| Listing note | Brilliance store: other Brilliance sets show 7K-20K+ bought in past month (snapshot) | ⚠️ unverified | [AZ-RUB-STORE](https://www.amazon.com/stores/Rubbermaid/page/56689DC6-A171-4F08-8F5F-0B74C7A2065B) | 2026-11-03 |
+
+**Third-party data** (other websites — never Amazon data)
+
+| Item | Value | Source | As of |
+|---|---|---|---|
+| Rating — Amazon Singapore (same ASIN - not Amazon USA) | 4.7 / 5 from 83,371 ratings | [AZSG-RUB](https://www.amazon.sg/Rubbermaid-2025903-Brilliance-Container-Leak-Proof/dp/B01JCNEJSO) | 2026-11-03 |
+
+**Selection score:** Viewer usefulness 5/5 · Visual storytelling 5/5 · Product variety 5/5 · Evidence quality 4/5 = **19/20**
+
+**Key features**
+
+- airtight lids with latches that seal the containers leak-proof — [AZ-RUB](https://www.amazon.com/-/es/Contenedor-almacenamiento-Rubbermaid-transparente-Transparente/dp/B01JCNEJSO)
+- clear containers, so you can see leftovers at a glance — [ATK-RUB](https://www.americastestkitchen.com/equipment_reviews/1876-glass-food-storage-containers)
+
+**Main benefits (what buyers/reviewers like)**
+
+- America's Test Kitchen says the Rubbermaid Brilliance line won its plastic food storage container testing — [ATK-RUB](https://www.americastestkitchen.com/equipment_reviews/1876-glass-food-storage-containers)
+- In a hands-on test, no water leaked when shaken or submerged — [PRUDENT-RUB](https://prudentreviews.com/best-food-storage-containers/)
+
+**Disadvantages (common complaints)**
+
+- The lids are the weak point: buyers report cracked lids or broken latches, and lids aren't sold separately (reported for the glass version of the line) — [CT-RUB](https://www.canadiantire.ca/en/pdp/rmb-brl-gls-6pk-2425133p.2425133.html)
+- The latches take two hands to open, and tomato sauce can stain them — [CH-RUB](https://www.clevelandheart.com/?p=31613)
+
+**Best for:** leftovers, meal prep and packed lunches
+
+**Why selected:** NEW (replaces the OXO Garlic Press, different brand). Adds a storage category, a strong 'flip it upside down' leak demo, broad everyday usefulness, and a test-kitchen win for the product line.
+
+**Check on Amazon:** record the live rating count (Amazon.com page showed 1,900 vs 83,371 on Amazon Singapore); confirm it is the 3-container / 6-piece set
 
 ## #1 — Dash Rapid Egg Cooker, 6 Egg Capacity, Black (DEC005BK)
 
@@ -490,9 +492,56 @@ Brand: **Dash** · Model: **DEC005BK** · Category: Breakfast · Product id: `eg
 
 **Best for:** busy mornings, meal preppers and anyone who struggles to peel boiled eggs
 
-**Why selected:** Highest total: useful for most households, the clearest before/after visual (steam, perfect eggs), the only appliance/breakfast item, and the strongest Amazon evidence (about 112,000 ratings, 4.7★ - rounded figure in the snapshot) plus a hands-on editorial verdict.
+**Why selected:** Highest total: the strongest Amazon evidence (about 112,000 ratings, 4.7★ - a rounded snapshot figure) plus a hands-on editorial verdict, the only small appliance, and a very clear steam-and-eggs visual.
 
 **Check on Amazon:** confirm the black DEC005BK listing is in stock (the white one was unavailable); Reviewed tested the 12-egg Deluxe version, not this exact model
+
+## [rejected] OXO Good Grips Garlic Press (die-cast zinc)
+
+Brand: **OXO** · Model: **11107400** · Category: Prep · Product id: `garlic-press`
+
+**Why removed:** Owner asked for a different brand (3 OXO products). Also: no Amazon star rating found and it overlaps with the other prep tools. Replaced by Rubbermaid Brilliance (new category).
+
+**Amazon data** (from Amazon pages via search engine — not yet checked live)
+
+| Field | Value | Status | Source | As of |
+|---|---|---|---|---|
+| ASIN | B00HEZ888K (from the amazon.com URL in search results; listing not opened live) | ⚠️ unverified | [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K) | 2026-11-03 |
+| Amazon URL | https://www.amazon.com/dp/B00HEZ888K (standard link built from the ASIN) | ⚠️ unverified | [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K) | 2026-11-03 |
+| Model (listing) | 11107400 | ⚠️ unverified | [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K) | 2026-11-03 |
+| Price | $20.99 (Amazon search-results page snapshot, date unknown (list price shown $28.99)) | ⚠️ unverified | [AZ-GARLIC-S](https://www.amazon.com/Garlic-Presses-OXO-Tools/s?keywords=Garlic+Presses&rh=n:678518011,p_89:OXO&c=ts&ts_id=678518011) | 2026-11-03 |
+| Star rating | — (not found on Amazon pages via search - check on Amazon) | — not collected |  |  |
+| Number of ratings | — (not found on Amazon pages via search - check on Amazon) | — not collected |  |  |
+| Listing note | '1K+ bought in past week' and ranked #2 in garlic presses (snapshot) | ⚠️ unverified | [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K) | 2026-11-03 |
+| Listing note | listing colour field says Silver while the title says Black | ⚠️ unverified | [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K) | 2026-11-03 |
+
+**Third-party data** (other websites — never Amazon data)
+
+| Item | Value | Source | As of |
+|---|---|---|---|
+| Rating — Amazon rating as reported by ShopSavvy | 4.7 / 5 from 35,993 ratings | [SS-GARLIC](https://shopsavvy.com/reviews-tldr/oxo-garlic-press.md) | 2026-11-03 |
+| Price — Macy's (sale) | $20.99 | [MACYS-GARLIC](https://www.macys.com/shop/product/oxo-good-grips-garlic-press?ID=13645073) | 2026-11-02 |
+
+**Key features**
+
+- a large chamber presses several cloves at once — [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K)
+- a built-in cleaner pushes out the leftover skins — [AZ-GARLIC](https://amazon.com/OXO-11107400-Large-capacity-Construction-Comfortable/dp/B00HEZ888K)
+
+**Main benefits (what buyers/reviewers like)**
+
+- Reviewers call it one of the best garlic tools they have used — [SS-GARLIC](https://shopsavvy.com/reviews-tldr/oxo-garlic-press.md)
+- It is easy to clean and can go in the dishwasher — [SS-GARLIC](https://shopsavvy.com/reviews-tldr/oxo-garlic-press.md)
+
+**Disadvantages (common complaints)**
+
+- Some buyers say pressing takes effort and leaves garlic behind — [SS-GARLIC](https://shopsavvy.com/reviews-tldr/oxo-garlic-press.md)
+- A few find the handles large, and one UK reviewer reported a broken press — [LAKE-GARLIC](https://www.lakeland.co.uk/11560/oxo-good-grips-garlic-press)
+
+**Best for:** people who cook with fresh garlic several times a week
+
+**Why selected:** Your preferred pick and a proven seller, but its Amazon star rating was not found and it overlaps with other prep tools - so it opens the countdown at #10.
+
+**Check on Amazon:** record the Amazon star rating and count (not found directly); check colour (Black vs Silver)
 
 ## [reserve] Original Scrub Daddy Sponge, 4 Count
 
@@ -723,6 +772,37 @@ Brand: **OXO** · Model: **—** · Category: Prep · Product id: `avocado-tool`
 
 **Why selected:** Safety angle + very visual. Lower rank: ratings found are from other retailers, and a test kitchen found its slicing only average.
 
+## [reserve] Kuhn Rikon garlic press (listing B0000CD0HX)
+
+Brand: **Kuhn Rikon** · Model: **2315** · Category: Prep · Product id: `kuhn-garlic-press`
+
+**Amazon data** (from Amazon pages via search engine — not yet checked live)
+
+| Field | Value | Status | Source | As of |
+|---|---|---|---|---|
+| ASIN | B0000CD0HX (from the amazon.com URL) | ⚠️ unverified | [AZ-KUHN](https://www.amazon.com/Kuhn-Rikon-2315-Epicurean-Garlic/dp/B0000CD0HX) | 2026-11-03 |
+| Amazon URL | https://www.amazon.com/dp/B0000CD0HX | ⚠️ unverified | [AZ-KUHN](https://www.amazon.com/Kuhn-Rikon-2315-Epicurean-Garlic/dp/B0000CD0HX) | 2026-11-03 |
+| Model (listing) | 2315 ('2315 Epicurean' appears in the URL, but the listing title says 'Easy-Clean Garlic Press, 7" Red' - identity unclear) | ⚠️ unverified | [AZ-KUHN](https://www.amazon.com/Kuhn-Rikon-2315-Epicurean-Garlic/dp/B0000CD0HX) | 2026-11-03 |
+| Price | — (not found) | — not collected |  |  |
+| Star rating | — (not found) | — not collected |  |  |
+| Number of ratings | — (not found) | — not collected |  |  |
+| Listing note | #32 in Best Sellers in Garlic Presses; '500+ bought in past month' on one listing (snapshot) | ⚠️ unverified | [AZ-KUHN](https://www.amazon.com/Kuhn-Rikon-2315-Epicurean-Garlic/dp/B0000CD0HX) | 2026-11-03 |
+| Listing note | customer Q&A warns about counterfeits from third-party sellers | ⚠️ unverified | [AZ-KUHN-QA](https://www.amazon.com/ask/questions/Tx18KSIH5MXQJOR) | 2026-11-03 |
+
+**Third-party data** (other websites — never Amazon data)
+
+*No third-party ratings or prices recorded.*
+
+**Main benefits (what buyers/reviewers like)**
+
+- Most often named best garlic press in review roundups (often attributed to America's Test Kitchen - not confirmed on ATK's site) — [AZ-KUHN](https://www.amazon.com/Kuhn-Rikon-2315-Epicurean-Garlic/dp/B0000CD0HX)
+
+**Disadvantages (common complaints)**
+
+- Counterfeit risk when not sold by Amazon or Kuhn Rikon — [AZ-KUHN-QA](https://www.amazon.com/ask/questions/Tx18KSIH5MXQJOR)
+
+**Why selected:** Considered as the like-for-like garlic press replacement, but NOT recommended: listing identity is unclear (Epicurean vs Easy-Clean), no Amazon rating found, counterfeit warnings, and it would add a sixth prep tool.
+
 ## Sources
 
 Quality: *editorial* = publication with its own testing/reviews · *aggregator* = summarises other reviews · *affiliate roundup* = earns from sales, often generic text · *retailer* = store page · *amazon (search index)* = Amazon page as indexed by a search engine, capture date unknown.
@@ -813,3 +893,19 @@ Quality: *editorial* = publication with its own testing/reviews · *aggregator* 
 | CS-BRUSH | retailer | retailer | Chef Supplies | [OXO Soap Dispensing Dish Brush 1067529WH](https://www.chefsupplies.ca/products/oxo-soap-dispensing-dish-brush-1067529wh) | 2026-11-03 |
 | WM-FROTH | retailer | retailer | Walmart | [PowerLix Handheld Electric Milk Frother with Stand](https://www.walmart.com/ip/PowerLix-Handheld-Electric-Milk-Frother-Stainless-Steel-Stand-Battery-Operated-Whisk-Foam-Maker-Coffee-Latte-Cappuccino-Hot-Chocolate-Frothy-Delights/961001359) | 2026-11-03 |
 | WM-SCRUB | retailer | retailer | Walmart | [Customer reviews for Scrub Daddy Original Sponge](https://www.walmart.com/reviews/product/35849202) | 2026-11-03 |
+| AZ-BRUSH-OLD | amazon_search_index | amazon (search index) | Amazon.com | [OXO Good Grips Soap Dispensing Dish Brush (B000CC91GK) - product page, 'currently unavailable'](https://www.amazon.com/OXO-Good-Grips-Dispensing-Brush/dp/B000CC91GK) | 2026-11-03 |
+| AZ-BRUSH-NEW | amazon_search_index | amazon (search index) | Amazon.com | [OXO Good Grips Soap Dispensing Dish Brush with Handle (B0BK2R8TQB)](https://www.amazon.com/OXO-Good-Grips-Dispensing-Brush/dp/B0BK2R8TQB) | 2026-11-03 |
+| AZSG-BRUSH | amazon_search_index | amazon (search index) - Singapore | Amazon.sg | [OXO NEW Good Grips Soap Dispensing Dish Brush](https://www.amazon.sg/OXO-Good-Grips-Dispensing-Brush/dp/B0BK2R8TQB) | 2026-11-03 |
+| AZCA-BRUSH | amazon_search_index | amazon (search index) - Canada | Amazon.ca | [OXO NEW Good Grips Soap Dispensing Dish Brush](https://www.amazon.ca/Good-Grips-Soap-Dispensing-Brush/dp/B0BK2R8TQB) | 2026-11-03 |
+| AT-BRUSH | editorial_review | editorial (editor review) | Apartment Therapy | [This Editor-Loved OXO Dish Brush Makes Doing the Dishes So Much Easier](https://www.apartmenttherapy.com/oxo-soap-dispensing-dish-brush-review-37073547) | 2026-11-03 |
+| AZ-RUB | amazon_search_index | amazon (search index) - Amazon.com, Spanish-language page | Amazon.com | [Rubbermaid Brilliance Leak-Proof Food Storage Containers, Set of 3 (6 Pieces Total) (B01JCNEJSO)](https://www.amazon.com/-/es/Contenedor-almacenamiento-Rubbermaid-transparente-Transparente/dp/B01JCNEJSO) | 2026-11-03 |
+| AZSG-RUB | amazon_search_index | amazon (search index) - Singapore | Amazon.sg | [Rubbermaid 2025903 Brilliance Food Storage Container, 6-Piece Set](https://www.amazon.sg/Rubbermaid-2025903-Brilliance-Container-Leak-Proof/dp/B01JCNEJSO) | 2026-11-03 |
+| AZ-RUB-STORE | amazon_search_index | amazon (search index) | Amazon.com | [Rubbermaid Brilliance brand store](https://www.amazon.com/stores/Rubbermaid/page/56689DC6-A171-4F08-8F5F-0B74C7A2065B) | 2026-11-03 |
+| ATK-RUB | editorial_review | editorial (test kitchen) | America's Test Kitchen | [The Best Glass Food Storage Containers](https://www.americastestkitchen.com/equipment_reviews/1876-glass-food-storage-containers) | 2026-11-03 |
+| PRUDENT-RUB | editorial_review | editorial (hands-on, affiliate) | Prudent Reviews | [Best Food Storage Containers? I Tested OXO, Pyrex, Rubbermaid...](https://prudentreviews.com/best-food-storage-containers/) | 2026-11-03 |
+| CT-RUB | retailer | retailer (customer reviews, glass version) | Canadian Tire | [Rubbermaid Brilliance Glass 6-pack](https://www.canadiantire.ca/en/pdp/rmb-brl-gls-6pk-2425133p.2425133.html) | 2026-11-03 |
+| CH-RUB | third_party | blog review (lower reliability) | Cleveland Heart | [Rubbermaid Brilliance review](https://www.clevelandheart.com/?p=31613) | 2026-11-03 |
+| AZAU-SHEARS | amazon_search_index | amazon (search index) - Australia | Amazon.com.au | [KitchenAid All Purpose Kitchen Shears, Black (B07PZF3QS3)](https://amazon.com.au/KitchenAid-Shears-8-75-inch-Black/dp/B07PZF3QS3) | 2026-11-03 |
+| AZSG-SHEARS | amazon_search_index | amazon (search index) - Singapore | Amazon.sg | [KitchenAid All Purpose Shears with Protective Sheath, Black (B07PZF3QS3)](https://www.amazon.sg/KitchenAid-Purpose-Shears-Protective-Sheath/dp/B07PZF3QS3) | 2026-11-03 |
+| AZ-KUHN | amazon_search_index | amazon (search index) | Amazon.com | [Kuhn Rikon garlic press listing (B0000CD0HX)](https://www.amazon.com/Kuhn-Rikon-2315-Epicurean-Garlic/dp/B0000CD0HX) | 2026-11-03 |
+| AZ-KUHN-QA | amazon_search_index | amazon (search index) - Q&A | Amazon.com | [Customer Q&A: Kuhn Rikon garlic press](https://www.amazon.com/ask/questions/Tx18KSIH5MXQJOR) | 2026-11-03 |
