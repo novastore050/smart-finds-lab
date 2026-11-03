@@ -1,0 +1,36 @@
+# =====================================================================
+#  SMART FINDS LAB - PRODUCTION STUDIO SETTINGS
+#  Used by scripts/studio.py (research -> script -> prompts -> voice ->
+#  edit -> Shorts -> thumbnail -> SEO -> QC). No secrets in this file!
+# =====================================================================
+
+channel:
+  name: "Smart Finds Lab"
+  tagline: "Discover. Compare. Buy Smarter."
+  language: en-US
+  # Your Amazon Associates tracking ID (NOT a secret - it appears in every link).
+  # Leave empty until you have one; links then go to Amazon without a tag.
+  amazon_tag: ""
+
+script:
+  words_per_minute: 155        # used to estimate scene length before the voice exists
+  hook_max_seconds: 15
+  product_max_seconds: 55
+  lower_third_max_chars: 34
+  originality_ngram: 7         # flag any 7-word sequence copied from a reference transcript
+
+disclosure:
+  affiliate: "As an Amazon Associate I earn from qualifying purchases. This doesn't change the price you pay."
+  research_based: "Smart Finds Lab researches products using specifications, verified customer reviews and expert comparisons. We did not physically test these products unless we say so."
+  spoken_short: "Links are affiliate links."
+
+visual_style:
+  # Appended to every AI video prompt so all clips share one look.
+  suffix: "bright modern kitchen, soft natural window light, clean white and light-wood surfaces, realistic, shallow depth of field, smooth slow camera movement, 4K, no text, no logos, no brand names"
+  avoid: "text, captions, watermarks, logos, brand names, distorted hands, extra fingers, warped objects, cartoon style"
+  clip_seconds: 5
+
+seo:
+  default_tags: ["kitchen gadgets", "amazon finds", "kitchen tools", "home gadgets", "cooking hacks",
+                 "amazon must haves", "kitchen essentials", "product review", "smart finds lab"]
+  hashtags: ["#KitchenGadgets", "#AmazonFinds", "#SmartFindsLab"]

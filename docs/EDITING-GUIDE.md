@@ -104,7 +104,7 @@ See [SHORTS-GUIDE.md](SHORTS-GUIDE.md). For the thumbnail:
 python scripts/sfl.py frames output/long-videos/<name>.mp4 --count 8
 ```
 ```bash
-python scripts/sfl.py thumbnail --text "7 Cleaning Gadgets Worth Buying" --sub "Researched & compared" --badge "TOP 7" --image thumbnails/frames/<name>/frame_03_....jpg
+python scripts/sfl.py thumbnail --text "7 Cleaning Gadgets Worth Buying" --sub "Researched picks" --badge "TOP 7" --image thumbnails/frames/<name>/frame_03_....jpg
 ```
 
 ## Step 8: Before uploading

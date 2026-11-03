@@ -1,0 +1,80 @@
+# Production settings and progress. Stages are recorded automatically.
+title: 10 Kitchen Gadgets That Actually Make Life Easier
+slug: kitchen-gadgets-10
+created: '2026-11-03'
+video_type: research_based
+market: Amazon USA
+audience: US (also UK, Canada, Australia)
+products_wanted: 10
+topic_noun: kitchen gadgets
+music:
+  file: null
+  license: null
+stages:
+  research:
+    at: 2026-11-03 08:06
+    note: products.yaml present
+  research_report:
+    at: 2026-11-03 08:06
+  products_approved:
+    at: 2026-11-03 08:11
+    note: Owner approved Version 4 shortlist (revision 4) on 2026-11-03
+  script:
+    at: 2026-11-03 08:17
+    note: 13 scenes
+  prompts:
+    at: 2026-11-03 08:15
+  thumbnail:
+    at: 2026-11-03 08:26
+    note: 2 variants
+  timeline:
+    at: 2026-11-03 08:17
+    note: 57 items missing
+  seo:
+    at: 2026-11-03 08:26
+  qc:
+    at: 2026-11-03 08:26
+    note: FAIL
+approved_products:
+- egg-cooker
+- food-storage
+- instant-thermometer
+- salad-spinner
+- veggie-chopper
+- milk-frother
+- dish-brush
+- zester
+- kitchen-shears
+- lemon-squeezer
+seo:
+  titles:
+  - 10 Kitchen Gadgets That Actually Make Life Easier
+  - 10 Kitchen Gadgets People Actually Keep Using
+  - 10 Kitchen Gadgets Worth Buying (and Their Honest Downsides)
+  - 'Stop Buying Useless Kitchen Gadgets: 10 That Actually Help'
+  - 10 Clever Kitchen Gadgets for Busy Mornings and Easy Meal Prep
+  description_intro: 'Most kitchen gadgets get used once and forgotten. These 10 fix small, annoying jobs
+    you do every day - from easy eggs and leak-proof leftovers to faster chopping, cleaner dishes and
+    better coffee. For each one: what it does, what buyers like, and the honest downside.'
+  tags:
+  - kitchen gadgets that actually work
+  - useful kitchen gadgets
+  - kitchen gadgets 2026
+  - egg cooker
+  - food storage containers
+  - instant read thermometer
+  - salad spinner
+  - vegetable chopper
+  - milk frother
+  - microplane zester
+  - kitchen shears
+  - lemon squeezer
+  - dish brush
+thumbnail:
+  variants:
+  - text: 10 Gadgets That Actually Help
+    sub: Researched & compared
+    badge: TOP 10
+  - text: Stop Buying Useless Gadgets
+    sub: 10 that are worth it
+    badge: TOP 10

@@ -83,7 +83,7 @@ def thumbnails(prod: Production, log):
     video = ROOT / "output" / "long-videos" / f"{prod.slug}.mp4"
     th = prod.meta.get("thumbnail") or {}
     variants = th.get("variants") or [
-        {"text": prod.title, "sub": "Researched & compared", "badge": f"TOP {n}"},
+        {"text": prod.title, "sub": "Researched picks", "badge": f"TOP {n}"},
         {"text": f"{n} Picks Worth Buying", "sub": "Buyers keep these", "badge": f"TOP {n}"},
     ]
     out = []

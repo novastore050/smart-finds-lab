@@ -49,13 +49,15 @@ approved_products:
 seo:
   titles:
   - 10 Kitchen Gadgets That Actually Make Life Easier
-  - 10 Kitchen Gadgets People Actually Keep Using
+  - 10 Kitchen Gadgets That Fix Annoying Everyday Jobs
   - 10 Kitchen Gadgets Worth Buying (and Their Honest Downsides)
   - 'Stop Buying Useless Kitchen Gadgets: 10 That Actually Help'
   - 10 Clever Kitchen Gadgets for Busy Mornings and Easy Meal Prep
-  description_intro: 'Most kitchen gadgets get used once and forgotten. These 10 fix small, annoying jobs
-    you do every day - from easy eggs and leak-proof leftovers to faster chopping, cleaner dishes and
-    better coffee. For each one: what it does, what buyers like, and the honest downside.'
+  description_intro: 'Plenty of kitchen gadgets end up forgotten in a drawer. These 10 fix small everyday
+    jobs - from one-button boiled eggs and drier salads to faster chopping, cleaner dishes, better coffee
+    and food containers that Rubbermaid sells as leak-proof. This countdown is our editorial selection, based
+    on manufacturer information, expert reviews and buyer feedback - we did not test these products ourselves.
+    For each one: what it does, what buyers like, and the honest downside.'
   tags:
   - kitchen gadgets that actually work
   - useful kitchen gadgets
@@ -73,7 +75,7 @@ seo:
 thumbnail:
   variants:
   - text: 10 Gadgets That Actually Help
-    sub: Researched & compared
+    sub: Researched picks
     badge: TOP 10
   - text: Stop Buying Useless Gadgets
     sub: 10 that are worth it

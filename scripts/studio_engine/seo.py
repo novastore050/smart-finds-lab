@@ -78,7 +78,7 @@ def build(prod: Production, log):
     title = s.get("title") or prod.title
     year = dt.date.today().year
     custom = prod.meta.get("seo") or {}
-    titles = custom.get("titles") or [title, f"{title} ({year})", f"{title} | Researched & Compared"]
+    titles = custom.get("titles") or [title, f"{title} ({year})", f"{title} | Researched Picks"]
     titles = [t for t in titles if len(t) <= 100]
     prods = [sc for sc in s.get("scenes") or [] if sc.get("role") == "product"]
     hook = custom.get("description_intro") or (" ".join(str(s["scenes"][0].get("narration", "")).split()[:30]) + "…")

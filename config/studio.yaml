@@ -21,7 +21,7 @@ script:
 
 disclosure:
   affiliate: "As an Amazon Associate I earn from qualifying purchases. This doesn't change the price you pay."
-  research_based: "Smart Finds Lab researches products using specifications, verified customer reviews and expert comparisons. We did not physically test these products unless we say so."
+  research_based: "Smart Finds Lab picks products through research: manufacturer information, expert reviews and buyer feedback. We did not physically test or directly compare these products unless we say so. Our rankings are editorial picks, not lab results or sales rankings."
   spoken_short: "Links are affiliate links."
 
 visual_style:

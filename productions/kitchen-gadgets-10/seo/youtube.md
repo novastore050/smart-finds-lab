@@ -11,7 +11,7 @@ Nothing has been uploaded. Copy these into YouTube Studio.
 ## Title options
 
 1. 10 Kitchen Gadgets That Actually Make Life Easier *(49 chars)*
-2. 10 Kitchen Gadgets People Actually Keep Using *(45 chars)*
+2. 10 Kitchen Gadgets That Fix Annoying Everyday Jobs *(50 chars)*
 3. 10 Kitchen Gadgets Worth Buying (and Their Honest Downsides) *(60 chars)*
 4. Stop Buying Useless Kitchen Gadgets: 10 That Actually Help *(58 chars)*
 5. 10 Clever Kitchen Gadgets for Busy Mornings and Easy Meal Prep *(62 chars)*
@@ -19,7 +19,7 @@ Nothing has been uploaded. Copy these into YouTube Studio.
 ## Description
 
 ```text
-Most kitchen gadgets get used once and forgotten. These 10 fix small, annoying jobs you do every day - from easy eggs and leak-proof leftovers to faster chopping, cleaner dishes and better coffee. For each one: what it does, what buyers like, and the honest downside.
+Plenty of kitchen gadgets end up forgotten in a drawer. These 10 fix small everyday jobs - from one-button boiled eggs and drier salads to faster chopping, cleaner dishes, better coffee and food containers that Rubbermaid sells as leak-proof. This countdown is our editorial selection, based on manufacturer information, expert reviews and buyer feedback - we did not test these products ourselves. For each one: what it does, what buyers like, and the honest downside.
 
 🛒 PRODUCTS IN THIS VIDEO (prices change — check the link for today's price):
 #10 Zulay Kitchen Metal 2-in-1 Lemon Lime Squeezer: https://www.amazon.com/dp/B00YBP918M
@@ -48,7 +48,7 @@ Most kitchen gadgets get used once and forgotten. These 10 fix small, annoying j
 8:17 Final thoughts
 
 ℹ️ As an Amazon Associate I earn from qualifying purchases. This doesn't change the price you pay.
-ℹ️ Smart Finds Lab researches products using specifications, verified customer reviews and expert comparisons. We did not physically test these products unless we say so.
+ℹ️ Smart Finds Lab picks products through research: manufacturer information, expert reviews and buyer feedback. We did not physically test or directly compare these products unless we say so. Our rankings are editorial picks, not lab results or sales rankings.
 
 🔔 Subscribe to Smart Finds Lab — Discover. Compare. Buy Smarter.
 
