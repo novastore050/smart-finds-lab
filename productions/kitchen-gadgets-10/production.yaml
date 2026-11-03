@@ -1,0 +1,18 @@
+# Production settings and progress. Stages are recorded automatically.
+title: 10 Kitchen Gadgets That Actually Make Life Easier
+slug: kitchen-gadgets-10
+created: '2026-11-03'
+video_type: research_based
+market: Amazon USA
+audience: US (also UK, Canada, Australia)
+products_wanted: 10
+topic_noun: kitchen gadgets
+music:
+  file: null
+  license: null
+stages:
+  research:
+    at: 2026-11-03 07:37
+    note: products.yaml present
+  research_report:
+    at: 2026-11-03 07:37

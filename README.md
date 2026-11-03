@@ -16,6 +16,30 @@ You describe a video in a simple text file (a **timeline**). The system does the
 
 ---
 
+## NEW: the Production Studio (research → finished video)
+
+`scripts/studio.py` runs the complete production of a video. It reuses this editor.
+
+**Product research → Amazon verification → Script → Scene prompts → Voice-over → Clip import →
+Editing → 3 Shorts → Thumbnails → SEO → Quality control**
+
+- Every product fact is saved with its source and date, marked *verified* only after you check it on Amazon.
+- Scripts are checked for honesty (no "I tested" in research-based videos, no prices, no unverified ratings)
+  and for copied wording.
+- Nothing costs money, generates paid media or gets published without you.
+
+This shows where a video stands and the exact next command:
+
+```bash
+python scripts/studio.py status kitchen-gadgets-10
+```
+
+Full guide: [docs/STUDIO-GUIDE.md](docs/STUDIO-GUIDE.md). Voice: [docs/VOICE-ELEVENLABS.md](docs/VOICE-ELEVENLABS.md).
+In Claude Code, the **`youtube-studio`** skill (`.claude/skills/youtube-studio/`) knows the whole workflow.
+Type `/youtube-studio` or just ask, e.g. *"what's next for kitchen-gadgets-10?"*
+
+---
+
 ## Quick start (5 commands)
 
 Open a terminal **inside the `Smart-Finds-Lab` folder**, then:
@@ -83,6 +107,9 @@ so you can see every feature working. Never publish these test videos.
 | `temp/` | Working files. Safe to delete at any time (it makes the next render slower). |
 | `logs/` | Detailed logs of every run (useful when something fails) |
 | `docs/` | Guides |
+| `productions/` | One folder per video in the Production Studio (research, script, prompts, voice, SEO, QC) |
+| `references/` | Reference channel analyses (transcripts stay on your computer) |
+| `config/studio.yaml`, `config/voice.yaml` | Studio settings, and the channel voice |
 | `scripts/` | The program (you don't need to edit it) |
 | `samples/` | Generated test media (placeholders only) |
 
@@ -115,6 +142,7 @@ so you can see every feature working. Never publish these test videos.
 
 ## Guides
 
+0. [docs/STUDIO-GUIDE.md](docs/STUDIO-GUIDE.md): **the full production workflow (start here)**
 1. [docs/INSTALL.md](docs/INSTALL.md): install Python + FFmpeg (Windows / Mac)
 2. [docs/EDITING-GUIDE.md](docs/EDITING-GUIDE.md): step-by-step workflow for a new video
 3. [docs/TIMELINE-REFERENCE.md](docs/TIMELINE-REFERENCE.md): every option you can write in a timeline

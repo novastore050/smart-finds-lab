@@ -201,7 +201,8 @@ def import_clips(src_folder, dest_name, log, prefix=""):
 
 
 # --------------------------------------------------------------------------- thumbnails
-def make_thumbnail(text, sub, log, image=None, video=None, at=None, out_name=None, badge=None, brand=None):
+def make_thumbnail(text, sub, log, image=None, video=None, at=None, out_name=None, badge=None, brand=None,
+                   out_path=None):
     from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
     from .config import load_brand
@@ -254,7 +255,7 @@ def make_thumbnail(text, sub, log, image=None, video=None, at=None, out_name=Non
         bw = fb.getlength(str(badge)) + 56
         dr.rounded_rectangle((W - bw - 40, 40, W - 40, 130), 22, fill=col["primary"])
         dr.text((W - 40 - bw / 2, 85), str(badge), font=fb, fill=col["dark"], anchor="mm")
-    out = unique_output(ROOT / "thumbnails" / f"{slugify(out_name or text)}.jpg")
+    out = Path(out_path) if out_path else unique_output(ROOT / "thumbnails" / f"{slugify(out_name or text)}.jpg")
     out.parent.mkdir(exist_ok=True)
     bg.save(out, quality=92)
     if tmp and tmp.exists():

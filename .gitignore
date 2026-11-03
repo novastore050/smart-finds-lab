@@ -13,3 +13,28 @@ __pycache__/
 Smart-Finds-Lab.zip
 # generated test media - recreate with: python scripts/sfl.py make-test-media
 samples/test-media/
+
+# ---- production studio
+# secrets (keys go in environment variables, never in files)
+.env
+*.env
+# free ElevenLabs previews (their files, for listening only)
+productions/_voice-samples/
+# generated voice audio and product photos/thumbnails (large and/or licensed media)
+productions/*/voice/*.mp3
+productions/*/voice/*.wav
+productions/*/voice/*.m4a
+productions/*/thumbnails/*.jpg
+assets/images/**/*.jpg
+assets/images/**/*.jpeg
+assets/images/**/*.png
+assets/images/**/*.webp
+# reference channel transcripts are other people's text - keep them local
+references/*/transcripts/*
+!references/*/transcripts/.gitkeep
+# self-test production and its outputs
+productions/zz-*/
+references/zz-*/
+assets/video/zz-*/
+assets/images/zz-*/
+output/**/zz-*

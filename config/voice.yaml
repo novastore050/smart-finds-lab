@@ -1,0 +1,46 @@
+# =====================================================================
+#  SMART FINDS LAB - CHANNEL VOICE (one consistent voice for every video)
+#  No API keys here! The direct API reads the key from the environment
+#  variable ELEVENLABS_API_KEY (set in your computer / cloud environment
+#  settings, never in a file that goes to GitHub).
+# =====================================================================
+
+provider: elevenlabs
+status: candidate            # candidate -> chosen (after you listen to the samples)
+
+# Initial choice: Aabo (owner's preferred candidate). Compare with Quentin and Abby:
+#   python scripts/studio.py voice-samples
+voice:
+  name: "Aabo - Engaging Confident Explainer Voice"
+  voice_id: KeU8nqWFDbaoi0QVUjD3
+  accent: American English, male, young
+
+# Keep these identical across videos so the channel always sounds the same.
+model_id: eleven_multilingual_v2    # stable, natural narration. (eleven_v4 supports [tags] but may vary more)
+output_format: mp3_44100_128
+voice_settings:
+  stability: 0.5
+  similarity_boost: 0.75
+  style: 0.0
+  use_speaker_boost: true
+  speed: 1.0
+
+# Words the voice might mispronounce -> how to write them for the voice only
+# (subtitles still show the original spelling).
+pronunciations:
+  OXO: "ox-oh"
+
+# Other voices that were compared (free public previews from ElevenLabs' voice library).
+candidates:
+  - name: "Aabo - Engaging Confident Explainer Voice"
+    voice_id: KeU8nqWFDbaoi0QVUjD3
+    description: "American male, young. Library description mentions YouTube videos and product reviews."
+    preview_url: "https://storage.googleapis.com/eleven-public-prod/database/workspace/cfc2981dc3a84ea8b25fcbbe79078559/voices/KeU8nqWFDbaoi0QVUjD3/NvyQ0V9jtIoAos68cbjB.mp3"
+  - name: "Quentin - Narrator and Educator"
+    voice_id: Aa6nEBJJMKJwJkCx8VU2
+    description: "American male, middle-aged, deep and calm. Audiobooks, documentaries, e-learning."
+    preview_url: "https://storage.googleapis.com/eleven-public-prod/database/workspace/f05ba25e25fc468d8f10e4da894d36b7/voices/Aa6nEBJJMKJwJkCx8VU2/Jjk2LhXGigKZzoLINPd2.mp3"
+  - name: "Abby - Clear & Engaging Young Narrator"
+    voice_id: IKuPqyuiEnnZFcU4OVzH
+    description: "American female, young, warm and clear. Educational content, podcasts."
+    preview_url: "https://storage.googleapis.com/eleven-public-prod/database/user/OgMJiVAehyeaRuNnrBxSovksRX13/voices/IKuPqyuiEnnZFcU4OVzH/7BylfhJe3KEjmEv7vvL1.mp3"

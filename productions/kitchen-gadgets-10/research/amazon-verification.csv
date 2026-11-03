@@ -1,0 +1,13 @@
+product_id,rank,product_name,amazon_link,asin_found,third_party_price_for_reference,correct_product_yes_no,available_in_us_yes_no,amazon_price_usd,amazon_rating,amazon_rating_count,asin_confirmed_or_corrected,amazon_url_if_different,checked_on_yyyy_mm_dd,notes
+salad-spinner,1,"OXO Good Grips Salad Spinner, Large (4.0)",https://www.amazon.com/dp/B077TV6BL3,B077TV6BL3,,,,,,,,,,
+instant-thermometer,2,TempPro (ThermoPro) TP19H Instant Read Meat Thermometer,https://www.amazon.com/dp/B07XXSYLL8,B07XXSYLL8,,,,,,,,,,
+veggie-chopper,3,"Fullstar The Original Pro Chopper, 4-in-1",https://www.amazon.com/dp/B0B8SQR665,B0B8SQR665,$39.99 list price per BestReviews (2026-11-03),,,,,,,,,
+garlic-press,4,OXO Good Grips Garlic Press (die-cast zinc),https://www.amazon.com/dp/B00HEZ888K,B00HEZ888K,$20.99 Macy's (sale) (2026-11-02),,,,,,,,,
+zester,5,Microplane Premium Classic Series Zester/Grater (46020),https://www.amazon.com/dp/B00151WA06,B00151WA06,$18.99 US retail listing (per search summary) (2026-11-03),,,,,,,,,
+kitchen-shears,6,KitchenAid All Purpose Kitchen Shears with Protective Sheath,https://www.amazon.com/dp/B07TLNSW1S,B07TLNSW1S,$7.51 lowest of range on ShopSavvy ($7.51-$26.85) (2026-11-03),,,,,,,,,
+lemon-squeezer,7,Zulay Kitchen Metal 2-in-1 Lemon Lime Squeezer,https://www.amazon.com/dp/B00YBP918M,B00YBP918M,,,,,,,,,,
+kitchen-scale,8,"Etekcity 0.1g Food Kitchen Scale with Bowl, 11 lb",https://www.amazon.com/dp/B08BPB9T1N,B08BPB9T1N,$18.00 price named in Tom's Guide test (model match unconfirmed) (2026-11-03),,,,,,,,,
+baking-mat,9,"Amazon Basics Silicone Baking Mat, 2-Pack (16.5 x 11.6 in)",https://www.amazon.com/dp/B0725GYNG6,B0725GYNG6,,,,,,,,,,
+avocado-tool,10,OXO Good Grips 3-in-1 Avocado Slicer (Green),https://www.amazon.com/dp/B0088LR592,B0088LR592,$9.99 ShopSavvy listing (2026-11-03); $11.99 Bloomingdale's (2026-11-03),,,,,,,,,
+stretch-lids,reserve,"Basic Haus Reusable Silicone Stretch Lids, 7 Pack",https://www.amazon.com/dp/B0FGW5LZTX,B0FGW5LZTX,,,,,,,,,,
+herb-spinner,reserve,OXO Good Grips Little Salad & Herb Spinner,https://www.amazon.com/dp/B00005QB5U,B00005QB5U,,,,,,,,,,

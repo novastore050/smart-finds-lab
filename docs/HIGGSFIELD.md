@@ -3,7 +3,28 @@
 **The editing system does not depend on Higgsfield.** It edits any video files you put in
 `assets/video/`. Higgsfield is just one possible source of clips.
 
-## Recommended workflow (works today, no API needed)
+## With the Production Studio (recommended)
+
+1. Generate prompts. They are organised by scene, with the file name to save each clip as:
+
+```bash
+python scripts/studio.py prompts <video>
+```
+
+2. Open `productions/<video>/prompts/higgsfield-prompts.md`.
+3. Generate each shot on higgsfield.ai.
+4. Download the clips. Keep the shot id (e.g. `s03-a`) in each file name.
+5. Copy them into the project:
+
+```bash
+python scripts/studio.py import-clips <video> "PATH/TO/DOWNLOADS"
+```
+
+Status checked on 2026-11-03: the connected Higgsfield account is on the **free plan with 10 credits**.
+One 5-second 1080p clip (Seedance 2.5) costs **80 credits**, so automated generation isn't possible
+without buying credits. Claude will never generate or spend credits without your explicit OK.
+
+## Older workflow (works today, no API needed)
 
 1. Generate clips on higgsfield.ai.
    - For Shorts, generate **9:16** versions; for the long video, **16:9**. (Either works in both:

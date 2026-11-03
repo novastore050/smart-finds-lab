@@ -1,12 +1,12 @@
 # Quality-control report — System Test - Placeholder Media
 
 **Status: PASS WITH WARNINGS**  
-Created: 2026-11-02 21:20  
+Created: 2026-11-03 07:37  
 Timeline: `config/timelines/test-demo.yaml`  
 Output: `output/long-videos/test-demo.mp4`  
 Format: long (1920x1080, 30 fps)  
 Length: 0:37.20  
-Render time: 57 s  
+Render time: 36 s  
 
 Errors: 0 · Warnings: 4 · Passed: 12
 
