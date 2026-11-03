@@ -1,0 +1,55 @@
+shot_id,used_in,aspect,seconds,search_terms,suggested_libraries,clip_url,creator,library_licence_name,licence_url,commercial_use_allowed (y/n),identifiable_people (y/n),model_release_available (y/n/na),brands_logos_or_labels_visible (y/n),shows_a_competing_or_different_product (y/n),could_imply_endorsement (y/n),downloaded_on,checked_by,status
+s01-c,s01,16:9,3,eggs boiling pot stove kitchen timer,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s01-d,s01,16:9,2,kitchen counter morning sunlight,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s02-a,s02,16:9,6,hands scrolling tablet kitchen counter,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s02-b,s02,16:9,6,notebook writing coffee table top view,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s03-a,s03,16:9,6,leaking container lunch bag,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s03-d,s03,16:9,6,meal prep containers refrigerator,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s03-h,s03,16:9,6,packed lunch office desk,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s03-i,s03,16:9,6,soup bowl lunch,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s04-a,s04,16:9,6,squeezing lemon by hand seeds,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s04-e,s04,16:9,6,lemonade pouring glass ice,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s04-h,s04,16:9,6,cocktail lime garnish bar,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s04-i,s04,16:9,4,citrus slices cutting board,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s05-a,s05,16:9,6,opening plastic packaging knife struggle,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s05-d,s05,16:9,6,trimming raw chicken scissors,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s05-h,s05,16:9,6,hand washing drying scissors kitchen towel,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s06-a,s06,16:9,6,box grater cheese kitchen,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s06-d,s06,16:9,6,grating fresh ginger,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s06-h,s06,16:9,6,pasta parmesan plating,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s07-a,s07,16:9,6,dirty sponge sink greasy pan,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s07-e,s07,16:9,6,washing wine glass brush sink,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s07-h,s07,16:9,6,clean dishes drying rack,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s08-a,s08,16:9,6,microwave milk mug,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s08-d,s08,16:9,6,matcha latte preparation,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s08-g,s08,16:9,6,hot chocolate mug foam,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s09-a,s09,16:9,6,cutting onion tears,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s09-d,s09,16:9,6,meal prep containers vegetables,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s09-h,s09,16:9,6,stir fry vegetables pan,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s10-a,s10,16:9,6,wet lettuce paper towel,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s10-d,s10,16:9,6,washing berries colander,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s10-g,s10,16:9,6,tossing salad wooden bowl,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s10-i,s10,16:9,6,herbs washing sink,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s11-a,s11,16:9,6,cutting grilled chicken check,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s11-d,s11,16:9,6,roast chicken oven,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s11-h,s11,16:9,6,glass ice water kitchen,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s11-i,s11,16:9,8,grilled steak resting board,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s12-a,s12,16:9,6,boiling eggs pot stove,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s12-d,s12,16:9,6,peeling boiled egg,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s12-g,s12,16:9,6,avocado toast soft boiled egg,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s12-i,s12,16:9,9,breakfast table family morning,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s13-a,s13,16:9,6,tidy bright kitchen counter coffee,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s13-c,s13,16:9,6,kitchen window morning light,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+s13-d,s13,16:9,4,cooking hands chopping slow motion,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short1-a,short1,9:16,3,eggs boiling pot stove,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short1-f,short1,9:16,4,peeling boiled egg,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short1-h,short1,9:16,4,avocado toast soft boiled egg,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short1-i,short1,9:16,4,breakfast meal prep eggs containers,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short2-a,short2,9:16,3,grating lemon box grater,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short2-f,short2,9:16,4,grating fresh ginger,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short2-g,short2,9:16,4,lemon tart dessert slice,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short2-i,short2,9:16,4,washing kitchen utensil sink careful,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short3-a,short3,9:16,3,cutting grilled chicken check,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short3-f,short3,9:16,4,roast chicken oven,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short3-g,short3,9:16,4,glass ice water kitchen,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
+short3-h,short3,9:16,4,juicy sliced chicken breast board,Pexels / Pixabay (free) or a paid library you already licence,,,,,,,,,,,,,NOT CHOSEN - check required
