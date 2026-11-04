@@ -15,9 +15,9 @@ Applied automatically to the voice text only (subtitles keep the real spelling):
 - **TempPro** → say *Temp Pro*
 - **ThermoPro** → say *Thermo Pro*
 - **PowerLix** → say *Power Licks*
-- **Zulay** → say *Zoo-lay*
+- **Zulay** → say *Soo-lay*
 - **Microplane** → say *Micro-plane*
-- **Zulay** pronunciation is a guess — confirm before generating.
+- Pronunciations approved by the owner.
 - Numbers are written as words in the script ("Number ten", "double-A") so the voice reads them naturally.
 
 ## Sections

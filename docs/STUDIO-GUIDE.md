@@ -148,7 +148,14 @@ python scripts/studio.py voice-pack cleaning-gadgets-7
 ```
 
 This creates one text file per scene and shows the number of characters, which is what ElevenLabs
-charges for. See [VOICE-ELEVENLABS.md](VOICE-ELEVENLABS.md) for the three ways to generate. 👤 You
+charges for.
+
+Pronunciation fixes (`config/voice.yaml → pronunciations`) change only the text sent to the voice; subtitles and
+on-screen text keep the real spelling (`align` restores it in word-timed subtitles). `voice-pack` also writes
+`voice/pronunciation-dictionary.pls` with the same rules for the ElevenLabs website.
+
+To test one scene on its own (no intro/outro): `python scripts/studio.py build-timeline <slug> --only s01`, then
+`python scripts/sfl.py build productions/<slug>/edit/scene-s01.yaml --draft`. See [VOICE-ELEVENLABS.md](VOICE-ELEVENLABS.md) for the three ways to generate. 👤 You
 approve any spending. Then import the files and create exact subtitles:
 
 ```bash

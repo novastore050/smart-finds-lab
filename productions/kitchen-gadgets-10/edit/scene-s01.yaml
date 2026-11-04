@@ -1,0 +1,23 @@
+# GENERATED single-scene test timeline (s01) from script/script.yaml - kitchen-gadgets-10
+project:
+  title: 10 Kitchen Gadgets That Actually Make Life Easier - scene s01 test
+  output: kitchen-gadgets-10-s01-test
+  format: long
+  source_script: productions/kitchen-gadgets-10/script/script.yaml
+  source_script_md5: 220bf4513ebd0ba2af0969da728eb43b
+audio: {}
+subtitles:
+  mode: auto
+intro:
+  enabled: false
+outro:
+  enabled: false
+scenes:
+- id: s01
+  narration: Plenty of kitchen gadgets end up forgotten in a drawer. These ten fix jobs you actually do,
+    and number one turns a breakfast you usually have to babysit into a one-button job.
+  duration: 13.8
+  type: card
+  title: 10 Kitchen Gadgets That Actually Make Life Easier
+  subtitle: '[media missing - preview]'
+  background: gradient

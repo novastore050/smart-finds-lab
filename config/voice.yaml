@@ -6,10 +6,13 @@
 # =====================================================================
 
 provider: elevenlabs
-status: candidate            # candidate -> chosen (after you listen to the samples)
+status: chosen               # approved by the owner on 2026-11-04 as the main channel voice
+approved:
+  on: '2026-11-04'
+  by: owner
+  note: Aabo approved as the main Smart Finds Lab voice; settings below are the ones used in the voice test
 
-# Initial choice: Aabo (owner's preferred candidate). Compare with Quentin and Abby:
-#   python scripts/studio.py voice-samples
+# Channel voice: Aabo (approved). Quentin and Abby are kept below only as the compared candidates.
 voice:
   name: "Aabo - Engaging Confident Explainer Voice"
   voice_id: KeU8nqWFDbaoi0QVUjD3
@@ -25,16 +28,19 @@ voice_settings:
   use_speaker_boost: true
   speed: 1.0
 
-# Words the voice might mispronounce -> how to write them for the voice only
-# (subtitles still show the original spelling).
+# Words the voice might mispronounce -> how to write them for the voice only.
+# Subtitles and on-screen text keep the ORIGINAL spelling: the swap happens only in the text sent to
+# ElevenLabs, and `studio.py align` puts the real spelling back into word-timed subtitles.
+# voice-pack also writes voice/pronunciation-dictionary.pls with the same rules (alias rules; phoneme/IPA
+# rules are not supported by eleven_multilingual_v2).
 pronunciations:
   OXO: "ox-oh"
-  TP19H: "T P nineteen H"
+  TP19H: "T P nineteen H"   # owner decision 2026-11-04
   TempPro: "Temp Pro"
   ThermoPro: "Thermo Pro"
   PowerLix: "Power Licks"
-  Zulay: "Zoo-lay"          # unconfirmed - check how the brand says it
-  Microplane: "Micro-plane"
+  Zulay: "Soo-lay"          # owner decision 2026-11-04 (Spanish/Venezuelan origin of the name)
+  Microplane: "Micro-plane" # owner decision 2026-11-04
 
 # Other voices that were compared (free public previews from ElevenLabs' voice library).
 candidates:

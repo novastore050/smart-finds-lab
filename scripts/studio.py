@@ -103,6 +103,9 @@ def cmd_review_done(a):
 
 def cmd_build_timeline(a):
     prod = P(a)
+    if a.only:  # single-scene test file only - the full timeline and its stage are left alone
+        timeline.build_scene(prod, Log("timeline"), a.only, a.placeholders)
+        return 0
     _, _, missing = timeline.build(prod, Log("timeline"), a.placeholders)
     note = f"{len(missing)} items missing" if missing else "complete"
     prod.mark("timeline", note + (" (placeholder preview)" if a.placeholders else ""))
@@ -172,6 +175,7 @@ def main():
     s = add("build-timeline", cmd_build_timeline,
             "script + assets -> edit/timeline.yaml + edit/shorts.yaml")
     s.add_argument("--placeholders", action="store_true", help="title cards instead of missing clips (preview)")
+    s.add_argument("--only", metavar="SCENE", help="write edit/scene-<SCENE>.yaml for a single-scene test only")
     s = add("render", lambda a: 0 if pipeline.render(P(a), Log("render"), a.draft, a.skip_shorts,
                                                     a.placeholders)[0] != "FAIL" else 2,
             "long video + 3 Shorts + thumbnails + SEO + QC")

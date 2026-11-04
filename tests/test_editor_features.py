@@ -306,6 +306,55 @@ def test_guards(prod, tl_path):
     ok("QC report flags the timeline built from a different script version", "different script version" in rep)
 
 
+def test_pronunciation_and_scene_test(prod):
+    print("F. pronunciation in voice only + single-scene test file")
+    cfg = voice.voice_cfg()
+    text = "Number nine is the Zulay press. The TP19H reads fast, and OXO's brush, TempPro, Microplane."
+    spoken = voice.speakable(text, cfg)
+    ok("voice text uses the pronunciation spellings", all(x in spoken for x in
+       (cfg["pronunciations"]["Zulay"], cfg["pronunciations"]["TP19H"], cfg["pronunciations"]["Microplane"])))
+    # fake ElevenLabs 'with timestamps' alignment for the SPOKEN text (one char every 0.05 s)
+    chars = list(spoken)
+    align = {"alignment": {"characters": chars,
+                           "character_start_times_seconds": [i * 0.05 for i in range(len(chars))],
+                           "character_end_times_seconds": [i * 0.05 + 0.05 for i in range(len(chars))]}}
+    words = voice.restore_spelling(voice.parse_word_timings(align), cfg)
+    joined = " ".join(w for w, _, _ in words)
+    ok("subtitle words get the ORIGINAL spelling back", joined == text, joined)
+    tp = next(w for w in words if w[0].startswith("TP19H"))
+    ok("a multi-word alias becomes one word spanning its whole timing",
+       tp[2] - tp[1] > 0.05 * (len(cfg["pronunciations"]["TP19H"]) - 1))
+    for k in ("Zulay", "TP19H", "Microplane"):
+        ok(f"no pronunciation spelling for {k} left in subtitles", cfg["pronunciations"][k] not in joined)
+    # srt written by align() for an imported scene
+    prod.p("voice", "s02.words.json").write_text(json.dumps(align), encoding="utf-8")
+    voice.align(prod, LOG)
+    srt = prod.p("voice", "s02.srt").read_text()
+    ok("align() writes subtitles with Zulay / TP19H / Microplane spelled correctly",
+       "Zulay" in srt and "TP19H" in srt and "Microplane" in srt and "Soo-lay" not in srt and "nineteen" not in srt)
+    # pronunciation dictionary = config
+    pack_pls = prod.p("voice", "pronunciation-dictionary.pls")
+    voice.export_pack(prod, LOG)
+    rules = voice.read_pls(pack_pls.read_text())
+    ok("pronunciation-dictionary.pls has exactly the rules in config/voice.yaml",
+       rules == {k: v for k, v in cfg["pronunciations"].items() if v and k != v}, rules)
+    # single-scene test timeline
+    path, missing = timeline.build_scene(prod, LOG, "s02", placeholders=True)
+    import yaml as _y
+    d = _y.safe_load(path.read_text())
+    ok("scene test file has one scene, no intro/outro", len(d["scenes"]) == 1 and d["scenes"][0]["id"] == "s02"
+       and d["intro"] == {"enabled": False} and d["outro"] == {"enabled": False})
+    ok("scene test uses the imported voice + keeps the scene's text overlays",
+       d["scenes"][0].get("voice", "").endswith("s02.wav") and d["scenes"][0].get("overlays"))
+    proj = load_timeline(path)
+    proj.output = TMP / "zz-scene-test.mp4"
+    out = render_project(proj, LOG, overwrite=True, draft=True)
+    vlen = probe(SAMPLES / "voice_02_placeholder.wav")["audio_duration"]
+    info = probe(out) if out else {}
+    ok("single-scene test renders (draft) and follows the voice length",
+       out and abs(info["duration"] - vlen) < 2.0, (vlen, info.get("duration")))
+
+
 def main():
     if not (SAMPLES / "image_1_square.jpg").exists():
         print("Run: python scripts/sfl.py make-test-media")
@@ -317,6 +366,7 @@ def main():
         prod = make_fixture_production()
         tl_path = test_dedicated_shorts(prod)
         test_seo(prod)
+        test_pronunciation_and_scene_test(prod)
         test_guards(prod, tl_path)
     finally:
         clean()

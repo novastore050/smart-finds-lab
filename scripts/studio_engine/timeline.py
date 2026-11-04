@@ -8,7 +8,7 @@ from __future__ import annotations
 import hashlib
 
 from sfl_engine.config import GRAPHIC_KINDS, MOTIONS
-from sfl_engine.util import ROOT, rel
+from sfl_engine.util import ROOT, SFLError, rel
 
 from .common import Production, fval, save_yaml
 from .prompts import shot_file
@@ -98,6 +98,33 @@ def _scene_entry(prod: Production, sc: dict, wpm: float, missing: list, placehol
     if ov and e.get("type") != "card":
         e["overlays"] = ov
     return e
+
+
+def build_scene(prod: Production, log, sid: str, placeholders=False):
+    """One scene on its own (16:9, no intro/outro) for a first real-scene test: edit/scene-<id>.yaml."""
+    prod.require("script", why="Write and check the script first.")
+    s = load_script(prod)
+    by_id = {sc["id"]: sc for sc in s.get("scenes") or []}
+    if sid not in by_id:
+        raise SFLError(f"No scene '{sid}' in script/script.yaml (scenes: {', '.join(by_id)})")
+    wpm = float(s.get("words_per_minute") or 155)
+    missing = []
+    entry = _scene_entry(prod, by_id[sid], wpm, missing, placeholders)
+    entry.pop("transition", None)
+    music = prod.meta.get("music") or {}
+    audio = {"music": music["file"], "music_license": music.get("license", "")} if music.get("file") else {}
+    src = prod.p("script", "script.yaml")
+    tl = {"project": {"title": f"{s.get('title') or prod.title} - scene {sid} test", "output": f"{prod.slug}-{sid}-test",
+                      "format": "long", "source_script": rel(src),
+                      "source_script_md5": hashlib.md5(src.read_bytes()).hexdigest()},
+          "audio": audio, "subtitles": {"mode": "auto"}, "intro": {"enabled": False}, "outro": {"enabled": False},
+          "scenes": [entry]}
+    path = prod.p("edit", f"scene-{sid}.yaml")
+    save_yaml(path, tl, f"# GENERATED single-scene test timeline ({sid}) from script/script.yaml - {prod.slug}")
+    log.info(f"Scene test timeline: {rel(path)}")
+    for m in missing:
+        log.info(f"     - missing: {m}")
+    return path, missing
 
 
 def build(prod: Production, log, placeholders=False):

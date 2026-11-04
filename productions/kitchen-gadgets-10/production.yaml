@@ -20,7 +20,7 @@ stages:
     at: 2026-11-03 08:11
     note: Owner approved Version 4 shortlist (revision 4) on 2026-11-03
   script:
-    at: 2026-11-03 21:35
+    at: 2026-11-04 18:26
     note: 13 scenes + 3 standalone Shorts (promoted from script/review/script-final-v2.yaml)
   prompts:
     at: 2026-11-03 21:27

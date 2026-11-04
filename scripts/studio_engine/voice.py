@@ -99,6 +99,7 @@ def export_pack(prod: Production, log):
                            "(Flash/Turbo about 0.5). Check the exact cost with an estimate before generating.",
             "jobs": jobs}
     prod.p("voice", "voice-jobs.json").write_text(json.dumps(pack, indent=2), encoding="utf-8")
+    prod.p("voice", "pronunciation-dictionary.pls").write_text(pronunciation_pls(cfg), encoding="utf-8")
     L = [f"# Voice-over pack — {prod.title}", "",
          f"Voice: **{cfg['voice']['name']}** (`{cfg['voice']['voice_id']}`) · model `{cfg['model_id']}` · "
          f"total **{total_chars:,} characters** (~{total_chars:,} credits on standard models — estimate only).", "",
@@ -211,6 +212,56 @@ def parse_word_timings(data) -> list:
     return out
 
 
+def restore_spelling(words: list, cfg: dict) -> list:
+    """Word timings come back as the SPOKEN text (e.g. "Soo-lay", "T P nineteen H").
+    Put the real spelling back (Zulay, TP19H) so subtitles never show the pronunciation spelling.
+    Multi-word aliases are merged into one word that spans their combined timing."""
+    rules = [(orig, say.split()) for orig, say in (cfg.get("pronunciations") or {}).items() if say and orig != say]
+    rules.sort(key=lambda r: -len(r[1]))  # longest alias first
+
+    def norm(t):
+        t = re.sub(r"['’]s$", "", re.sub(r"[^\w'’-]+$", "", t))
+        return re.sub(r"^[^\w-]+", "", t).lower()
+
+    out, i = [], 0
+    while i < len(words):
+        for orig, toks in rules:
+            seg = words[i:i + len(toks)]
+            if len(seg) == len(toks) and all(norm(w[0]) == t.lower() for w, t in zip(seg, toks)):
+                lead = re.match(r"^[^\w-]*", seg[0][0]).group(0)
+                trail = re.search(r"((?:['’]s)?[^\w'’-]*)$", seg[-1][0]).group(1)
+                out.append((lead + orig + trail, seg[0][1], seg[-1][2]))
+                i += len(toks)
+                break
+        else:
+            out.append(words[i])
+            i += 1
+    return out
+
+
+def pronunciation_pls(cfg: dict) -> str:
+    """ElevenLabs pronunciation dictionary (.pls) with the SAME alias rules as config/voice.yaml.
+    Alias rules work with every model (eleven_multilingual_v2 does not support phoneme/IPA rules)."""
+    from xml.sax.saxutils import escape
+    L = ['<?xml version="1.0" encoding="UTF-8"?>',
+         "<!-- GENERATED from config/voice.yaml (pronunciations) - do not edit by hand.",
+         "     Alias rules: the word is replaced by the alias only in the audio; subtitles keep the real spelling. -->",
+         '<lexicon version="1.0" xmlns="http://www.w3.org/2005/01/pronunciation-lexicon" alphabet="ipa" xml:lang="en-US">']
+    for orig, say in (cfg.get("pronunciations") or {}).items():
+        if say and orig != say:
+            L.append(f"  <lexeme><grapheme>{escape(str(orig))}</grapheme><alias>{escape(str(say))}</alias></lexeme>")
+    L.append("</lexicon>")
+    return "\n".join(L) + "\n"
+
+
+def read_pls(text: str) -> dict:
+    import xml.etree.ElementTree as ET
+    ns = {"p": "http://www.w3.org/2005/01/pronunciation-lexicon"}
+    root = ET.fromstring(text)
+    return {lx.findtext("p:grapheme", namespaces=ns): lx.findtext("p:alias", namespaces=ns)
+            for lx in root.findall("p:lexeme", ns)}
+
+
 def words_to_cues(words, max_chars=80, max_dur=6.0, min_gap=0.35):
     cues, cur, a, b = [], [], None, None
     for t, s0, e0 in words:
@@ -237,7 +288,7 @@ def align(prod: Production, log):
         j = prod.p("voice", f"{sc['id']}.words.json")
         if not j.exists():
             continue
-        words = parse_word_timings(json.loads(j.read_text(encoding="utf-8")))
+        words = restore_spelling(parse_word_timings(json.loads(j.read_text(encoding="utf-8"))), voice_cfg())
         if not words:
             log.warn(f"{rel(j)} contains no word timings")
             continue

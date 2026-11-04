@@ -6,10 +6,10 @@ Tick in order. Commands run from the Smart-Finds-Lab folder.
 - [x] Products approved (Version 4)
 - [ ] Fill `research/amazon-verification.csv` on Amazon.com, then `python scripts/studio.py import-verification kitchen-gadgets-10`
 - [ ] Resolve every "needs verification" note in `script/script.md` (10 products have no verified Amazon rating)
-- [ ] Confirm Zulay pronunciation
+- [x] Pronunciation rules set in `config/voice.yaml` (also in `voice/pronunciation-dictionary.pls`)
 
 ## 2. Assets
-- [ ] Choose the voice (listen to `productions/_voice-samples/`), set `status: chosen` in `config/voice.yaml`
+- [x] Channel voice chosen: Aabo - Engaging Confident Explainer Voice (`config/voice.yaml`)
 - [ ] Approve ElevenLabs cost (~8,673 characters per take), generate, then `import-voice` + `align`
 - [ ] Generate Higgsfield clips from `prompts/higgsfield-prompts.md` (needs paid credits), then `import-clips kitchen-gadgets-10 <folder>`
 - [ ] Add real product photos to `assets/images/<slug>/<product-id>.jpg` (yours or licensed)

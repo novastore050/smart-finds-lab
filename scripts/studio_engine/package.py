@@ -78,7 +78,8 @@ def write(prod: Production, log):
              "**Nothing has been generated.**", "",
          "## Pronunciation notes", "", "Applied automatically to the voice text only (subtitles keep the real spelling):", ""]
     L += [f"- **{w}** → say *{say}*" for w, say in (vc.get("pronunciations") or {}).items()]
-    L += ["- **Zulay** pronunciation is a guess — confirm before generating.",
+    L += [("- Pronunciations approved by the owner." if vc.get("status") == "chosen"
+           else "- **Zulay** pronunciation is a guess — confirm before generating."),
           "- Numbers are written as words in the script (\"Number ten\", \"double-A\") so the voice reads them naturally.",
           "", "## Sections", "",
           "| # | Scene | Characters | ~Seconds | Text file | Save audio as |", "|---|---|---|---|---|---|"]
@@ -119,9 +120,11 @@ def write(prod: Production, log):
          "- [x] Products approved (Version 4)",
          f"- [ ] Fill `research/amazon-verification.csv` on Amazon.com, then `python scripts/studio.py import-verification {prod.slug}`",
          f"- [ ] Resolve every \"needs verification\" note in `script/script.md` ({len(unver)} products have no verified Amazon rating)",
-         "- [ ] Confirm Zulay pronunciation",
+         ("- [x] Pronunciation rules set in `config/voice.yaml` (also in `voice/pronunciation-dictionary.pls`)"
+          if vc.get("status") == "chosen" else "- [ ] Confirm pronunciation of brand names (config/voice.yaml)"),
          "", "## 2. Assets",
-         "- [ ] Choose the voice (listen to `productions/_voice-samples/`), set `status: chosen` in `config/voice.yaml`",
+         (f"- [x] Channel voice chosen: {vc['voice']['name']} (`config/voice.yaml`)" if vc.get("status") == "chosen" else
+          "- [ ] Choose the voice (listen to `productions/_voice-samples/`), set `status: chosen` in `config/voice.yaml`"),
          f"- [ ] Approve ElevenLabs cost (~{jobs['total_characters']:,} characters per take), generate, then "
          f"`import-voice` + `align`",
          f"- [ ] Generate Higgsfield clips from `prompts/higgsfield-prompts.md` (needs paid credits), then "
